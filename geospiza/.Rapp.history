@@ -1,0 +1,2010 @@
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
+layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
+#layout.show(4)#
+i = 1#
+gaps = c(1,2,3)#
+#for(i in c(1,3,5)){#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+gaps = c(1,3,5)
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+dev.new(width=3,height=6.25)#
+m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
+layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
+#layout.show(4)#
+i = 1#
+gaps = c(1,2,3)
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+#load packages#
+library(mclust)#
+library(mvtnorm)#
+library(ellipse)#
+library(clustvarsel)#
+library(dplyr)#
+#
+library(ggplot2)#
+setwd('~/Dropbox/SBE/SBE.in.silico/geospiza/')#
+#
+#################################################################################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data <- read.table("data.csv", header=T, sep=",")
+# run NMM across the entire dataset and for individual islands#
+# remove individuals based on bill depth or bill size (PC1) for a few different scenarios#
+#
+# run analysis on all species and then only for G. fuliginosa, fortis, and magnirostris where the relationship between bill size is most tightly correlated with the adaptive landscape, for other species, specialized foraging niches may obscure relationship #
+d = data
+#############
+#	plotting#
+library(RColorBrewer)#
+results = get(load('~/Dropbox/SBE/SBE.in.silico/geospiza/results.rda'))
+gaps = c(1,2,3)#
+#gaps = c(1,3,5)#
+#
+png('Figure.Geospiza.extinction.gaps.1.2.3.png',width=3,height=6.25,units='in',res=300,bg='transparent')#
+#
+#dev.new(width=3,height=6.25)#
+m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
+layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
+#layout.show(4)#
+i = 1#
+#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)#
+	dev.off()
+library(RColorBrewer)#
+results = get(load('~/Dropbox/SBE/SBE.in.silico/geospiza/results.rda'))#
+#
+gaps = c(1,2,3)
+dev.new(width=3,height=6.25)#
+m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
+layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))
+layout.show(4)
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+	par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}
+par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+dev.new(width=3.5,height=6.25)
+m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)
+m
+m  = matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)
+m
+m  = matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2)
+m
+rbind(m,c(7,7))
+m
+m  = matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2)
+m = rbind(m,c(7,7)) # create space for x axis label
+m
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.25,3))
+layout.show(7)
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))
+layout.show(7)
+m
+matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))
+m = rbind(m,c(7,7)) # create space for x axis label
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))
+layout.show(7)
+i = 1
+gap = gaps[i]
+gap
+tmp = results[results$gap %in% gap, ]
+tmp
+xlim = c(0,1)
+ylim = c(5,11)
+seq(0 +.5,xlim[2]-.5,1)
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+par(mar=c(2,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+xat
+segments(xat,0,xat,8,col='grey')
+points(xat,8,pch=16,cex=1.5)
+axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)
+axis(2,at=c(5:7,9:10),label=c(5:7,9:10))
+axis(2,at=8,label=8,col=NA,col.tick=1,font=2)
+mtext('N Inferred Species', 2,2.5,cex=.75)
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+par(mar=c(3,4,1,2))
+xlim = c(0,nrow(tmp))
+ylim = c(5,11)
+xat = seq(0 +.5,xlim[2]-.5,1)
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+par(mar=c(3,4,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))#
+#layout.show(7)
+dev.new(width=3.25,height=6.25)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))#
+#layout.show(7)#
+#
+i = 1
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(2,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=T)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(1,2.25))#
+#layout.show(7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(2,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=T)#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+xat
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(2,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(2,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)
+xlim
+ylim
+xat
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+abline(h=8,lty=2,col='grey')
+segments(xat,0,xat,tmp$max.BIC.G,col='grey')
+points(xat,tmp$max.BIC.G,pch=16,cex=1.5)
+axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=2,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)
+axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+abline(h=8,lty=1,col='grey')
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+?axis
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=2,hadj=-0.5)#
+	axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=2,hadj= 0.5)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=2,padj=-0.5)#
+	axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=2,padj= 0.5)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=1,padj= 0.5)
+par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)
+par(“usr”)[3]
+?text
+text(xat,0, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
+text(xat,1, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
+text(xat,2, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
+text(xat,.5, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
+par("usr")[3]
+text(xat,par("usr")[3], labels = 'No Extinction')
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE)
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,str=45)
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45)
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1))
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.75)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.75) #
+	srt = 45, adj = c(1.1,1.1), , cex=.9)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.75)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.75)
+text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7) #
+	axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=1,padj= 0.5)#
+	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7) #
+	axis(1,at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7) #
+	axis(1,at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+?adj
+?text
+?text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,?adj = c(0,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,?adj = c(0,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(0,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1,0),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', xpd = TRUE,srt=45,adj = c(1,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', xpd = TRUE,srt=45,adj = c(1,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', xpd = TRUE,srt=45, adj = c(2,-1),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,-1),cex=.7) #
+	text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2, 1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,-2),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,-.5),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,-1.5),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1, .5),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,-1),cex=.7) #
+	text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1, .5),cex=.7)
+axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(0,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(0,1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(1,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,1),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(1,1),cex=.7) #
+	text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,0),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,-1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,3),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(1,1),cex=.7) #
+	text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,3),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,1),cex=.7)
+text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7)
+text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7)
+par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7) #
+	text(xat,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7)
+text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7)
+text(xat+.25,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7)
+text(xat+.25,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.25,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7) #
+	text(xat+.25,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.15,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7) #
+	text(xat+.15,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(3,1),cex=.7) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
+text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2,1),cex=.7)
+text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.7)
+axis(2,at=c(5:7,9:10),label=c(5:7,9:10))
+axis(2,at=8,label=8,col=NA,col.tick=1,font=2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.7) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.7) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.9) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.9) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.5,2.5),cex=.8)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.5,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.25,2.5),cex=.8)
+text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+nrow(tmp)
+seq(0 +.5,xlim[2]-.5,1)
+seq(0 +.5,xlim[2]-.5,1) - .5
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp))#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1) - .5#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}
+nrow(tmp)
+Version 2#
+dev.new(width=3.25,height=6.25)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = xlim#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+#############
+#	plotting#
+library(RColorBrewer)#
+results = get(load('~/Dropbox/SBE/SBE.in.silico/geospiza/results.rda'))#
+#
+gaps = c(1,2,3)#
+#gaps = c(1,3,5)
+#Version 2#
+dev.new(width=3.25,height=6.25)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = xlim
+plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
+abline(h=8,lty=1,col='grey')
+segments(xat,0,xat,tmp$max.BIC.G,col='grey')
+xat
+xat = seq(xlim[1],xlim[2],1)
+xat
+segments(xat,0,xat,tmp$max.BIC.G,col='grey')
+points(xat,tmp$max.BIC.G,pch=16,cex=1.5)
+axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=16,cex=1.5)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey')#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)
+points(xat,8,pch=21,cex=1.5,col='black',bg='grey',lwd=2)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey',lwd=2)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey75',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey25',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
+text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.5)
+text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat+.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)
+text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1.1,2.5),cex=.8)
+text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.8)
+par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	text(xat+.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)
+text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.8) #
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)
+i = 1
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)
+axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))
+text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.5,1),cex=.8)
+text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1,2.5),cex=.8)
+text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+#Version 2#
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,0,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,0,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
+#	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
+#	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)
+text(-1,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)
+text(-3,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1.5,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(0.5,10.75,paste0(LETTERS[i],'.'),pos=4,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1.5,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)
+text(0.5,10.75,paste0(LETTERS[i],'.'),pos=1,cex=1.25)
+text(0.5,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
+text(1,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
+text(0,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
+gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(0,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
+text(1,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
+par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
+text(-1.5,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)
+gap
+text(-1,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(.5,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(.75,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.75,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.75,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,11,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,11,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
