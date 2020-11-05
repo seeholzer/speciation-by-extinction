@@ -1,5 +1,6 @@
 ##################################################
-#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models 
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models
+#	- code adapted from Cadena et al. 2018
 #	Author: Glenn F. Seeholzer
 #	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
@@ -9,12 +10,6 @@ setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')
 
 #load packages
 library(mclust)
-#library(mvtnorm)
-#library(ellipse)
-#library(clustvarsel)
-#library(dplyr)
-#library(ggplot2)
-
 
 ##################################################
 # 1.2) Read data
@@ -25,15 +20,20 @@ data = read.table("Geospiza.data.csv", header=T, sep=",")
 d = data
 #d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]
 
-scenarios = c()
+mclust.data = list()
+results = c()
 g = 1
 for(g in 1:5){
+
 	gap = g  
 	
 	floor = floor(min(d$Bdepth))
 	ceiling = ceiling(max(d$Bdepth))
 	min = floor:(ceiling-gap)
 	max = (floor+gap):ceiling
+	
+
+	scenario.data = list()
 	
 	colnames = c('gap','extinction.range','min','max','max.BIC.G')
 	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))
@@ -46,27 +46,31 @@ for(g in 1:5){
 	for(i in 1:nrow(foo)){
 		cat(' scenario ',i,'/',nrow(foo),' ',sep='')
 		
-		if(foo$extinction[i] %in% 'none'){
-			tmp = d
-		}else{
-			tmp = d[	d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	
-		}
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	
 		
 		tmp.ln = log(tmp[,c(9:14)])
 		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")
 		#PCA using the covariance matrix
-		tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)
 		#change default as needed
 		mclust.options(hcUse="VARS")
 		#Mclust analysis
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018
 		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)
 		#extract BIC values for the best model conditional on the number of groups
 		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)
 		max.BIC.G = which.max(BIC.Best.Model.Per.G)    
 		max.BIC = max(BIC.Best.Model.Per.G)
 		foo[i,'max.BIC.G'] = max.BIC.G
+		
+		name = foo[i,'extinction.range']
+		scenario.data[[name]]$mclust = Mcluster.tmp.ln.pca.subset
+	
 	}
-	scenarios = rbind(scenarios,foo)
+	
+	mclust.data[[paste0(gap,'mm.gap')]] = scenario.data
+	
+	results = rbind(results,foo)
 }
 
 
@@ -79,17 +83,20 @@ for(g in 1:5){
 	#change default as needed
 	mclust.options(hcUse="VARS")
 	#Mclust analysis
+	#PC1-4 were used following the variable selection procedure of Cadena et al. 2018
 	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)
 	#extract BIC values for the best model conditional on the number of groups
 	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)
 	max.BIC.G = which.max(BIC.Best.Model.Per.G)    
 	max.BIC = max(BIC.Best.Model.Per.G)
 
-results = rbind(scenarios,c('none','none','NA','NA', max.BIC.G))
+
+mclust.data[['no.extinction']] = list(mclust = Mcluster.tmp.ln.pca.subset)
+save(mclust.data,file='mclust.data.rda')
+
+results = rbind(results,c('none','none','NA','NA', max.BIC.G))
 results[,c('gap','min','max','max.BIC.G')] = apply(results[,c('gap','min','max','max.BIC.G')],2,as.numeric)
-
 save(results,file='results.rda')
-
 
 
 

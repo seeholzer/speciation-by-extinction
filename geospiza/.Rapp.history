@@ -1,469 +1,3 @@
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}#
-	par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
-layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
-#layout.show(4)#
-i = 1#
-gaps = c(1,2,3)#
-#for(i in c(1,3,5)){#
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}#
-	par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-gaps = c(1,3,5)
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}#
-	par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-dev.new(width=3,height=6.25)#
-m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
-layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
-#layout.show(4)#
-i = 1#
-gaps = c(1,2,3)
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}#
-	par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-#load packages#
-library(mclust)#
-library(mvtnorm)#
-library(ellipse)#
-library(clustvarsel)#
-library(dplyr)#
-#
-library(ggplot2)#
-setwd('~/Dropbox/SBE/SBE.in.silico/geospiza/')#
-#
-#################################################################################################################
-# 1.2) Read data#
-#
-#read the morphological data and examine the resulting data frame#
-data <- read.table("data.csv", header=T, sep=",")
-# run NMM across the entire dataset and for individual islands#
-# remove individuals based on bill depth or bill size (PC1) for a few different scenarios#
-#
-# run analysis on all species and then only for G. fuliginosa, fortis, and magnirostris where the relationship between bill size is most tightly correlated with the adaptive landscape, for other species, specialized foraging niches may obscure relationship #
-d = data
-#############
-#	plotting#
-library(RColorBrewer)#
-results = get(load('~/Dropbox/SBE/SBE.in.silico/geospiza/results.rda'))
-gaps = c(1,2,3)#
-#gaps = c(1,3,5)#
-#
-png('Figure.Geospiza.extinction.gaps.1.2.3.png',width=3,height=6.25,units='in',res=300,bg='transparent')#
-#
-#dev.new(width=3,height=6.25)#
-m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
-layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))#
-#layout.show(4)#
-i = 1#
-#
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}#
-	par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)#
-	dev.off()
-library(RColorBrewer)#
-results = get(load('~/Dropbox/SBE/SBE.in.silico/geospiza/results.rda'))#
-#
-gaps = c(1,2,3)
-dev.new(width=3,height=6.25)#
-m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)#
-layout(mat = m, heights = c(2, 2, 2,0.25),widths = c(2,2,2,2))
-layout.show(4)
-for(i in 1:length(gaps)){#
-	gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-	par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-	text(-0.95,10.75,paste0(LETTERS[i],'. ',gap,' mm ext. range'),pos=4,cex=1.25)#
-#
-}
-par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-dev.new(width=3.5,height=6.25)
-m  = matrix(c(1, 2, 3, 4), nrow = 4, ncol = 1)
-m
-m  = matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)
-m
-m  = matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2)
-m
-rbind(m,c(7,7))
-m
-m  = matrix(c(1, 2, 3, 4, 5, 6), nrow = 3, ncol = 2)
-m = rbind(m,c(7,7)) # create space for x axis label
-m
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.25,3))
-layout.show(7)
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))
-layout.show(7)
-m
-matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
-t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))
-m = rbind(m,c(7,7)) # create space for x axis label
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))
-layout.show(7)
-i = 1
-gap = gaps[i]
-gap
-tmp = results[results$gap %in% gap, ]
-tmp
-xlim = c(0,1)
-ylim = c(5,11)
-seq(0 +.5,xlim[2]-.5,1)
-plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
-par(mar=c(2,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
-xat
-segments(xat,0,xat,8,col='grey')
-points(xat,8,pch=16,cex=1.5)
-axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)
-axis(2,at=c(5:7,9:10),label=c(5:7,9:10))
-axis(2,at=8,label=8,col=NA,col.tick=1,font=2)
-mtext('N Inferred Species', 2,2.5,cex=.75)
-plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
-par(mar=c(3,4,1,2))
-xlim = c(0,nrow(tmp))
-ylim = c(5,11)
-xat = seq(0 +.5,xlim[2]-.5,1)
-plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
-par(mar=c(3,4,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)
-plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
-m = rbind(m,c(7,7)) # create space for x axis label#
-#
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))#
-#layout.show(7)
-dev.new(width=3.25,height=6.25)#
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
-m = rbind(m,c(7,7)) # create space for x axis label#
-#
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.5,2.75))#
-#layout.show(7)#
-#
-i = 1
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(2,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=T)
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
-m = rbind(m,c(7,7)) # create space for x axis label#
-#
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(1,2.25))#
-#layout.show(7)
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(2,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=T)#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-xat
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(2,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
-m = rbind(m,c(7,7)) # create space for x axis label#
-#
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
-#layout.show(7)
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(2,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-par(mar=c(3,0,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)
-xlim
-ylim
-xat
-plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)
-abline(h=8,lty=2,col='grey')
-segments(xat,0,xat,tmp$max.BIC.G,col='grey')
-points(xat,tmp$max.BIC.G,pch=16,cex=1.5)
-axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-#
-	par(mar=c(3,0,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=2,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)
-axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
-abline(h=8,lty=1,col='grey')
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)#
-#
-	par(mar=c(3,0,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
-par(mar=c(0,0,0,0))#
-	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
-	text(.56,.4,'Extinction Events by Bill Depth (mm)',cex=1.2)
-m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
-m = rbind(m,c(7,7)) # create space for x axis label#
-#
-layout(mat = m, heights = c(2, 2, 2, 0.25), widths = c(.75,2.5))#
-#layout.show(7)#
-#
-i = 1
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No Extinction",cex.axis=1,lwd.ticks=2,las=2)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-?axis
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=2,hadj=-0.5)#
-	axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=2,hadj= 0.5)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)#
-	axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=2,padj=-0.5)#
-	axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=2,padj= 0.5)#
-	axis(2,at=c(5:7,9:10),label=c(5:7,9:10))#
-	axis(2,at=8,label=8,col=NA,col.tick=1,font=2)#
-	mtext('N Inferred Species', 2,2.5,cex=.75)
-axis(1,at=xat,label="No",			cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)
-axis(1,at=xat,label="Extinction",	cex.axis=1,lwd.ticks=2,las=1,padj= 0.5)
-par(mar=c(3,0,1,2))#
-	xlim = c(0,nrow(tmp))#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
-	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
-	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)
-gap = gaps[i]	#
-	tmp = results[results$gap %in% gap, ]#
-#
-	par(mar=c(3,4,1,0))#
-	xlim = c(0,1)#
-	ylim = c(5,11)#
-	xat = seq(0 +.5,xlim[2]-.5,1)#
-	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
-	abline(h=8,lty=1,col='grey')#
-	segments(xat,0,xat,8,col='grey')#
-	points(xat,8,pch=16,cex=1.5)
-par(“usr”)[3]
-?text
-text(xat,0, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
-text(xat,1, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
-text(xat,2, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
-text(xat,.5, labels = 'No Extinction', srt = 45, adj = c(1.1,1.1), xpd = TRUE, cex=.9)
-par("usr")[3]
-text(xat,par("usr")[3], labels = 'No Extinction')
-text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE)
 text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,str=45)
 text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45)
 text(xat,par("usr")[3], labels = 'No Extinction', xpd = TRUE,srt=45,adj = c(1.1,1.1))
@@ -2008,3 +1542,1067 @@ for(i in 1:length(gaps)){#
 	par(mar=c(0,0,0,0))#
 	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
 	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)
+###################################################
+#	Plot the results of simulated extinction in Darwin's Finches#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')
+#load results#
+results = get(load('results.rda'))#
+#
+#Version 1#
+# png('Figure.Geospiza.extinction.gaps.1.2.3.png',width=3,height=6.25,units='in',res=300,bg='transparent')#
+# gaps = c(1,2,3)#
+#
+png('Figure.Geospiza.extinction.gaps.1.3.5.png',width=3,height=6.25,units='in',res=300,bg='transparent')#
+gaps = c(1,3,5)#
+#
+#Version 2#
+dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)#
+dev.off()
+png('Figure.Geospiza.extinction.gaps.1.3.5.png',width=3,height=6.25,units='in',res=300,bg='transparent')#
+gaps = c(1,3,5)#
+#
+#Version 2#
+#dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)#
+dev.off()
+png('Figure.Geospiza.extinction.gaps.1.3.5.png',width=3.25,height=6.25,units='in',res=300,bg='transparent')#
+gaps = c(1,3,5)#
+#
+#Version 2#
+#dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-1,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)#
+dev.off()
+png('Figure.Geospiza.extinction.gaps.1.3.5.png',width=3.25,height=6.25,units='in',res=300,bg='transparent')#
+gaps = c(1,3,5)#
+#
+#Version 2#
+#dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-.9,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)#
+dev.off()
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models #
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')
+data = read.table("data.csv", header=T, sep=",")
+data = read.table("Geospiza.data.csv", header=T, sep=",")
+d = data
+scenarios = c()
+g = 1
+gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling
+colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max
+i = 1
+cat(' scenario ',i,'/',nrow(foo),' ',sep='')
+if(foo$extinction[i] %in% 'none'){#
+			tmp = d#
+		}else{#
+			tmp = d[	d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		}#
+		dim(tmp)
+tmp.ln = log(tmp[,c(9:14)])
+colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")
+tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)
+mclust.options(hcUse="VARS")
+library(mclust)
+mclust.options(hcUse="VARS")
+Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)
+BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)
+max.BIC.G = which.max(BIC.Best.Model.Per.G)
+max.BIC = max(BIC.Best.Model.Per.G)
+foo[i,'max.BIC.G'] = max.BIC.G
+scenarios = rbind(scenarios,foo)
+#no extinction#
+	tmp = d#
+	tmp.ln = log(tmp[,c(9:14)])#
+	colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+	#PCA using the covariance matrix#
+	tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+	#change default as needed#
+	mclust.options(hcUse="VARS")#
+	#Mclust analysis#
+	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+	#extract BIC values for the best model conditional on the number of groups#
+	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+	max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+	max.BIC = max(BIC.Best.Model.Per.G)
+results = rbind(scenarios,c('none','none','NA','NA', max.BIC.G))
+results
+str(results)
+results = rbind(scenarios,c('none','none','NA','NA', max.BIC.G))#
+results[,c('gap','min','max','max.BIC.G')] = apply(results[,c('gap','min','max','max.BIC.G')],2,as.numeric)
+results
+str(results)
+###################################################
+#	Description: Plot the results of simulated extinction in Darwin's Finches from script 1.Geospiza.sim.ext.R#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load results#
+results = get(load('results.rda'))
+png('Figure.Geospiza.extinction.gaps.1.3.5.png',width=3.25,height=6.25,units='in',res=300,bg='transparent')#
+gaps = c(1,3,5)#
+#
+#Version 2#
+#dev.new(width=3.25,height=6.5)#
+m = t(matrix(c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3))#
+m = rbind(m,c(7,7)) # create space for x axis label#
+#
+layout(mat = m, heights = c(2, 2, 2, 0.5), widths = c(.75,2.5))#
+#layout.show(7)#
+#
+i = 1#
+for(i in 1:length(gaps)){#
+	gap = gaps[i]	#
+	tmp = results[results$gap %in% gap, ]#
+#
+	par(mar=c(3,4,1,0))#
+	xlim = c(0,1)#
+	ylim = c(5,11)#
+	xat = seq(0 +.5,xlim[2]-.5,1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,8,col='grey')#
+	points(xat,8,pch=21,cex=1.5,col='black',bg='grey85',lwd=1)#
+	axis(1,labels='',at=xat,cex.axis=1,lwd.ticks=2,las=1,padj=-0.5)#
+	axis(2,at=c(5:10),label=c(5:10))#
+	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) #
+	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) #
+	mtext('N Inferred Species', 2,2.5,cex=.75)#
+#
+	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)#
+#
+	par(mar=c(3,0,1,2))#
+	xlim = c(0,nrow(tmp)-1)#
+	ylim = c(5,11)#
+	xat = seq(xlim[1],xlim[2],1)#
+	plot(1,1,xlim=xlim,ylim=ylim,xlab='',ylab='',axes=F)#
+	abline(h=8,lty=1,col='grey')#
+	segments(xat,0,xat,tmp$max.BIC.G,col='grey')#
+	points(xat,tmp$max.BIC.G,pch=16,cex=1.5)#
+	axis(1,at=xat,label=tmp[,'extinction.range'],cex.axis=1,lwd.ticks=2,las=2)#
+#
+	text(-.9,10.85,paste0(gap,' mm ext. range'),pos=4,cex=1.25)#
+#
+}#
+#
+	par(mar=c(0,0,0,0))#
+	plot(0:1,0:1,xlab='',ylab='',axes=F,type='n')#
+	text(.6,.4,'Extinction Events by Bill Depth (mm)',cex=1.3)#
+dev.off()
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models #
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#library(mvtnorm)#
+#library(ellipse)#
+#library(clustvarsel)#
+#library(dplyr)#
+#library(ggplot2)#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")
+d = data
+g = 1
+scenarios = c()
+gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling
+colnames = c('gap','extinction.range','min','max','max.BIC.G')
+foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))
+colnames(foo) = colnames
+foo$gap = g
+foo$extinction.range = paste0(min,'-',max)
+foo$min = min
+foo$max = max
+i = 1
+cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		if(foo$extinction[i] %in% 'none'){#
+			tmp = d#
+		}else{#
+			tmp = d[	d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		}
+tmp
+#################################################################################################################
+#################################################################################################################
+#################################################################################################################
+## This script runs analyses for species delimitaion of Darwin's Finches in the genus Geospiza using#
+## morphological data obtained by H. S. Swarth and used by McKay and Zink (2015. Sisyphean evolution in Darwin's#
+## finches. Biological Reviews 90: 689-698). The script uses Gaussian mixture models to detect morphological#
+## groups. Following cKay and Zink (2015), the focus is on six traits: wing length, tail length, bill length,#
+## bill depth, bill width, and tarsus length.#
+###
+## The main sections of the script are: #
+###
+## 1) Preliminaries (loading packages and reading, transforming and rotating [with PCA] data).#
+## 2) Data analysis using Gaussian mixture models on logarithmically transformed data.#
+#################################################################################################################
+#################################################################################################################
+#################################################################################################################
+#################################################################################################################
+#################################################################################################################
+# 1) Preliminaries (loading packages and reading, transforming and rotating [with PCA] data)#
+#################################################################################################################
+#################################################################################################################
+#
+#################################################################################################################
+# 1.1) Load packages#
+#
+#load packages#
+library(mclust)#
+library(mvtnorm)#
+library(ellipse)#
+library(clustvarsel)#
+setwd('~/Dropbox/SBE/Cadena.et.al.code')
+#read the morphological data and examine the resulting data frame#
+morpho.data <- read.table("data.csv", header=T, sep=",")#
+dim(morpho.data)#
+head(morpho.data)#
+summary(morpho.data)#
+summary(morpho.data$Sex)#
+#
+hist(morpho.data$Bdepth)#
+boxplot(Bdepth ~ Island,data=morpho.data )
+morpho.data.ln <- log(morpho.data[,c(9:14)])#
+#change column names and examine resulting data frame#
+colnames(morpho.data.ln)#
+colnames(morpho.data.ln) <- c("Ln (Wing length)", "Ln (Tail length)", "Ln (Bill length)",#
+"Ln (Bill depth)", "Ln (Bill width)", "Ln (Tarsus)")#
+dim(morpho.data.ln)#
+summary(morpho.data.ln)
+mclust.options() #check Mclust options and make sure hcUSE="VARS", otherwise change it.
+mclust.options(hcUse="VARS")
+#Run mclust analysis#
+Mcluster.morpho.data.ln.pca.subset <- Mclust(morpho.data.ln.pca$x[,1:4], G=1:30)#
+summary(Mcluster.morpho.data.ln.pca.subset)#
+attributes(Mcluster.morpho.data.ln.pca.subset)#
+#help(mclustModelNames) #in this help page there is information about model names#
+#plot(Mcluster.morpho.data.ln.pca.subset$BIC)#
+summary(Mcluster.morpho.data.ln.pca.subset$data)#
+dim(Mcluster.morpho.data.ln.pca.subset$data)#
+#
+#extract BIC values for the best model conditional on the number of groups#
+BIC.Best.Model.Per.G <- apply(Mcluster.morpho.data.ln.pca.subset$BIC, 1, max, na.rm=T)#
+#Mcluster.morpho.data.ln.pca.subset$BIC#
+#
+#Obtain second best Mclust model, with 7 morphogroups #
+Mcluster.morpho.data.ln.pca.subset.G7 <- Mclust(morpho.data.ln.pca$x[,1:4], G=7)#
+summary(Mcluster.morpho.data.ln.pca.subset.G7)#
+attributes(Mcluster.morpho.data.ln.pca.subset.G7)#
+#help(mclustModelNames) #in this help page there is information about model names#
+Mcluster.morpho.data.ln.pca.subset.G7$BIC#
+summary(Mcluster.morpho.data.ln.pca.subset.G7$data)#
+dim(Mcluster.morpho.data.ln.pca.subset.G7$data)
+# 1.5.1) perform PCA using the covariance matrix of the logarithmic#
+#transformation of the six traits of interest (Wing, Tail, Blength,#
+#Bdepth, Bwidth, Tarsus) and examine the results#
+morpho.data.ln.pca <- prcomp(morpho.data.ln, center = T, scale. = F) #PCA using the covariance matrix#
+#
+#examine PCA results#
+#get the list of attributes of the R object containing the PCA results (which#
+#is an R object of class "prcomp")#
+attributes(morpho.data.ln.pca)#
+morpho.data.ln.pca$scale#
+morpho.data.ln.pca$center#
+#variance explained by each principal component: #
+summary(morpho.data.ln.pca)#
+#summary of the principal components: #
+summary(morpho.data.ln.pca$x)#
+#examine the "rotation" element of the R object containing the PCA results,#
+#it shows the coefficients (or "loadings") of each trait on each principal component#
+morpho.data.ln.pca$rotation
+#Run mclust analysis#
+Mcluster.morpho.data.ln.pca.subset <- Mclust(morpho.data.ln.pca$x[,1:4], G=1:30)#
+summary(Mcluster.morpho.data.ln.pca.subset)#
+attributes(Mcluster.morpho.data.ln.pca.subset)#
+#help(mclustModelNames) #in this help page there is information about model names#
+#plot(Mcluster.morpho.data.ln.pca.subset$BIC)#
+summary(Mcluster.morpho.data.ln.pca.subset$data)#
+dim(Mcluster.morpho.data.ln.pca.subset$data)
+#extract BIC values for the best model conditional on the number of groups#
+BIC.Best.Model.Per.G <- apply(Mcluster.morpho.data.ln.pca.subset$BIC, 1, max, na.rm=T)#
+#Mcluster.morpho.data.ln.pca.subset$BIC#
+#
+#Obtain second best Mclust model, with 7 morphogroups #
+Mcluster.morpho.data.ln.pca.subset.G7 <- Mclust(morpho.data.ln.pca$x[,1:4], G=7)#
+summary(Mcluster.morpho.data.ln.pca.subset.G7)#
+attributes(Mcluster.morpho.data.ln.pca.subset.G7)#
+#help(mclustModelNames) #in this help page there is information about model names#
+Mcluster.morpho.data.ln.pca.subset.G7$BIC#
+summary(Mcluster.morpho.data.ln.pca.subset.G7$data)#
+dim(Mcluster.morpho.data.ln.pca.subset.G7$data)
+#Calculate empirical support for the hypothesis of species limits by Lack (1947) #
+H.Lack <- MclustDA(Mcluster.morpho.data.ln.pca.subset$data, class=as.vector(morpho.data$Taxon), G = 1, modelType = "MclustDA")#
+#attributes(H.Lack)#
+summary(H.Lack)#
+#H.Lack$models#
+H.Lack$bic
+#Calculate empirical support for the hypothesis of species limits proposed by the currently accepted taxonomy #
+H.Current.taxonomy <- MclustDA(Mcluster.morpho.data.ln.pca.subset$data, class=as.vector(morpho.data$New_Taxonomy), G = 1, modelType = "MclustDA")#
+#attributes(H.Current.taxonomy)#
+summary(H.Current.taxonomy)#
+#H.Current.taxonomy$models#
+H.Current.taxonomy$bic
+max.BIC <- max(BIC.Best.Model.Per.G)
+par(mar=c(5, 4.5, 2, 2) + 0.1)#
+plot(1:30, max.BIC-BIC.Best.Model.Per.G[1:30], type="n", bty="n", xlim=c(1,30), ylim=c(900,0), yaxt="n", xaxt="n",#
+	xlab="Number of morphological groups", ylab=expression(paste("Empirical support (",Delta, "BIC )", sep="")), main="",#
+	cex.axis=1.5, cex.lab=1.5, cex.main=1.5)#
+points(2:30, max.BIC-BIC.Best.Model.Per.G[2:30], cex=2, pch=21, col="black", lwd=2)#
+#show the best Mclust models#
+points(Mcluster.morpho.data.ln.pca.subset$G, max.BIC-max(BIC.Best.Model.Per.G), pch=19, cex=2)#
+points(7, max.BIC-sort(BIC.Best.Model.Per.G, decreasing=T)[2], pch=19, cex=2)#
+#show the hypothesis by McKay and Zink (2015)#
+points(1, max.BIC-BIC.Best.Model.Per.G[1], pch=24, bg="black", cex=2)#
+#show the hypothesis by Lack (1947)#
+points(length(unique(morpho.data$Taxon)), max.BIC-H.Lack$bic, pch=25, bg="black", cex=2)#
+#show the hypothesis according to current taxonomy#
+points(length(unique(morpho.data$New_Taxonomy)), max.BIC-H.Current.taxonomy$bic, pch=15, bg="black", cex=2)#
+#add abscissa#
+axis(1, at=seq(1,30,1), labels=F, tcl=-0.4)#
+axis(1, at=c(1,seq(5,30,5)), labels=T, tcl=-0.7, cex.axis=1.5)#
+axis(2, at=seq(1000,0,-50), labels=F, tcl=-0.4)#
+axis(2, at=seq(1000,0,-200), tcl=-0.7, cex.axis=1.5)#
+#add legend#
+legend(10.3,400, c("Sisyphean evolution", "(McKay & Zink 2015)", "Previous taxonomy", "(Lack 1947, Rising et al. 2011)", "Current taxonomy", "(Remsen et al. 2017)", expression(paste("Best Mclust models (", Delta,BIC<=1.26, ")", sep="")), expression(paste("Other Mclust models (", Delta, BIC>20, ")", sep=""))),#
+pch=c(24,NA,25,NA,15,NA,19,21), pt.bg=c("black", NA, "black", NA,"black",NA, "black", NA), pt.cex=2, cex=1.3, pt.lwd=c(1,0,1,0,1,0,1,2))#
+#add arrows#
+arrows(7, 1000, #
+	7, max.BIC-sort(BIC.Best.Model.Per.G, decreasing=T)[2], length=0, lty=3, lwd=1.5)#
+arrows(Mcluster.morpho.data.ln.pca.subset$G, 1000, #
+	Mcluster.morpho.data.ln.pca.subset$G, max.BIC-max(BIC.Best.Model.Per.G), length=0, lty=3, lwd=1.5)#
+arrows(length(unique(morpho.data$Taxon)), 1000, #
+	length(unique(morpho.data$Taxon)),max.BIC-H.Lack$bic, length=0, lty=3, lwd=1.5)#
+arrows(length(unique(morpho.data$New_Taxonomy)), 1000, #
+	length(unique(morpho.data$New_Taxonomy)),max.BIC-H.Current.taxonomy$bic, length=0, lty=3, lwd=1.5)#
+arrows(1, 1000, #
+	1,max.BIC-BIC.Best.Model.Per.G[1], length=0, lty=3, lwd=1.5)#
+#add horizontal line#
+abline(h=max(BIC.Best.Model.Per.G)-10, lty=2)
+dev.off()
+max.BIC <- max(BIC.Best.Model.Per.G)#
+#
+par(mar=c(5, 4.5, 2, 2) + 0.1)#
+plot(1:30, max.BIC-BIC.Best.Model.Per.G[1:30], type="n", bty="n", xlim=c(1,30), ylim=c(900,0), yaxt="n", xaxt="n",#
+	xlab="Number of morphological groups", ylab=expression(paste("Empirical support (",Delta, "BIC )", sep="")), main="",#
+	cex.axis=1.5, cex.lab=1.5, cex.main=1.5)#
+points(2:30, max.BIC-BIC.Best.Model.Per.G[2:30], cex=2, pch=21, col="black", lwd=2)#
+#show the best Mclust models#
+points(Mcluster.morpho.data.ln.pca.subset$G, max.BIC-max(BIC.Best.Model.Per.G), pch=19, cex=2)#
+points(7, max.BIC-sort(BIC.Best.Model.Per.G, decreasing=T)[2], pch=19, cex=2)#
+#show the hypothesis by McKay and Zink (2015)#
+points(1, max.BIC-BIC.Best.Model.Per.G[1], pch=24, bg="black", cex=2)#
+#show the hypothesis by Lack (1947)#
+points(length(unique(morpho.data$Taxon)), max.BIC-H.Lack$bic, pch=25, bg="black", cex=2)#
+#show the hypothesis according to current taxonomy#
+points(length(unique(morpho.data$New_Taxonomy)), max.BIC-H.Current.taxonomy$bic, pch=15, bg="black", cex=2)#
+#add abscissa#
+axis(1, at=seq(1,30,1), labels=F, tcl=-0.4)#
+axis(1, at=c(1,seq(5,30,5)), labels=T, tcl=-0.7, cex.axis=1.5)#
+axis(2, at=seq(1000,0,-50), labels=F, tcl=-0.4)#
+axis(2, at=seq(1000,0,-200), tcl=-0.7, cex.axis=1.5)#
+#add legend#
+legend(10.3,400, c("Sisyphean evolution", "(McKay & Zink 2015)", "Previous taxonomy", "(Lack 1947, Rising et al. 2011)", "Current taxonomy", "(Remsen et al. 2017)", expression(paste("Best Mclust models (", Delta,BIC<=1.26, ")", sep="")), expression(paste("Other Mclust models (", Delta, BIC>20, ")", sep=""))),#
+pch=c(24,NA,25,NA,15,NA,19,21), pt.bg=c("black", NA, "black", NA,"black",NA, "black", NA), pt.cex=2, cex=1.3, pt.lwd=c(1,0,1,0,1,0,1,2))#
+#add arrows#
+arrows(7, 1000, #
+	7, max.BIC-sort(BIC.Best.Model.Per.G, decreasing=T)[2], length=0, lty=3, lwd=1.5)#
+arrows(Mcluster.morpho.data.ln.pca.subset$G, 1000, #
+	Mcluster.morpho.data.ln.pca.subset$G, max.BIC-max(BIC.Best.Model.Per.G), length=0, lty=3, lwd=1.5)#
+arrows(length(unique(morpho.data$Taxon)), 1000, #
+	length(unique(morpho.data$Taxon)),max.BIC-H.Lack$bic, length=0, lty=3, lwd=1.5)#
+arrows(length(unique(morpho.data$New_Taxonomy)), 1000, #
+	length(unique(morpho.data$New_Taxonomy)),max.BIC-H.Current.taxonomy$bic, length=0, lty=3, lwd=1.5)#
+arrows(1, 1000, #
+	1,max.BIC-BIC.Best.Model.Per.G[1], length=0, lty=3, lwd=1.5)#
+#add horizontal line#
+abline(h=max(BIC.Best.Model.Per.G)-10, lty=2)
+morpho.groups.colors <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+col.BestModel <- rep(morpho.groups.colors[1], length(morpho.data$New_Taxonomy))
+col.BestModel
+cat(' scenario ',i,'/',nrow(foo),' ',sep='')
+foo
+gap
+foo
+Mcluster.tmp.ln.pca.subset
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models#
+#	- code adapted from Cadena et al. 2018#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models#
+#	- code adapted from Cadena et al. 2018#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1#
+#for(g in 1:5){#
+for(g in 1:2){#
+	gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling#
+	scenario = list()#
+	colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max#
+#
+	for(i in 1:nrow(foo)){#
+		cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G#
+		scenario.data[[extinction.range]]$gap = foo[i,'gap']#
+		scenario.data[[extinction.range]]$extinction.range = foo[i,'extinction.range']#
+		scenario.data[[extinction.range]]$mclust = Mcluster.tmp.ln.pca.subset#
+	}#
+	mclust.data[[gap]] = scenario.data#
+	results = rbind(results,foo)#
+}#
+	#no extinction#
+	tmp = d#
+	tmp.ln = log(tmp[,c(9:14)])#
+	colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+	#PCA using the covariance matrix#
+	tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+	#change default as needed#
+	mclust.options(hcUse="VARS")#
+	#Mclust analysis#
+	#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+	#extract BIC values for the best model conditional on the number of groups#
+	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+	max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+	max.BIC = max(BIC.Best.Model.Per.G)
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models#
+#	- code adapted from Cadena et al. 2018#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1#
+#for(g in 1:5){#
+for(g in 1:2){#
+	gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling#
+	scenario.data = list()#
+	colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max#
+#
+	for(i in 1:nrow(foo)){#
+		cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G#
+		scenario.data[[extinction.range]]$gap = foo[i,'gap']#
+		scenario.data[[extinction.range]]$extinction.range = foo[i,'extinction.range']#
+		scenario.data[[extinction.range]]$mclust = Mcluster.tmp.ln.pca.subset#
+	}#
+	mclust.data[[gap]] = scenario.data#
+	results = rbind(results,foo)#
+}#
+	#no extinction#
+	tmp = d#
+	tmp.ln = log(tmp[,c(9:14)])#
+	colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+	#PCA using the covariance matrix#
+	tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+	#change default as needed#
+	mclust.options(hcUse="VARS")#
+	#Mclust analysis#
+	#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+	#extract BIC values for the best model conditional on the number of groups#
+	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+	max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+	max.BIC = max(BIC.Best.Model.Per.G)#
+mclust.data[['no.extinction']] = list(mclust = Mcluster.tmp.ln.pca.subset)#
+#
+save(mclust.data,file='mclust.data.rda')#
+results = rbind(scenarios,c('none','none','NA','NA', max.BIC.G))#
+results[,c('gap','min','max','max.BIC.G')] = apply(results[,c('gap','min','max','max.BIC.G')],2,as.numeric)#
+#
+save(results,file='results.rda')#
+# run NMM across the entire dataset and for individual islands#
+# remove individuals based on bill depth or bill size (PC1) for a few different scenarios#
+#
+# run analysis on all species and then only for G. fuliginosa, fortis, and magnirostris where the relationship between bill size is most tightly correlated with the adaptive landscape, for other species, specialized foraging niches may obscure relationship #
+#For each island#
+islands = c('ALL',unique(data$Island))#
+res = c()#
+#
+f = islands[2]#
+i = 1#
+for(f in islands)	#
+	if(f %in% 'ALL'){ d = data }else{ d = data[data$Island %in% f, ] }#
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-1)#
+	max = (floor+1):ceiling#
+	colnames = c('Island','extinction','max.G','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min)+1,ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$min = c(NA,min)#
+	foo$max = c(NA,max)#
+	foo$Island = f#
+	foo$extinction = c('none',paste0(min,'-',max))#
+	i = 2#
+	for(i in 1:nrow(foo)){#
+		cat(f,'(',which(islands %in% f),'/',19,')',' scenario',i,'/',nrow(foo),sep='')#
+		if(foo$extinction[i] %in% 'none'){#
+			tmp = d#
+			G = 1:15#
+		}else{#
+			tmp = d[	d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+			max.G = (length(unique(d$New_Taxonomy))*2)#
+			if(max.G < 3) max.G = 3 #
+			G = 1:3	#
+		}#
+#
+		foo$max.G[i] = max(G)#
+		table(data[,c('New_Taxonomy','Island')])#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=G)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G#
+	}#
+	res = rbind(res,foo)#
+}
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models#
+#	- code adapted from Cadena et al. 2018#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1
+gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling#
+	scenario.data = list()#
+	colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max
+i = 1
+cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G
+scenario.data[[extinction.range]]$gap = foo[i,'gap']
+extinction.range
+name = foo[i,'extinction.range']
+name
+scenario.data[[name]]$gap = foo[i,'gap']
+scenario.data[[name]]$extinction.range = foo[i,'extinction.range']
+scenario.data[[name]]$mclust = Mcluster.tmp.ln.pca.subset
+scenario.data
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1#
+#for(g in 1:5){#
+for(g in 1:2){#
+	gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling#
+	scenario.data = list()#
+	colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max#
+	i = 1#
+	for(i in 1:nrow(foo)){#
+		cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G#
+		name = foo[i,'extinction.range']#
+		scenario.data[[name]]$mclust = Mcluster.tmp.ln.pca.subset#
+	}#
+	mclust.data[[gap]] = scenario.data#
+	results = rbind(results,foo)#
+}
+#no extinction#
+	tmp = d#
+	tmp.ln = log(tmp[,c(9:14)])#
+	colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+	#PCA using the covariance matrix#
+	tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+	#change default as needed#
+	mclust.options(hcUse="VARS")#
+	#Mclust analysis#
+	#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+	#extract BIC values for the best model conditional on the number of groups#
+	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+	max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+	max.BIC = max(BIC.Best.Model.Per.G)
+mclust.data[['no.extinction']] = list(mclust = Mcluster.tmp.ln.pca.subset)
+names(mclust.data)
+gap
+mclust.data[[paste0(gap,'mm.gap')]] = scenario.data
+names(mclust)
+names(mclust.data)
+mclust.data[[1]]
+###################################################
+#	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models#
+#	- code adapted from Cadena et al. 2018#
+#	Author: Glenn F. Seeholzer#
+#	Update history at github.com/seeholzer/speciation-by-extinction#
+###################################################
+#
+#	***Set working directory to local path***#
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')#
+#
+#load packages#
+library(mclust)#
+#
+###################################################
+# 1.2) Read data#
+#
+#read the morphological data and examine the resulting data frame#
+data = read.table("Geospiza.data.csv", header=T, sep=",")#
+#
+d = data#
+#d = data[data$New_Taxonomy %in% c('G. fortis','G. fuliginosa','G. magnirostris'), ]#
+#
+mclust.data = list()#
+results = c()#
+g = 1#
+#for(g in 1:5){#
+for(g in 1:2){#
+	gap = g  #
+	floor = floor(min(d$Bdepth))#
+	ceiling = ceiling(max(d$Bdepth))#
+	min = floor:(ceiling-gap)#
+	max = (floor+gap):ceiling#
+	scenario.data = list()#
+	colnames = c('gap','extinction.range','min','max','max.BIC.G')#
+	foo = data.frame(matrix(nrow=length(min),ncol=length(colnames)))#
+	colnames(foo) = colnames#
+	foo$gap = g#
+	foo$extinction.range = paste0(min,'-',max)#
+	foo$min = min#
+	foo$max = max#
+	i = 1#
+	for(i in 1:nrow(foo)){#
+		cat(' scenario ',i,'/',nrow(foo),' ',sep='')#
+		tmp = d[d$Bdepth <= foo[i,'min'] | d$Bdepth >= foo[i,'max'], ]	#
+		tmp.ln = log(tmp[,c(9:14)])#
+		colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+		#PCA using the covariance matrix#
+		tmp.ln.pca = prcomp(tmp.ln, center = T, scale = F)#
+		#change default as needed#
+		mclust.options(hcUse="VARS")#
+		#Mclust analysis#
+		#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+		Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+		#extract BIC values for the best model conditional on the number of groups#
+		BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+		max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+		max.BIC = max(BIC.Best.Model.Per.G)#
+		foo[i,'max.BIC.G'] = max.BIC.G#
+		name = foo[i,'extinction.range']#
+		scenario.data[[name]]$mclust = Mcluster.tmp.ln.pca.subset#
+	}#
+	mclust.data[[paste0(gap,'mm.gap')]] = scenario.data#
+	results = rbind(results,foo)#
+}#
+	#no extinction#
+	tmp = d#
+	tmp.ln = log(tmp[,c(9:14)])#
+	colnames(tmp.ln) = c("LnWing", "LnTail", "LnBlength", "LnBdepth", "LnBwidth", "LnTarsus")#
+	#PCA using the covariance matrix#
+	tmp.ln.pca <- prcomp(tmp.ln, center = T, scale = F)#
+	#change default as needed#
+	mclust.options(hcUse="VARS")#
+	#Mclust analysis#
+	#PC1-4 were used following the variable selection procedure of Cadena et al. 2018#
+	Mcluster.tmp.ln.pca.subset = Mclust(tmp.ln.pca$x[,c('PC1','PC2','PC3','PC4')], G=1:10)#
+	#extract BIC values for the best model conditional on the number of groups#
+	BIC.Best.Model.Per.G = apply(Mcluster.tmp.ln.pca.subset$BIC, 1, max, na.rm=T)#
+	max.BIC.G = which.max(BIC.Best.Model.Per.G)    #
+	max.BIC = max(BIC.Best.Model.Per.G)#
+mclust.data[['no.extinction']] = list(mclust = Mcluster.tmp.ln.pca.subset)#
+save(mclust.data,file='mclust.data.rda')#
+results = rbind(scenarios,c('none','none','NA','NA', max.BIC.G))#
+results[,c('gap','min','max','max.BIC.G')] = apply(results[,c('gap','min','max','max.BIC.G')],2,as.numeric)#
+save(results,file='results.rda')
+results = rbind(results,c('none','none','NA','NA', max.BIC.G))
+head(results)
+results
+results = rbind(results,c('none','none','NA','NA', max.BIC.G))
+results[,c('gap','min','max','max.BIC.G')] = apply(results[,c('gap','min','max','max.BIC.G')],2,as.numeric)
