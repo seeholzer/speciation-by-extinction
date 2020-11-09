@@ -42,7 +42,7 @@ for(i in 1:length(gaps)){
 	axis(2,at=c(5:10),label=c(5:10))
 	text(xat-.1,par("usr")[3], labels = 'No', 			xpd = TRUE,srt=45, adj = c(2.25, 1  ),cex=.8) 
 	text(xat-.1,par("usr")[3], labels = 'Extinction', 	xpd = TRUE,srt=45, adj = c(1  , 2.5),cex=.8) 
-	mtext('N Inferred Species', 2,2.5,cex=.75)
+	mtext('N Species Diagnosed', 2,2.5,cex=.75)
 
 	text(1,10.85,paste0(LETTERS[i],'.'),pos=2,cex=1.25)
 
