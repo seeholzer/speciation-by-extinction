@@ -1,14 +1,14 @@
 Taxon,Institution,Museum.Number,Island,Taxon_Island,New.Taxonomy,New.Taxonomy_Island,Sex,Wing,Tail,Blength,Bdepth,Bwidth,Tarsus
-G. conirostris,Rotheschild Mus.,1916,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78.2,46,19.5,14,11,25.2
-G. conirostris,Rotheschild Mus.,1918,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81.5,53,22.2,17.2,13.5,26.5
-G. conirostris,Rotheschild Mus.,1931,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81,49.5,21.2,16.2,12.2,23.5
-G. conirostris,Rotheschild Mus.,none,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78,48.8,20,14.2,11,25.2
-G. conirostris,Rotheschild Mus.,1930,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,84,53.2,22.2,19.5,14,24.5
-G. conirostris,Rotheschild Mus.,157,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,82,50,22.8,19.5,14,25.5
+G. conirostris,RM,1916,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78.2,46,19.5,14,11,25.2
+G. conirostris,RM,1918,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81.5,53,22.2,17.2,13.5,26.5
+G. conirostris,RM,1931,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81,49.5,21.2,16.2,12.2,23.5
+G. conirostris,RM,none,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78,48.8,20,14.2,11,25.2
+G. conirostris,RM,1930,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,84,53.2,22.2,19.5,14,24.5
+G. conirostris,RM,157,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,82,50,22.8,19.5,14,25.5
 G. conirostris,Harris,104,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,82,50.5,22.5,17,13.8,25.5
-G. conirostris,G. W. Hull,105,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78.2,47,21.2,15.2,11.5,24.5
-G. conirostris,Rotheschild Mus.,160,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,80.5,48.5,20.8,17,12.5,25
-G. conirostris,Rotheschild Mus.,159,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81.5,50.5,21,18,13.2,25.5
+G. conirostris,Hull,105,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,78.2,47,21.2,15.2,11.5,24.5
+G. conirostris,RM,160,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,80.5,48.5,20.8,17,12.5,25
+G. conirostris,RM,159,Darwin,conirostrisDarwin,G. propinqua,propinquaDarwin,Male,81.5,50.5,21,18,13.2,25.5
 G. magnirostris,CAS,37920,Genovesa,magnirostrisGenovesa,G. magnirostris,magnirostrisGenovesa,Male,86.5,54.5,26,23,17,25.5
 G. magnirostris,CAS,37919,Genovesa,magnirostrisGenovesa,G. magnirostris,magnirostrisGenovesa,Male,84,52,23.2,20,15.5,25
 G. magnirostris,CAS,37921,Genovesa,magnirostrisGenovesa,G. magnirostris,magnirostrisGenovesa,Male,83.2,57.5,25,22,17,26
@@ -26,12 +26,12 @@ G. magnirostris,CAS,5318,Wolf,magnirostrisWolf,G. magnirostris,magnirostrisWolf,
 G. magnirostris,CAS,5323,Wolf,magnirostrisWolf,G. magnirostris,magnirostrisWolf,Male,85,53,24,20,15,25.5
 G. magnirostris,CAS,5155,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,78,47.5,21.8,18.8,14.8,26
 G. magnirostris,CAS,5102,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,78,48,21,18.2,14,23
-G. magnirostris,Stanford University,1254,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,81,48.5,22.2,20.8,15.5,24.5
-G. magnirostris,Stanford University,1530,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,80.2,51,22.2,18.2,14,23
-G. magnirostris,Stanford University,1162,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,79,45.2,22,19,14.5,25.5
-G. magnirostris,Stanford University,1400,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,81,42,21,20,15.2,24.5
-G. magnirostris,Stanford University,1261,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,80,47.5,22.5,20.5,15,25.2
-G. magnirostris,Stanford University,1110,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,78,49,22.5,19.5,15,26
+G. magnirostris,SU,1254,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,81,48.5,22.2,20.8,15.5,24.5
+G. magnirostris,SU,1530,Marchena,magnirostrisMarchena,G. magnirostris,magnirostrisMarchena,Male,80.2,51,22.2,18.2,14,23
+G. magnirostris,SU,1162,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,79,45.2,22,19,14.5,25.5
+G. magnirostris,SU,1400,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,81,42,21,20,15.2,24.5
+G. magnirostris,SU,1261,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,80,47.5,22.5,20.5,15,25.2
+G. magnirostris,SU,1110,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,78,49,22.5,19.5,15,26
 G. magnirostris,CAS,5322,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,81.2,51,21,19.2,15.2,23.5
 G. magnirostris,CAS,5137,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,77,49,23.5,20.2,15.5,25
 G. magnirostris,CAS,5123,Pinta,magnirostrisPinta,G. magnirostris,magnirostrisPinta,Male,80,50.5,21.2,20,15,24.2
@@ -58,8 +58,8 @@ G. magnirostris,CAS,5334,Rabida,magnirostrisRabida,G. magnirostris,magnirostrisR
 G. magnirostris,CAS,5328,Rabida,magnirostrisRabida,G. magnirostris,magnirostrisRabida,Male,81,50.5,21,18,14,23.5
 G. magnirostris,CAS,5330,Rabida,magnirostrisRabida,G. magnirostris,magnirostrisRabida,Male,83,51,21.5,20,14,24.5
 G. magnirostris,CAS,5337,Rabida,magnirostrisRabida,G. magnirostris,magnirostrisRabida,Male,77,48,19,17,12.5,21
-G. fortis,Stanford University,5073,Pinta,fortisPinta,G. fortis,fortisPinta,Male,64.5,37,16,11,9,20.2
-G. fortis,Stanford University,5203,Pinta,fortisPinta,G. fortis,fortisPinta,Male,64.8,42,17,12,10,20.5
+G. fortis,SU,5073,Pinta,fortisPinta,G. fortis,fortisPinta,Male,64.5,37,16,11,9,20.2
+G. fortis,SU,5203,Pinta,fortisPinta,G. fortis,fortisPinta,Male,64.8,42,17,12,10,20.5
 G. fortis,CAS,5409,Pinta,fortisPinta,G. fortis,fortisPinta,Male,71,44.5,16.5,12.5,10.5,21.5
 G. fortis,CAS,5181,Pinta,fortisPinta,G. fortis,fortisPinta,Male,62,39.5,15,10.2,8.5,19
 G. fortis,CAS,5184,Pinta,fortisPinta,G. fortis,fortisPinta,Male,61,37.5,15.2,11,9,19.2
@@ -68,8 +68,8 @@ G. fortis,CAS,5180,Pinta,fortisPinta,G. fortis,fortisPinta,Male,62,41.8,16,11.5,
 G. fortis,CAS,5188,Pinta,fortisPinta,G. fortis,fortisPinta,Male,67,39,16,12,9.2,20.2
 G. fortis,CAS,5186,Pinta,fortisPinta,G. fortis,fortisPinta,Male,67,40,15.2,11,9,20.2
 G. fortis,CAS,5187,Pinta,fortisPinta,G. fortis,fortisPinta,Male,65.5,41.8,16,12.5,10,20
-G. fortis,Stanford University,5223,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,64,38,16.8,12.2,9.8,20
-G. fortis,Stanford University,5256,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,66,39,16.8,12.2,9,19
+G. fortis,SU,5223,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,64,38,16.8,12.2,9.8,20
+G. fortis,SU,5256,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,66,39,16.8,12.2,9,19
 G. fortis,CAS,5178,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,65,39.5,16,12,9.2,20.2
 G. fortis,CAS,5179,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,65.5,40.5,16,11.5,9.2,20
 G. fortis,CAS,5177,Marchena,fortisMarchena,G. fortis,fortisMarchena,Male,65.8,41.8,16,12,9.5,19.5
@@ -82,12 +82,12 @@ G. fortis,CAS,5309,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,6
 G. fortis,CAS,5403,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,69.5,44,17,12,9,21
 G. fortis,CAS,5357,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,68,43,17,12,9.2,21
 G. fortis,CAS,5404,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,72,42.2,16.5,13,10,22.2
-G. fortis,Stanford University,3933,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,67,41.5,15.5,12.2,9.8,20.5
-G. fortis,Stanford University,3950,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,68,39,16.5,11,9.2,20.5
-G. fortis,Stanford University,4006,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,72,39.5,14.8,12.2,9.2,21
-G. fortis,Stanford University,4459,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,70.5,43,17.2,12.5,9.5,20.8
-G. fortis,Stanford University,4440,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,67,38,15.8,12,9,22
-G. fortis,Stanford University,4463,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,71,41,16.2,12,9.8,21.8
+G. fortis,SU,3933,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,67,41.5,15.5,12.2,9.8,20.5
+G. fortis,SU,3950,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,68,39,16.5,11,9.2,20.5
+G. fortis,SU,4006,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,72,39.5,14.8,12.2,9.2,21
+G. fortis,SU,4459,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,70.5,43,17.2,12.5,9.5,20.8
+G. fortis,SU,4440,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,67,38,15.8,12,9,22
+G. fortis,SU,4463,Fernandina,fortisFernandina,G. fortis,fortisFernandina,Male,71,41,16.2,12,9.8,21.8
 G. fortis,CAS,5237,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,68,39.5,14.8,11.2,8.8,21.5
 G. fortis,CAS,5292,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,66.5,40.8,15.8,12.2,9.2,21
 G. fortis,CAS,5225,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,66,41,15,11,8.5,20
@@ -96,8 +96,8 @@ G. fortis,CAS,5212,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,66,38.5,16
 G. fortis,CAS,5208,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,69.5,43,15.5,11.2,9,20.5
 G. fortis,CAS,5200,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,69.5,44,16,12.5,9.2,21.5
 G. fortis,CAS,5468,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,74,48,18.5,14.5,12,22.8
-G. fortis,Stanford University,4008,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,74,47,17.5,13.5,9.8,21.5
-G. fortis,Stanford University,4201,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,71.5,43,16.5,12.2,9.5,21.5
+G. fortis,SU,4008,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,74,47,17.5,13.5,9.8,21.5
+G. fortis,SU,4201,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,71.5,43,16.5,12.2,9.5,21.5
 G. fortis,CAS,5340,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,77.2,47.8,19.5,16.2,11.5,24.5
 G. fortis,CAS,5202,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,72.5,42.2,17.5,14,11.5,21.5
 G. fortis,CAS,5211,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,74,43,18,14,11.2,21.5
@@ -108,7 +108,7 @@ G. fortis,CAS,5376,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,74,44.2,19
 G. fortis,CAS,5342,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,75.5,46,18.8,14.2,11.2,21.8
 G. fortis,CAS,5217,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,77,47,18,13.5,11.5,23.2
 G. fortis,CAS,5366,Isabela,fortisIsabela,G. fortis,fortisIsabela,Male,73.5,46.5,17,12.2,9,21.5
-G. fortis,Stanford University,4535,Santiago,fortisSantiago,G. fortis,fortisSantiago,Male,69.2,43,17.5,13.2,10,21
+G. fortis,SU,4535,Santiago,fortisSantiago,G. fortis,fortisSantiago,Male,69.2,43,17.5,13.2,10,21
 G. fortis,CAS,5302,Santiago,fortisSantiago,G. fortis,fortisSantiago,Male,68,41.5,16,12,9.8,21
 G. fortis,CAS,5353,Santiago,fortisSantiago,G. fortis,fortisSantiago,Male,71.5,42,16.2,14,10.2,22
 G. fortis,CAS,5268,Santiago,fortisSantiago,G. fortis,fortisSantiago,Male,69,41,17,13,10,22
@@ -148,15 +148,15 @@ G. fortis,CAS,5762,Baltra,fortisBaltra,G. fortis,fortisBaltra,Male,69.2,43,15,10
 G. fortis,CAS,5218,Baltra,fortisBaltra,G. fortis,fortisBaltra,Male,72.2,42.5,16,12.8,10,21.5
 G. fortis,CAS,6776,Baltra,fortisBaltra,G. fortis,fortisBaltra,Male,70,45.5,16.5,12.5,10,22
 G. fortis,CAS,5251,Baltra,fortisBaltra,G. fortis,fortisBaltra,Male,71.2,45.2,16,13,10,21.2
-G. fortis,Stanford University,4668,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,63.5,40,16,11,9,20
-G. fortis,Stanford University,4702,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,69.5,41,16,12,9,21.2
+G. fortis,SU,4668,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,63.5,40,16,11,9,20
+G. fortis,SU,4702,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,69.5,41,16,12,9,21.2
 G. fortis,CAS,5247,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,70,44,16,12,9.2,21
 G. fortis,CAS,5392,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,70,43.5,16.2,11.2,9.2,20.5
 G. fortis,CAS,5301,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,70.5,42,16.5,12,9.5,22
 G. fortis,CAS,5509,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,66,41,17,12.2,10,22
-G. fortis,Stanford University,4667,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,68,40,17,12,8.5,22
+G. fortis,SU,4667,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,68,40,17,12,8.5,22
 G. fortis,CAS,5475,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,68.5,43.5,17,13,10.2,22
-G. fortis,Stanford University,4707,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,68.5,40,17.5,12.5,10,22
+G. fortis,SU,4707,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,68.5,40,17.5,12.5,10,22
 G. fortis,CAS,5295,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,72,44.5,17.5,13,10.8,21.2
 G. fortis,CAS,6780,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,74.2,46,18,15,12,22.5
 G. fortis,CAS,5462,Santa Cruz,fortisSanta Cruz,G. fortis,fortisSanta Cruz,Male,76,44.5,18.5,14.2,11,23
@@ -210,9 +210,9 @@ G. fortis,CAS,5346,Floreana,fortisFloreana,G. fortis,fortisFloreana,Male,75,46.5
 G. fortis,CAS,5345,Floreana,fortisFloreana,G. fortis,fortisFloreana,Male,75.5,44.5,17.5,14.5,11,23
 G. fuliginosa,CAS,5431,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,60,37,11,7.2,6,18
 G. fuliginosa,CAS,5932,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58.5,38,11.2,8,6.2,19
-G. fuliginosa,Stanford University,5251,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,55.2,34,12,8.2,6.5,17.5
-G. fuliginosa,Stanford University,5195,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58,34.5,10.5,7,6,17
-G. fuliginosa,Stanford University,5158,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58.5,35.5,11.2,7.5,6.2,18.5
+G. fuliginosa,SU,5251,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,55.2,34,12,8.2,6.5,17.5
+G. fuliginosa,SU,5195,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58,34.5,10.5,7,6,17
+G. fuliginosa,SU,5158,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58.5,35.5,11.2,7.5,6.2,18.5
 G. fuliginosa,CAS,5935,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,57.2,36.8,11.5,7,6,18.5
 G. fuliginosa,CAS,5939,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,57.5,34.8,10,6.5,6,18
 G. fuliginosa,CAS,5931,Pinta,fuliginosaPinta,G. fuliginosa,fuliginosaPinta,Male,58.8,39,11.2,7.5,6,19
@@ -224,19 +224,19 @@ G. fuliginosa,CAS,5928,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarch
 G. fuliginosa,CAS,5432,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,57.5,36,11.5,7.8,6.5,18.2
 G. fuliginosa,CAS,5929,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,59,37,11,7.2,6,18.2
 G. fuliginosa,CAS,5933,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,59.2,36.8,11,7.2,5.8,18
-G. fuliginosa,Stanford University,5128,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,55.2,36.2,11,6.5,5.8,18
-G. fuliginosa,Stanford University,5165,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,57.8,37,11,7,6,18
-G. fuliginosa,Stanford University,5117,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,56,37,11.2,6.2,6,19
-G. fuliginosa,Stanford University,4119,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.5,37.5,11,7.5,6.2,18.2
-G. fuliginosa,Stanford University,4164,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,63,38,11,7.5,6.2,20.5
-G. fuliginosa,Stanford University,4151,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,37.8,11.2,7.5,6,18.5
-G. fuliginosa,Stanford University,4159,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,63,38.2,10.5,7.8,6.5,20
-G. fuliginosa,Stanford University,4426,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.2,38,11.5,7.5,6.2,20
-G. fuliginosa,Stanford University,4009,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,61.5,38,10,7.5,6.5,18.5
-G. fuliginosa,Stanford University,4465,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,38,11.2,7.2,6.2,18.2
-G. fuliginosa,Stanford University,4413,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,40,11.2,7.2,6.2,20
-G. fuliginosa,Stanford University,4460,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.2,37,11.2,8,7,20
-G. fuliginosa,Stanford University,4045,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,65,36,11,8,6.5,20
+G. fuliginosa,SU,5128,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,55.2,36.2,11,6.5,5.8,18
+G. fuliginosa,SU,5165,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,57.8,37,11,7,6,18
+G. fuliginosa,SU,5117,Marchena,fuliginosaMarchena,G. fuliginosa,fuliginosaMarchena,Male,56,37,11.2,6.2,6,19
+G. fuliginosa,SU,4119,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.5,37.5,11,7.5,6.2,18.2
+G. fuliginosa,SU,4164,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,63,38,11,7.5,6.2,20.5
+G. fuliginosa,SU,4151,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,37.8,11.2,7.5,6,18.5
+G. fuliginosa,SU,4159,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,63,38.2,10.5,7.8,6.5,20
+G. fuliginosa,SU,4426,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.2,38,11.5,7.5,6.2,20
+G. fuliginosa,SU,4009,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,61.5,38,10,7.5,6.5,18.5
+G. fuliginosa,SU,4465,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,38,11.2,7.2,6.2,18.2
+G. fuliginosa,SU,4413,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62,40,11.2,7.2,6.2,20
+G. fuliginosa,SU,4460,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,62.2,37,11.2,8,7,20
+G. fuliginosa,SU,4045,Fernandina,fuliginosaFernandina,G. fuliginosa,fuliginosaFernandina,Male,65,36,11,8,6.5,20
 G. fuliginosa,CAS,5684,Isabela,fuliginosaIsabela,G. fuliginosa,fuliginosaIsabela,Male,63.2,38.5,12.5,8.2,7,19
 G. fuliginosa,CAS,5629,Isabela,fuliginosaIsabela,G. fuliginosa,fuliginosaIsabela,Male,65.2,40.8,11.2,8,6.8,19.8
 G. fuliginosa,CAS,5687,Isabela,fuliginosaIsabela,G. fuliginosa,fuliginosaIsabela,Male,66.5,41,11.5,8,7,20
@@ -252,7 +252,7 @@ G. fuliginosa,CAS,6820,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSanti
 G. fuliginosa,CAS,5764,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,58,33.5,11,8,7,18.5
 G. fuliginosa,CAS,5707,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,61.5,37.2,11.5,7.5,6.5,19.2
 G. fuliginosa,CAS,5724,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,62,42,10.2,7.5,6.2,18.8
-G. fuliginosa,Stanford University,4534,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,62.2,39.2,12,8,6.2,20
+G. fuliginosa,SU,4534,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,62.2,39.2,12,8,6.2,20
 G. fuliginosa,CAS,5815,Santiago,fuliginosaSantiago,G. fuliginosa,fuliginosaSantiago,Male,61.5,37,11,8,6.5,20
 G. fuliginosa,CAS,5772,Rabida,fuliginosaRabida,G. fuliginosa,fuliginosaRabida,Male,62.2,36,12,9,7,20
 G. fuliginosa,CAS,5701,Rabida,fuliginosaRabida,G. fuliginosa,fuliginosaRabida,Male,61,36.2,11,7.2,6.2,19
@@ -336,24 +336,24 @@ G. difficilis,CAS,6984,Darwin,difficilisDarwin,G. septentrionalis,septentrionali
 G. difficilis,CAS,6985,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,72,48,16,8.8,7.2,23
 G. difficilis,CAS,6986,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,72,48,16.2,9,7.8,23.2
 G. difficilis,CAS,6992,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,73,49,15,9,7.5,23.5
-G. difficilis,Stanford University,5406,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,72,47,15,9,7.2,23
-G. difficilis,Stanford University,5408,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,70,46,15,8.5,7,22
-G. difficilis,Stanford University,5412,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,73,50,17,9.2,8,23
+G. difficilis,SU,5406,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,72,47,15,9,7.2,23
+G. difficilis,SU,5408,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,70,46,15,8.5,7,22
+G. difficilis,SU,5412,Darwin,difficilisDarwin,G. septentrionalis,septentrionalisDarwin,Male,73,50,17,9.2,8,23
 G. difficilis,CAS,6947,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,68,45.5,14,7.5,7,22
 G. difficilis,CAS,6948,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,74,48,13.2,8.8,7,23
 G. difficilis,CAS,6949,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,71.5,47.5,14,8,6.8,23
 G. difficilis,CAS,6950,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,72,47,14,7.5,7,22
 G. difficilis,CAS,6951,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,72,45.5,13.5,8,6.5,21.2
 G. difficilis,CAS,6952,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,71.2,48,13.5,7.5,7,21.5
-G. difficilis,Stanford University,3857,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,70,44.5,15,8.5,7.2,22.5
-G. difficilis,Stanford University,3863,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,72,44.5,15,8,7,22
-G. difficilis,Stanford University,3864,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,71,44,14.2,8.5,7.2,22.2
-G. difficilis,Stanford University,3873,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,69.5,43.5,14.5,8,6.8,22
-G. difficilis,Stanford University,5254,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,62.2,39.2,14.5,8,6,20.5
-G. difficilis,Stanford University,5192,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,35,14.5,8.2,6.5,21
-G. difficilis,Stanford University,5216,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,38,14.5,8.5,7,20.5
-G. difficilis,Stanford University,5246,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,61,38,14.5,8,6.5,21
-G. difficilis,Stanford University,5095,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,37.5,14.2,8.2,7,21.2
+G. difficilis,SU,3857,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,70,44.5,15,8.5,7.2,22.5
+G. difficilis,SU,3863,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,72,44.5,15,8,7,22
+G. difficilis,SU,3864,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,71,44,14.2,8.5,7.2,22.2
+G. difficilis,SU,3873,Wolf,difficilisWolf,G. septentrionalis,septentrionalisWolf,Male,69.5,43.5,14.5,8,6.8,22
+G. difficilis,SU,5254,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,62.2,39.2,14.5,8,6,20.5
+G. difficilis,SU,5192,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,35,14.5,8.2,6.5,21
+G. difficilis,SU,5216,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,38,14.5,8.5,7,20.5
+G. difficilis,SU,5246,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,61,38,14.5,8,6.5,21
+G. difficilis,SU,5095,Pinta,difficilisPinta,G. difficilis,difficilisPinta,Male,60.5,37.5,14.2,8.2,7,21.2
 G. difficilis,CAS,5943,Genovesa,difficilisGenovesa,G. acutirostris,acutirostrisGenovesa,Male,61,36,12.5,8,6,18.8
 G. difficilis,CAS,5944,Genovesa,difficilisGenovesa,G. acutirostris,acutirostrisGenovesa,Male,64,40,12.5,8,6.5,19.2
 G. difficilis,CAS,5945,Genovesa,difficilisGenovesa,G. acutirostris,acutirostrisGenovesa,Male,65,41.2,12.5,8,6.2,19
@@ -388,10 +388,10 @@ G. scandens,CAS,7226,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male
 G. scandens,CAS,7227,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,73,43.5,18.5,9.8,8.2,22
 G. scandens,CAS,7228,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,71.2,44,18,9.5,7.5,22
 G. scandens,CAS,7229,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,75,44,21,11.5,9.5,23.5
-G. scandens,Stanford University,5237,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,69,43.5,18,10.5,8,21
-G. scandens,Stanford University,5145,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,67.5,41,21,10,7.5,21.5
-G. scandens,Stanford University,5146,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,71.2,43,20.2,11,9,21
-G. scandens,Stanford University,5122,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,69,43.5,18,10,8,21.5
+G. scandens,SU,5237,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,69,43.5,18,10.5,8,21
+G. scandens,SU,5145,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,67.5,41,21,10,7.5,21.5
+G. scandens,SU,5146,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,71.2,43,20.2,11,9,21
+G. scandens,SU,5122,Marchena,scandensMarchena,G. scandens,scandensMarchena,Male,69,43.5,18,10,8,21.5
 G. scandens,CAS,7223,Pinta,scandensPinta,G. scandens,scandensPinta,Male,71,47.2,18.5,10,8.5,22.5
 G. scandens,CAS,7222,Pinta,scandensPinta,G. scandens,scandensPinta,Male,73,48,19.8,9.5,8.5,22
 G. scandens,CAS,7224,Pinta,scandensPinta,G. scandens,scandensPinta,Male,69,43,18.5,10,8.2,22.2
@@ -406,16 +406,16 @@ G. scandens,CAS,7208,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,72
 G. scandens,CAS,7212,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,71.5,42.5,18,9,8,22.2
 G. scandens,CAS,7205,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,74,40,19.8,9.8,8.5,23.2
 G. scandens,CAS,7209,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,71,43.8,17.5,9,7.5,22.2
-G. scandens,Stanford University,5098,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,70,43.2,17.5,9,8,21.5
+G. scandens,SU,5098,Isabela,scandensIsabela,G. scandens,scandensIsabela,Male,70,43.2,17.5,9,8,21.5
 G. scandens,CAS,7018,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,70.5,43.5,17.2,8.8,7.5,21.5
 G. scandens,CAS,7290,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,69.5,42,16.5,8,7,20.5
-G. scandens,Stanford University,4518,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68.5,41.5,16,9,7.2,20.2
-G. scandens,Stanford University,4592,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,70.2,43,17.5,8.2,7.5,21
-G. scandens,Stanford University,4543,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,69,41.2,17.2,8,7,20.5
-G. scandens,Stanford University,4594,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,71,43,17,9,7.5,22
-G. scandens,Stanford University,4595,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,67.5,40,17.2,8.5,7.2,20.2
-G. scandens,Stanford University,4596,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68,41.2,17,9,7.2,22.2
-G. scandens,Stanford University,4597,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68,42,17.8,9,8,22.5
+G. scandens,SU,4518,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68.5,41.5,16,9,7.2,20.2
+G. scandens,SU,4592,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,70.2,43,17.5,8.2,7.5,21
+G. scandens,SU,4543,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,69,41.2,17.2,8,7,20.5
+G. scandens,SU,4594,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,71,43,17,9,7.5,22
+G. scandens,SU,4595,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,67.5,40,17.2,8.5,7.2,20.2
+G. scandens,SU,4596,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68,41.2,17,9,7.2,22.2
+G. scandens,SU,4597,Santiago,scandensSantiago,G. scandens,scandensSantiago,Male,68,42,17.8,9,8,22.5
 G. scandens,CAS,7200,Pinzon,scandensPinzon,G. scandens,scandensPinzon,Male,70,43,18.5,9,7.2,21.5
 G. scandens,CAS,7201,Pinzon,scandensPinzon,G. scandens,scandensPinzon,Male,70,41,19.5,9.5,8,21.2
 G. scandens,CAS,7202,Pinzon,scandensPinzon,G. scandens,scandensPinzon,Male,70.2,43,18.2,9.5,7.5,22.2
@@ -457,13 +457,13 @@ G. scandens,CAS,7021,Floreana,scandensFloreana,G. scandens,scandensFloreana,Male
 G. scandens,CAS,7038,Floreana,scandensFloreana,G. scandens,scandensFloreana,Male,68.5,45,18,9.2,7.5,22
 G. scandens,CAS,7054,Floreana,scandensFloreana,G. scandens,scandensFloreana,Male,71.5,42,18,9.5,7.5,23
 G. conirostris,CAS,4987,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,77,48.5,19.5,12.2,9.5,23
-G. conirostris,Stanford University,5005,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,74,46,20.5,13.5,10,23
-G. conirostris,Stanford University,5233,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,72.5,46.5,18.2,12,9.5,23.5
-G. conirostris,Stanford University,5109,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,73,43,18,12.2,9.5,25
-G. conirostris,Stanford University,5171,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,73,46.8,20,13,10,25
-G. conirostris,Stanford University,5129,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,74.5,46.5,18.8,13.2,10,23
-G. conirostris,Stanford University,5214,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,77,48,20,13.8,10.5,24.5
-G. conirostris,Stanford University,5281,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,77,48.5,20.5,14,10.5,24.2
+G. conirostris,SU,5005,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,74,46,20.5,13.5,10,23
+G. conirostris,SU,5233,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,72.5,46.5,18.2,12,9.5,23.5
+G. conirostris,SU,5109,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,73,43,18,12.2,9.5,25
+G. conirostris,SU,5171,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,73,46.8,20,13,10,25
+G. conirostris,SU,5129,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,74.5,46.5,18.8,13.2,10,23
+G. conirostris,SU,5214,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,77,48,20,13.8,10.5,24.5
+G. conirostris,SU,5281,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,77,48.5,20.5,14,10.5,24.2
 G. conirostris,CAS,4988,Genovesa,conirostrisGenovesa,G. propinqua,propinquaGenovesa,Male,73,43,20.5,12,9.5,25.5
 G. conirostris,CAS,4992,Espanola,conirostrisEspanola,G. conirostris,conirostrisEspanola,Male,77.5,50,19,14.5,11,23.2
 G. conirostris,CAS,5007,Espanola,conirostrisEspanola,G. conirostris,conirostrisEspanola,Male,83.5,47.5,23.5,18.5,13,24.2
