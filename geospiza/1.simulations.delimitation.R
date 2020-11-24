@@ -9,7 +9,6 @@
 #	***Set working directory to local path***
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza/')
 
-
 #load packages
 library(mclust)
 library(foreach)
