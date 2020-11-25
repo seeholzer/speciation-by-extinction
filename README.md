@@ -5,6 +5,12 @@ This repository contains data and scripts to reproduce analyses in Seeholzer & B
 
 ######################################################################
 
+## Cranioleuca
+
+Data and scripts used for species delimitation analyses following simulated extinction in the phenotypic and genetic datasets for *Cranioleuca antisiensis* used in Seeholzer and Brumfield 2018.
+
+Seeholzer GF, Brumfield RT. 2017. Isolation-by-distance, not incipient ecological speciation, explains genetic differentiation in an Andean songbird (Aves: Furnariidae: *Cranioleuca antisiensis*, Line-cheeked Spinetail) despite near three-fold body size change across an environmental. Molecular Ecology 1–18.
+
 
 ## Geospiza
 
