@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=32
+#PBS -l walltime=5000:00:00
+#PBS -N F4.SBE2_v2_2sp.r2
+#PBS -j oe
+#PBS -m ae
+#PBS -M seeholzer.glenn@gmail.com
+#PBS -o F4.SBE2_v2_2sp.r2.out
+
+# change to the working directory
+cd $PBS_O_WORKDIR
+echo "pbsworkdir"
+echo $PBS_O_WORKDIR
+EXECDIR=`pwd`
+export PATH=./:$PATH
+echo $PATH
+
+date
+time
+
+
+rm -rf ./F4.SBE2_v2_2sp.r2
+mkdir ./F4.SBE2_v2_2sp.r2
+
+time beast -threads 32 F4.SBE2_v2_2sp.r2.xml
+
+

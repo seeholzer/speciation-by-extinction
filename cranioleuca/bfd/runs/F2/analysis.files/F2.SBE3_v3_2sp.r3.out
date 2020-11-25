@@ -1,0 +1,473 @@
+pbsworkdir
+/home/gseeholzer/nas3/bfd/runs/F2
+./:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/gseeholzer/programs/bamUtil/bin:/home/gseeholzer/programs/samtools-1.10/bin:/home/gseeholzer/programs/angsd:/home/gseeholzer/programs/angsd/misc:/home/gseeholzer/programs/satsuma2-master/bin:/home/gseeholzer/programs/pcangsd:/home/gseeholzer/programs/evalAdmix:/home/gseeholzer/programs/htslib-1.10.2/bin:/home/gseeholzer/programs/ngsRelate:/home/gseeholzer/programs/vcftools_0.1.13/bin:/home/gseeholzer/programs/bcftools-1.10.2/bin:/home/gseeholzer/programs/gsl/bin:/home/gseeholzer/programs/ngsTools/ngsDist:/home/gseeholzer/programs/ngsTools/ngsF:/home/gseeholzer/programs/ngsTools/ngsF-HMM:/home/gseeholzer/programs/ngsTools/ngsLD:/home/gseeholzer/programs/ngsTools/ngsPopGen:/home/gseeholzer/programs/ngsTools/ngsSim:/home/gseeholzer/programs/ngsTools/ngsUtils:/home/gseeholzer/programs/fastme-2.1.6.1/src:/home/gseeholzer/programs/beast/bin:/home/gseeholzer/.local/bin:/home/gseeholzer/bin
+Mon Jun 22 09:23:54 EDT 2020
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+
+                        BEAST v2.6.2, 2002-2020
+             Bayesian Evolutionary Analysis Sampling Trees
+                       Designed and developed by
+ Remco Bouckaert, Alexei J. Drummond, Andrew Rambaut & Marc A. Suchard
+                                    
+                   Centre for Computational Evolution
+                         University of Auckland
+                       r.bouckaert@auckland.ac.nz
+                        alexei@cs.auckland.ac.nz
+                                    
+                   Institute of Evolutionary Biology
+                        University of Edinburgh
+                           a.rambaut@ed.ac.uk
+                                    
+                    David Geffen School of Medicine
+                 University of California, Los Angeles
+                           msuchard@ucla.edu
+                                    
+                      Downloads, Help & Resources:
+                           http://beast2.org/
+                                    
+  Source code distributed under the GNU Lesser General Public License:
+                   http://github.com/CompEvol/beast2
+                                    
+                           BEAST developers:
+   Alex Alekseyenko, Trevor Bedford, Erik Bloomquist, Joseph Heled, 
+ Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li, 
+Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel, 
+          Oliver Pybus, Tim Vaughan, Chieh-Hsi Wu, Walter Xie
+                                    
+                               Thanks to:
+          Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Random number seed: 1592832234475
+
+File: F2.SBE3_v3_2sp.r3.xml seed: 1592832234475 threads: 8
+Loading package BEAST v2.6.2
+Loading package BEASTLabs v1.9.2
+Loading package MODEL_SELECTION v1.5.2
+Loading package SNAPP v1.5.0
+Loading package BEAST v2.6.2
+Alignment(F2)
+  40 taxa
+  100 sites
+  100 patterns
+
+ant: 100 17
+bar: 100 17
+cur: 100 5
+Data(snap.F2)
+  3 taxa
+  100 sites
+  72 patterns
+
+Seq: seq_Amotape_B67127.Tumbes.Amotape
+Seq: seq_Amotape_B67201.Tumbes.Amotape
+Seq: seq_Canchaque_B72874.Piura.Canchaque
+Seq: seq_Canchaque_B72878.Piura.Canchaque
+Seq: seq_Llama_B72880.Cajamarca.Llama
+Seq: seq_Llama_B72887.Cajamarca.Llama
+Seq: seq_Porculla_B31685.Piura.Porculla
+Seq: seq_Porculla_B72870.Piura.Porculla
+Seq: seq_Carpish_B72762.Huanuco.Acomayo
+Seq: seq_Carpish_B72773.Huanuco.Mitotambo
+Seq: seq_Quichas_B72777.Lima.Quichas
+Seq: seq_Quichas_B72785.Lima.Quichas
+Seq: seq_Huamatanga_B72889.Lima.Huamatanga
+Seq: seq_Huamatanga_B72892.Lima.Huamatanga
+Seq: seq_LaQuinua_B72754.Pasco.LaQuinua
+Seq: seq_LaQuinua_B72760.Pasco.LaQuinua
+Seq: seq_curtata_cra.cur.B6032
+Seq: seq_curtata_cra.cur.B8175
+ant: 96 17
+bar: 96 17
+cur: 96 5
+3 taxa
+96 sites with weight 100
+73 patterns
+Rate prior = gamma
+Log Likelihood Correction = -1035.2553781708411
+===============================================================================
+Citations for this model:
+
+Bouckaert, Remco, Timothy G. Vaughan, Jo?lle Barido-Sottani, Sebasti?n Duch?ne, 
+  Mathieu Fourment, Alexandra Gavryushkina, Joseph Heled et al. 
+  BEAST 2.5: An advanced software platform for Bayesian evolutionary analysis. 
+  PLoS computational biology 15, no. 4 (2019): e1006650.
+
+David Bryant, Remco Bouckaert, Joseph Felsenstein, Noah Rosenberg, Arindam RoyChoudhury. Inferring Species Trees Directly from Biallelic Genetic Markers: Bypassing Gene Trees in a Full Coalescent Analysis. Mol. Biol. Evol. 29(8):1917-1932, 2012
+
+===============================================================================
+Starting step 0
+Starting step 3
+Starting step 1
+Starting step 2
+Starting step 4
+Starting step 5
+Starting step 7
+Starting step 6
+Finished step 3
+Finished step 2
+Finished step 1
+Finished step 5
+Finished step 6
+Finished step 7
+Finished step 0
+Finished step 4
+Starting step 8
+Starting step 9
+Starting step 10
+Starting step 11
+Starting step 12
+Starting step 13
+Starting step 15
+Starting step 14
+Finished step 8
+Finished step 9
+Finished step 11
+Finished step 15
+Finished step 12
+Finished step 10
+Finished step 14
+Finished step 13
+Starting step 16
+Starting step 17
+Starting step 18
+Starting step 20
+Starting step 19
+Starting step 22
+Starting step 21
+Starting step 23
+Finished step 21
+Finished step 20
+Finished step 18
+Finished step 23
+Finished step 19
+Finished step 17
+Finished step 16
+Finished step 22
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step0/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[0 ] = -1609.2472083070938
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step1/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[1 ] = -1609.6469001758428
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step2/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[2 ] = -1609.9699941741721
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step3/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[3 ] = -1610.379945710312
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step4/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[4 ] = -1610.9701854635446
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step5/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[5 ] = -1611.2603745510737
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step6/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[6 ] = -1611.8079596762495
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step7/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[7 ] = -1612.247908970221
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step8/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[8 ] = -1612.9647665790985
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step9/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[9 ] = -1613.20651213352
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step10/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[10 ] = -1613.6852290479385
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step11/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[11 ] = -1614.5053224441485
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step12/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[12 ] = -1614.9736307136516
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step13/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[13 ] = -1615.486977709328
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step14/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[14 ] = -1616.1974565671806
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step15/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[15 ] = -1616.804596394945
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step16/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[16 ] = -1617.1836935429797
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step17/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[17 ] = -1617.583121322307
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step18/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[18 ] = -1619.5395728850926
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step19/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[19 ] = -1620.5673293191658
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step20/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[20 ] = -1619.1975279877158
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step21/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[21 ] = -1620.6413431368662
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step22/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[22 ] = -1619.9145566225677
+
+Loading /home/gseeholzer/nas3/bfd/runs/F2/F2.SBE3_v3_2sp.r3/step23/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[23 ] = -1620.5432257391728
+
+Step        theta         likelihood   contribution ESS
+0            1            -1609.2472   0            801          
+1            0.8623       -1609.6469   -221.6495    791.424      
+2            0.7384       -1609.97     -199.3843    801          
+3            0.6276       -1610.3799   -178.4627    681.0827     
+4            0.529        -1610.9702   -158.8676    646.6509     
+5            0.4417       -1611.2604   -140.5347    638.3954     
+6            0.3651       -1611.808    -123.4925    801          
+7            0.2983       -1612.2479   -107.6849    749.0708     
+8            0.2406       -1612.9648   -93.1135     801          
+9            0.1911       -1613.2065   -79.715      801          
+10           0.1493       -1613.6852   -67.4994     580.769      
+11           0.1143       -1614.5053   -56.4381     707.9258     
+12           0.0855       -1614.9736   -46.4799     529.3275     
+13           0.0623       -1615.487    -37.6095     734.5105     
+14           0.0438       -1616.1975   -29.7973     680.5366     
+15           0.0296       -1616.8046   -23.0012     482.9775     
+16           0.019        -1617.1837   -17.1893     575.8607     
+17           0.0113       -1617.5831   -12.3223     452.0705     
+18           0.0062       -1619.5396   -8.3643      457.1056     
+19           0.0029       -1620.5673   -5.2515      247.0423     
+20           0.0011       -1619.1975   -2.9316      221.6462     
+21           0.0003       -1620.6413   -1.3517      501.0069     
+22           0            -1619.9146   -0.4251      331.3756     
+23           0            -1620.5432   -0.0468      396.0647     
+sum(ESS) = 14409.8433  
+
+marginal L estimate = -1611.6126297455135
+
+
+Total wall time: 57225 seconds
+Done
+
+real	953m46.938s
+user	7943m46.444s
+sys	105m25.207s

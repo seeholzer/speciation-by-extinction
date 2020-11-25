@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='SNAPP' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data
+id="F2"
+spec="Alignment"
+dataType="integer"
+name="rawdata">
+                    <sequence id="seq_Amotape_B67127.Tumbes.Amotape" spec="Sequence" taxon="Amotape_B67127.Tumbes.Amotape" totalcount="3" value="2121221222202222211022222212212222021122122222002012222222212222122222222212222221202222222222122222"/>
+                    <sequence id="seq_Amotape_B67201.Tumbes.Amotape" spec="Sequence" taxon="Amotape_B67201.Tumbes.Amotape" totalcount="3" value="2020222212202022222121222200202222220020002202022002122202122212211202002022222022200222212220102222"/>
+                    <sequence id="seq_Canchaque_B72874.Piura.Canchaque" spec="Sequence" taxon="Canchaque_B72874.Piura.Canchaque" totalcount="3" value="1020022212202021221222122202201212220020002202021102222202122202210202110122222022200220202221102222"/>
+                    <sequence id="seq_Canchaque_B72878.Piura.Canchaque" spec="Sequence" taxon="Canchaque_B72878.Piura.Canchaque" totalcount="3" value="2021022212202022222012222202202011221021002202022202222212222022202202201122221122212221222212202220"/>
+                    <sequence id="seq_CarpaChavin_B72794.Huanuco.CarpaChavin" spec="Sequence" taxon="CarpaChavin_B72794.Huanuco.CarpaChavin" totalcount="3" value="2020222222202022212012122202202102220020002202122202222202222122222202212222112222202220222212202222"/>
+                    <sequence id="seq_CarpaChavin_B72802.Huanuco.CarpaChavin" spec="Sequence" taxon="CarpaChavin_B72802.Huanuco.CarpaChavin" totalcount="3" value="2121222222211221212022222202212222221022100222022112222222221222222212221222122222222221012122112212"/>
+                    <sequence id="seq_Carpish_B72762.Huanuco.Acomayo" spec="Sequence" taxon="Carpish_B72762.Huanuco.Acomayo" totalcount="3" value="2222222021202212111122222202212221121002211221012112222011120222222222222212122221212220222222102112"/>
+                    <sequence id="seq_Carpish_B72773.Huanuco.Mitotambo" spec="Sequence" taxon="Carpish_B72773.Huanuco.Mitotambo" totalcount="3" value="2222221222102212111122222201202212121122022222012001222212121222222212222222021222212220122222112222"/>
+                    <sequence id="seq_Celendin_B72843.Cajamarca.Celendin" spec="Sequence" taxon="Celendin_B72843.Cajamarca.Celendin" totalcount="3" value="1022222222012122212022222201211202222021002212022202222221211222222212222222121222222120122211202122"/>
+                    <sequence id="seq_Celendin_B72848.Cajamarca.Celendin" spec="Sequence" taxon="Celendin_B72848.Cajamarca.Celendin" totalcount="3" value="2122222121111022222121222201221222221021002212122102212202221222222222222222220222112211222222222212"/>
+                    <sequence id="seq_Chavinillo_B72789.Huanuco.Chavinillo" spec="Sequence" taxon="Chavinillo_B72789.Huanuco.Chavinillo" totalcount="3" value="2221222222212222202022222202210212220022110222022121222101221122222222222112012221222120202222212112"/>
+                    <sequence id="seq_Chavinillo_B72792.Huanuco.Chavinillo" spec="Sequence" taxon="Chavinillo_B72792.Huanuco.Chavinillo" totalcount="3" value="2222222222111122201222222212211212122010101222002011222221101122222220222211102221222120222222202222"/>
+                    <sequence id="seq_Chinchan_B72895.Ancash.Chinchan" spec="Sequence" taxon="Chinchan_B72895.Ancash.Chinchan" totalcount="3" value="2222222222212222201122122201211222222121002222022102222111211222222221222222022222222212222222002122"/>
+                    <sequence id="seq_Chinchan_NK_173896" spec="Sequence" taxon="Chinchan_NK_173896" totalcount="3" value="2222222222212222212122222202220212222112001221022222212122122222222202222122022221222121121222012122"/>
+                    <sequence id="seq_Contumaza_B72838.Cajamarca.Contumaza" spec="Sequence" taxon="Contumaza_B72838.Cajamarca.Contumaza" totalcount="3" value="2121222220212212211022122201222211221022002212022002222212222222222222222112021222202221022222202221"/>
+                    <sequence id="seq_Contumaza_NK_172063" spec="Sequence" taxon="Contumaza_NK_172063" totalcount="3" value="2112222220202222012022222202221212221022002212122002222212222122222222220222120222212220222012202221"/>
+                    <sequence id="seq_CorBlanca_FMNH_391889" spec="Sequence" taxon="CorBlanca_FMNH_391889" totalcount="3" value="2020221211202222122222222202200110210021002212120002222222222222002212202122222222212220222222102221"/>
+                    <sequence id="seq_CorBlanca_NK_171703" spec="Sequence" taxon="CorBlanca_NK_171703" totalcount="3" value="2020220221202222122022222102201120220121002202121002222222222222022212202222222222212220222222202222"/>
+                    <sequence id="seq_Duraznopampa_B72853.Amazonas.Duraznopampa" spec="Sequence" taxon="Duraznopampa_B72853.Amazonas.Duraznopampa" totalcount="3" value="2222212211112112211111221201122211221022012222122101222222221122221222222222022221222120212222202122"/>
+                    <sequence id="seq_Duraznopampa_B72858.Amazonas.Duraznopampa" spec="Sequence" taxon="Duraznopampa_B72858.Amazonas.Duraznopampa" totalcount="3" value="2121222210222122222122121201121212222022002212022012212212222222221222222222022221212220221122222211"/>
+                    <sequence id="seq_ElMolino_B72828.LaLibertad.ElMolino" spec="Sequence" taxon="ElMolino_B72828.LaLibertad.ElMolino" totalcount="3" value="2212222212212022222222222200222222220021102020022201221222220111221221222222022222022200222212102022"/>
+                    <sequence id="seq_ElMolino_B72833.LaLibertad.ElMolino" spec="Sequence" taxon="ElMolino_B72833.LaLibertad.ElMolino" totalcount="3" value="2202222202102122222222222200222222200021002120022201221212220100220112222212022222022200221200202122"/>
+                    <sequence id="seq_Huamatanga_B72889.Lima.Huamatanga" spec="Sequence" taxon="Huamatanga_B72889.Lima.Huamatanga" totalcount="3" value="2021220222202222212022222201210222120022122222022012222221212222222222222222122201212220222222221222"/>
+                    <sequence id="seq_Huamatanga_B72892.Lima.Huamatanga" spec="Sequence" taxon="Huamatanga_B72892.Lima.Huamatanga" totalcount="3" value="2022220222212222201022222201222221021022211222022002222212202222222222222122122211212220222222221222"/>
+                    <sequence id="seq_LaQuinua_B72754.Pasco.LaQuinua" spec="Sequence" taxon="LaQuinua_B72754.Pasco.LaQuinua" totalcount="3" value="1120122122102212222021122202201222222022002212022102222221222022211222220221121122222122222220202122"/>
+                    <sequence id="seq_LaQuinua_B72760.Pasco.LaQuinua" spec="Sequence" taxon="LaQuinua_B72760.Pasco.LaQuinua" totalcount="3" value="2222222122102122122022222202222212220021002212022102222222212122211202220222222222221220222220002222"/>
+                    <sequence id="seq_Llama_B72880.Cajamarca.Llama" spec="Sequence" taxon="Llama_B72880.Cajamarca.Llama" totalcount="3" value="2212202121212122212122212200221222221121102121021101211212221222222211222221022222222221222211002222"/>
+                    <sequence id="seq_Llama_B72887.Cajamarca.Llama" spec="Sequence" taxon="Llama_B72887.Cajamarca.Llama" totalcount="3" value="2221222020222212221022222201221201221020002220021022221222221222222201222222222222222200212221112212"/>
+                    <sequence id="seq_Macate_B72807.Ancash.Macate" spec="Sequence" taxon="Macate_B72807.Ancash.Macate" totalcount="3" value="2121221222222022201022222202222221021022102222022002222212102222222222222222222222222220122222102222"/>
+                    <sequence id="seq_Macate_B72815.Ancash.Macate" spec="Sequence" taxon="Macate_B72815.Ancash.Macate" totalcount="3" value="2221222221001122212022222202221222221012002212022001222212221222222222222212221222222210221222211202"/>
+                    <sequence id="seq_Pacar_B72905.Ancash.Pacar" spec="Sequence" taxon="Pacar_B72905.Ancash.Pacar" totalcount="3" value="2211212111212122222022222110222222200022102220021022220222220111220101222202022222222200122222002222"/>
+                    <sequence id="seq_Pacar_B72912.Ancash.Pacar" spec="Sequence" taxon="Pacar_B72912.Ancash.Pacar" totalcount="3" value="2111212122122022221122222010221222210021002021022102210212220222221202222212012222022200221222102222"/>
+                    <sequence id="seq_Porculla_B31685.Piura.Porculla" spec="Sequence" taxon="Porculla_B31685.Piura.Porculla" totalcount="3" value="2021122222202022222022222200222122120122002202211202222221222222220222222202122221121220222221102221"/>
+                    <sequence id="seq_Porculla_B72870.Piura.Porculla" spec="Sequence" taxon="Porculla_B72870.Piura.Porculla" totalcount="3" value="2020122222202112222122222101202222121021002202022112222212022122222222121222221222211221212221102221"/>
+                    <sequence id="seq_Quichas_B72777.Lima.Quichas" spec="Sequence" taxon="Quichas_B72777.Lima.Quichas" totalcount="3" value="2201222202212021222022212110222222200021102022021200221212221101221202222212022222022200222211002022"/>
+                    <sequence id="seq_Quichas_B72785.Lima.Quichas" spec="Sequence" taxon="Quichas_B72785.Lima.Quichas" totalcount="3" value="2222222112202022222122212010222222200022102022022201221210222111221211222202022222222200221211002122"/>
+                    <sequence id="seq_Suyubamba_B72819.LaLibertad.Suyubamba" spec="Sequence" taxon="Suyubamba_B72819.LaLibertad.Suyubamba" totalcount="3" value="2222212222001122112022222202121222221021012212112012212221121222222202222221121222222121122122212222"/>
+                    <sequence id="seq_Suyubamba_B72826.LaLibertad.Suyubamba" spec="Sequence" taxon="Suyubamba_B72826.LaLibertad.Suyubamba" totalcount="3" value="2222212222102122222022122212221222221021002212112002212221122222222202222222121221222021122222222222"/>
+                    <sequence id="seq_curtata_cra.cur.B6032" spec="Sequence" taxon="curtata_cra.cur.B6032" totalcount="3" value="1220222222201112222221221201212222221122002222022012222212222222221222222212021122201221122222202122"/>
+                    <sequence id="seq_curtata_cra.cur.B8175" spec="Sequence" taxon="curtata_cra.cur.B8175" totalcount="3" value="2021222221202121212021222211202212221022002222021202212202222222222222222222120212222220121222102221"/>
+                </data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+<run spec="beast.inference.PathSampler"
+	chainLength="500000"
+	alpha="0.3"
+	rootdir="/home/gseeholzer/nas3/bfd/runs/F2/F2.SBE1_v1_2sp.r1"
+	burnInPercentage="20"
+	preBurnin="50000"
+	deleteOldLogs="true"
+	nrOfSteps="24">
+	cd $(dir)
+	java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml
+
+<mcmc id="mcmc" spec="MCMC" chainLength="10000000" storeEvery="1000">
+    <state id="state" spec="State" storeEvery="1000">
+        <stateNode id="Tree.F2" spec="beast.util.ClusterTree" clusterType="upgma" nodetype="snap.NodeData">
+            <taxa id="snap.F2" spec="snap.Data" dataType="integerdata">
+                <rawdata idref="F2"/>
+                <taxonset id="ant" spec="TaxonSet">
+                    <taxon id="Amotape_B67127.Tumbes.Amotape" spec="Taxon"/>
+                    <taxon id="Amotape_B67201.Tumbes.Amotape" spec="Taxon"/>
+                    <taxon id="Canchaque_B72874.Piura.Canchaque" spec="Taxon"/>
+                    <taxon id="Canchaque_B72878.Piura.Canchaque" spec="Taxon"/>
+                    <taxon id="Llama_B72880.Cajamarca.Llama" spec="Taxon"/>
+                    <taxon id="Llama_B72887.Cajamarca.Llama" spec="Taxon"/>
+                    <taxon id="Porculla_B31685.Piura.Porculla" spec="Taxon"/>
+                    <taxon id="Porculla_B72870.Piura.Porculla" spec="Taxon"/>
+                </taxonset>
+                <taxonset id="bar" spec="TaxonSet">
+                    <taxon id="CarpaChavin_B72794.Huanuco.CarpaChavin" spec="Taxon"/>
+                    <taxon id="CarpaChavin_B72802.Huanuco.CarpaChavin" spec="Taxon"/>
+                    <taxon id="Carpish_B72762.Huanuco.Acomayo" spec="Taxon"/>
+                    <taxon id="Carpish_B72773.Huanuco.Mitotambo" spec="Taxon"/>
+                    <taxon id="ElMolino_B72828.LaLibertad.ElMolino" spec="Taxon"/>
+                    <taxon id="ElMolino_B72833.LaLibertad.ElMolino" spec="Taxon"/>
+                    <taxon id="Chavinillo_B72789.Huanuco.Chavinillo" spec="Taxon"/>
+                    <taxon id="Chavinillo_B72792.Huanuco.Chavinillo" spec="Taxon"/>
+                    <taxon id="Macate_B72807.Ancash.Macate" spec="Taxon"/>
+                    <taxon id="Macate_B72815.Ancash.Macate" spec="Taxon"/>
+                    <taxon id="Quichas_B72777.Lima.Quichas" spec="Taxon"/>
+                    <taxon id="Quichas_B72785.Lima.Quichas" spec="Taxon"/>
+                    <taxon id="CorBlanca_NK_171703" spec="Taxon"/>
+                    <taxon id="CorBlanca_FMNH_391889" spec="Taxon"/>
+                    <taxon id="Suyubamba_B72819.LaLibertad.Suyubamba" spec="Taxon"/>
+                    <taxon id="Suyubamba_B72826.LaLibertad.Suyubamba" spec="Taxon"/>
+                    <taxon id="Huamatanga_B72889.Lima.Huamatanga" spec="Taxon"/>
+                    <taxon id="Huamatanga_B72892.Lima.Huamatanga" spec="Taxon"/>
+                    <taxon id="Pacar_B72905.Ancash.Pacar" spec="Taxon"/>
+                    <taxon id="Pacar_B72912.Ancash.Pacar" spec="Taxon"/>
+                    <taxon id="LaQuinua_B72754.Pasco.LaQuinua" spec="Taxon"/>
+                    <taxon id="LaQuinua_B72760.Pasco.LaQuinua" spec="Taxon"/>
+                    <taxon id="Chinchan_B72895.Ancash.Chinchan" spec="Taxon"/>
+                    <taxon id="Chinchan_NK_173896" spec="Taxon"/>
+                </taxonset>
+                <taxonset id="cur" spec="TaxonSet">
+                    <taxon id="curtata_cra.cur.B6032" spec="Taxon"/>
+                    <taxon id="curtata_cra.cur.B8175" spec="Taxon"/>
+                </taxonset>
+            </taxa>
+            <parameter id="RealParameter.0" spec="parameter.RealParameter" lower="0.0" name="clock.rate" upper="0.0">1.0</parameter>
+        </stateNode>
+        <parameter id="lambda" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.01</parameter>
+        <parameter id="coalescenceRate" spec="parameter.RealParameter" name="stateNode">10.0</parameter>
+    </state>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <prior id="lambdaPrior.F2" name="distribution" x="@lambda">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">2.0</parameter>
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">200.0</parameter>
+                </Gamma>
+            </prior>
+            <distribution id="snapprior.F2" spec="snap.likelihood.SnAPPrior" coalescenceRate="@coalescenceRate" lambda="@lambda" tree="@Tree.F2">
+                <parameter id="alpha" spec="parameter.RealParameter" estimate="false" lower="0.0" name="alpha">11.75</parameter>
+                <parameter id="beta" spec="parameter.RealParameter" estimate="false" lower="0.0" name="beta">109.73</parameter>
+                <parameter id="kappa" spec="parameter.RealParameter" estimate="false" lower="0.0" name="kappa">1.0</parameter>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution">
+            <distribution id="treeLikelihood.F2" spec="snap.likelihood.SnAPTreeLikelihood" data="@snap.F2" non-polymorphic="false" pattern="coalescenceRate" tree="@Tree.F2">
+                <siteModel id="MutationSiteModel.F2" spec="SiteModel">
+                    <parameter id="mutationRate" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                    <parameter id="shape" spec="parameter.RealParameter" estimate="false" name="shape">2.0</parameter>
+                    <parameter id="proportionInvariant" spec="parameter.RealParameter" estimate="false" name="proportionInvariant">0.0</parameter>
+                    <substModel id="MutationModel" spec="snap.likelihood.SnapSubstitutionModel" coalescenceRate="@coalescenceRate">
+                        <parameter id="u" spec="parameter.RealParameter" estimate="false" lower="0.0" name="mutationRateU">1.0</parameter>
+                        <parameter id="v" spec="parameter.RealParameter" lower="0.0" name="mutationRateV">1.0</parameter>
+                    </substModel>
+                </siteModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="NodeSwapper" spec="snap.operators.NodeSwapper" tree="@Tree.F2" weight="0.5"/>
+
+    <operator id="NodeBudger" spec="snap.operators.NodeBudger" size="0.5" tree="@Tree.F2" weight="0.5"/>
+
+    <operator id="TreeScaler" spec="snap.operators.ScaleOperator" scaleFactor="0.25" tree="@Tree.F2" weight="0.5"/>
+
+    <operator id="GammaMover" spec="snap.operators.GammaMover" coalescenceRate="@coalescenceRate" scale="0.5" weight="8.0"/>
+
+    <operator id="RateMixer" spec="snap.operators.RateMixer" coalescenceRate="@coalescenceRate" scaleFactors="0.25" tree="@Tree.F2" weight="1.0"/>
+
+    <operator id="lambdaScaler" spec="snap.operators.ScaleOperator" parameter="@lambda" scaleFactor="0.75" weight="1.0"/>
+
+    <logger id="tracelog" spec="Logger" fileName="F2.SBE1_v1_2sp.r1.log" logEvery="1000" model="@posterior">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log id="ThetaLogger" spec="snap.ThetaLogger" coalescenceRate="@coalescenceRate"/>
+        <log id="TreeHeightLogger" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.F2"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="1000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog" spec="Logger" fileName="F2.SBE1_v1_2sp.r1.trees" logEvery="1000" mode="tree">
+        <log id="TreeWithMetaDataLogger.F2" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.F2">
+            <metadata id="theta" spec="snap.RateToTheta" coalescenceRate="@coalescenceRate"/>
+        </log>
+    </logger>
+    </mcmc>
+</run>
+
+</beast>
