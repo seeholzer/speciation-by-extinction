@@ -21,19 +21,10 @@ library(dplyr)
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/bfd')
 
 #path to analysis files
-path = 'bfd/runs/T2/analysis.files'
-path = 'bfd/runs/T3/analysis.files'
-path = 'bfd/runs/T5/analysis.files'
-path = 'bfd/runs/T6/analysis.files'
-path = 'bfd/runs/T7/analysis.files'
-path = 'bfd/runs/T8/analysis.files'
-path = 'bfd/runs/T9/analysis.files'
-path = 'bfd/runs/T10/analysis.files'
-path = 'bfd/runs/F1r1/analysis.files'
-path = 'bfd/runs/F2/analysis.files'
-path = 'bfd/runs/F3/analysis.files'
-path = 'bfd/runs/F4/analysis.files'
-
+path = 'runs/F1r1/analysis.files'
+path = 'runs/F2/analysis.files'
+path = 'runs/F3/analysis.files'
+path = 'runs/F4/analysis.files'
 
 ##################################################
 # 1) Get paths of analysis files
@@ -47,7 +38,8 @@ trees = list.files(path,pattern='.trees',full.names=T)
 #			will have a fatal error during the computation of marginal liklihoods.
 #		This error is related to memory issues.
 #		This code will determine which runs have the memory issue.
-#		Solution: Just need to drop the number of cores from 16 to 8 in the .job file and rerun. Things should work. 
+#		Solution: Just need to drop the number of cores (ncpus) from 16 to 8 in the .job file and rerun. Things should work.
+#			(make sure to change -threads flag in beast command in addition to ncpus) 
 i = outs[1]
 for(i in outs){
 	o = readLines(i)
@@ -69,7 +61,14 @@ i = 1
 for(i in 1:nrow(sum)){
 	dataset.hyp.run = sum$dataset.hyp.run[i] 
 	o = readLines(outs[grep(dataset.hyp.run,outs)])
-	sum[i,'MLE'] = as.numeric(gsub('marginal L estimate = ','', o[grep('marginal L estimate',o)]))
+	MLE = as.numeric(gsub('marginal L estimate = ','', o[grep('marginal L estimate',o)]))
+	
+	if(length(MLE) == 0 ){
+		sum[i,'MLE'] = NA
+	}else{
+		sum[i,'MLE'] = MLE
+		}
+	 
 	sum[i,'start'] = o[4]
 	foo = gsub('real\t','',o[grep('real',o)[2]])
 	sum[i,'duration.hrs'] = as.numeric(gsub('m(.*)','',foo))/60

@@ -6,14 +6,8 @@
 #	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
-#mclust analysis of phenotypic data 
-#Seeholzer & Brumfield 20XX - Speciation-by-Extinction
-#Author: Glenn F. Seeholzer
-#Last Update: 21 June 2020
-
-
 #	***Change working directory to local path***
-setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/mclust/')
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/')
 
 #load packages
 library(plyr)
@@ -25,11 +19,11 @@ options(scipen=999)
 ####	load and transform data
 ################################################################
 #Meta
-meta = read.delim('cran.meta.txt',stringsAsFactors=F)
+meta = read.delim('mclust/cran.meta.txt',stringsAsFactors=F)
 #Plumage
-plumage = read.delim('cran.plumage.txt')
+plumage = read.delim('mclust/cran.plumage.txt')
 #Morphology
-morph = read.delim('cran.morph.txt',stringsAsFactors=F)
+morph = read.delim('mclust/cran.morph.txt',stringsAsFactors=F)
 #Merge meta and phenotypic data
 data = join_all(list(meta,morph,plumage),by='ID',type='full')
 #Remove non-adults, non-antisiensis
@@ -39,12 +33,14 @@ data = data[!(data$pop %in% c('Zarate','SanDamien','Pariacoto','Tayabamba')), ]
 #Trait sets
 morph.traits = c('b.l','b.w','b.d','w.l','t.max','t.min','t.w','ts.l','h.l')
 plumage.traits = c('PC1.crow','PC1.back','PC1.rump','PC1.tail','PC1.bell','PC1.brea','PC1.thro','PC1.wing','PC1.cheek')
+
 all.traits = c(morph.traits,plumage.traits)
 traits = list(morphology=morph.traits,plumage=plumage.traits,combined=all.traits)
 
 
+
 #Simulated Extinction Scenarios
-popdata = read.delim('~/Dropbox/SBE/SBE.in.silico/cran.SBE.scenarios.txt',stringsAsFactors=F)
+popdata = read.delim('cran.SBE.scenarios.txt',stringsAsFactors=F)
 popdata = popdata[!popdata$pop %in% 'curtata', ]
 
 
@@ -79,10 +75,13 @@ for(i in 1:length(scenario.trait)){
 		#mclust default is to transform variables using "scaled singular value decomposition (SVD) transformation"
 		subdata = subdata[,-1]								
 		
-		#Alternative: scale variables and use directly without transformation
+		#Alternative 1: scale variables prior to input into mclust, which will tranform again with SVD
+		#subdata = scale(subdata[,-1])								
+	
+		#Alternative 2: scale variables and use directly without transformation
 		#subdata = scale(subdata[,-1]) #scale data and remove ID column
 		#mclust.options(hcUse="VARS") 
-		
+
 		#constrain models to just those comparing 1 vs. 2 clusters
 		G = 2
 		mclust = Mclust(subdata, G=1:G)
@@ -114,12 +113,12 @@ for(i in 1:length(scenario.trait)){
 }#scenario loop
 
 #positive values indicates support for two species
-#negative values indicates support for one species species 
+#negative values indicates support for one species 
 sum$deltaBIC = sum$BIC.G2 - sum$BIC.G1
 
 #summary table of results
 write.table(sum,'results.mclust.txt',sep='\t',col.names=T,row.names=F,quote=F)
 
-#raw data used in plotting Figure 3
-save(results.list,file='results.list.rda')
+#raw data used in plotting Figure S3
+save(results.list,file='results.mclust.list.rda')
 

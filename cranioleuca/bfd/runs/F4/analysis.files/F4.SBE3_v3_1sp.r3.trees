@@ -1,0 +1,14 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=2;
+		Taxlabels
+			ant
+			cur
+			;
+End;
+Begin trees;
+	Translate
+		   1 ant,
+		   2 cur
+;

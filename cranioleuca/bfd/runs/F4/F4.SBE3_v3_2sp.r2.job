@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=16
+#PBS -l select=1:ncpus=8
 #PBS -l walltime=5000:00:00
 #PBS -N F4.SBE3_v3_2sp.r2
 #PBS -j oe
@@ -22,6 +22,6 @@ time
 rm -rf ./F4.SBE3_v3_2sp.r2
 mkdir ./F4.SBE3_v3_2sp.r2
 
-time beast -threads 16 F4.SBE3_v3_2sp.r2.xml
+time beast -threads 8 F4.SBE3_v3_2sp.r2.xml
 
 

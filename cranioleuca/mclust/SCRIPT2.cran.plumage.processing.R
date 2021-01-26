@@ -9,6 +9,12 @@
 #	***Change working directory to local path***
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/mclust/')
 
+#Load Packages
+library(pavo)
+library(plyr)
+
+#VERSION 1
+
 #raw color coordinates for each plumage patch
 data = read.delim('cran.plumage.raw.txt',stringsAsFactors=F)
 
@@ -30,3 +36,32 @@ for(i in 1:length(patch.names.new)){
 }
 
 write.table(patch.data,'cran.plumage.txt',row.names=F,col.names=T,quote=F,sep='\t')
+
+
+# #VERSION 2
+# #import spec data
+# myspecs = get(load('cran.spectra.Rdata'))
+# patch.names = c('crow','back','rump','tail','bell','brea','thro','wing','cheek')
+
+# patch.data = list()
+
+# i = 1
+# for(i in 1:length(patch.names)){
+	# patch = myspecs[,c(1,grep(patch.names[i],colnames(myspecs)))]
+	# patch = procspec(patch, opt='smooth', span = 0.2)
+	# sum = summary(patch)
+	# redness = apply(patch[,-1],2,function(x) lm(x~patch$wl)$coefficients[2] )
+	# col.data = data.frame(ID=gsub(paste0('.',patch.names[i]),'',rownames(sum)),brightness=sum$B2,redness=redness)
+	# colnames(col.data) = c('ID',paste0(c('brightness','redness'),'.',patch.names[i]))
+		
+	# patch.data[[patch.names[i]]] = col.data
+
+# }
+
+# patch.data = join_all(patch.data,by='ID')
+
+# write.table(patch.data,'cran.plumage.2.txt',row.names=F,col.names=T,quote=F,sep='\t')
+
+
+
+

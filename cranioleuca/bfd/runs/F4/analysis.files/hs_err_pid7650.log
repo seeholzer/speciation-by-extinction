@@ -1,0 +1,2415 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 4300210176 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2657), pid=7650, tid=0x00002b52c8196700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_171-b10) (build 1.8.0_171-b10)
+# Java VM: OpenJDK 64-Bit Server VM (25.171-b10 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00002b51b80c3120):  VMThread [stack: 0x00002b52c8097000,0x00002b52c8197000] [id=8391]
+
+Stack: [0x00002b52c8097000,0x00002b52c8197000],  sp=0x00002b52c8195460,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xab47fd]
+V  [libjvm.so+0x4ec92a]
+V  [libjvm.so+0x8b0ee8]
+V  [libjvm.so+0x8ab3fe]
+V  [libjvm.so+0x92477b]
+V  [libjvm.so+0x925450]
+V  [libjvm.so+0x9257ab]
+V  [libjvm.so+0x92211c]
+V  [libjvm.so+0x9228f8]
+V  [libjvm.so+0x8d4e33]
+V  [libjvm.so+0xab65d3]
+V  [libjvm.so+0xabab87]
+V  [libjvm.so+0xab9498]
+V  [libjvm.so+0xab9969]
+V  [libjvm.so+0xab9dc1]
+V  [libjvm.so+0x8ae232]
+
+VM_Operation (0x00002b51b3170570): ParallelGCFailedAllocation, mode: safepoint, requested by thread 0x00002b51b8009a40
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00002b51b812eff0 JavaThread "Service Thread" daemon [_thread_blocked, id=8662, stack(0x00002b52c96ac000,0x00002b52c97ad000)]
+  0x00002b51b812a970 JavaThread "C1 CompilerThread17" daemon [_thread_blocked, id=8594, stack(0x00002b52c95ac000,0x00002b52c96ac000)]
+  0x00002b51b8129160 JavaThread "C1 CompilerThread16" daemon [_thread_blocked, id=8591, stack(0x00002b52c94ab000,0x00002b52c95ab000)]
+  0x00002b51b8127950 JavaThread "C1 CompilerThread15" daemon [_thread_blocked, id=8585, stack(0x00002b52c93aa000,0x00002b52c94aa000)]
+  0x00002b51b8126140 JavaThread "C1 CompilerThread14" daemon [_thread_blocked, id=8575, stack(0x00002b52c92a9000,0x00002b52c93a9000)]
+  0x00002b51b8124930 JavaThread "C1 CompilerThread13" daemon [_thread_blocked, id=8574, stack(0x00002b52c91a8000,0x00002b52c92a8000)]
+  0x00002b51b8122d30 JavaThread "C1 CompilerThread12" daemon [_thread_blocked, id=8573, stack(0x00002b52c90a7000,0x00002b52c91a7000)]
+  0x00002b51b8121130 JavaThread "C2 CompilerThread11" daemon [_thread_blocked, id=8572, stack(0x00002b52c8fa6000,0x00002b52c90a6000)]
+  0x00002b51b811f530 JavaThread "C2 CompilerThread10" daemon [_thread_blocked, id=8571, stack(0x00002b52c8ea5000,0x00002b52c8fa5000)]
+  0x00002b51b811d930 JavaThread "C2 CompilerThread9" daemon [_thread_blocked, id=8570, stack(0x00002b52c8da4000,0x00002b52c8ea4000)]
+  0x00002b51b811bd30 JavaThread "C2 CompilerThread8" daemon [_thread_blocked, id=8569, stack(0x00002b52c8ca3000,0x00002b52c8da3000)]
+  0x00002b51b811a130 JavaThread "C2 CompilerThread7" daemon [_thread_blocked, id=8568, stack(0x00002b52c8ba2000,0x00002b52c8ca2000)]
+  0x00002b51b8118530 JavaThread "C2 CompilerThread6" daemon [_thread_blocked, id=8567, stack(0x00002b52c8aa1000,0x00002b52c8ba1000)]
+  0x00002b51b8116950 JavaThread "C2 CompilerThread5" daemon [_thread_blocked, id=8564, stack(0x00002b52c89a0000,0x00002b52c8aa0000)]
+  0x00002b51b810cd80 JavaThread "C2 CompilerThread4" daemon [_thread_blocked, id=8562, stack(0x00002b52c889f000,0x00002b52c899f000)]
+  0x00002b51b810b1a0 JavaThread "C2 CompilerThread3" daemon [_thread_blocked, id=8561, stack(0x00002b52c879e000,0x00002b52c889e000)]
+  0x00002b51b81095c0 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=8560, stack(0x00002b52c869d000,0x00002b52c879d000)]
+  0x00002b51b801b690 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=8559, stack(0x00002b52c859c000,0x00002b52c869c000)]
+  0x00002b51b80fb200 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=8513, stack(0x00002b52c849b000,0x00002b52c859b000)]
+  0x00002b51b80f9750 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=8511, stack(0x00002b52c8399000,0x00002b52c849a000)]
+  0x00002b51b80d0820 JavaThread "Finalizer" daemon [_thread_blocked, id=8409, stack(0x00002b52c8298000,0x00002b52c8399000)]
+  0x00002b51b80cc5b0 JavaThread "Reference Handler" daemon [_thread_blocked, id=8401, stack(0x00002b52c8197000,0x00002b52c8298000)]
+  0x00002b51b8009a40 JavaThread "main" [_thread_blocked, id=7678, stack(0x00002b51b3073000,0x00002b51b3173000)]
+
+Other Threads:
+=>0x00002b51b80c3120 VMThread [stack: 0x00002b52c8097000,0x00002b52c8197000] [id=8391]
+  0x00002b51b8130fc0 WatcherThread [stack: 0x00002b52c97ae000,0x00002b52c98ae000] [id=8666]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00002b51b8006f20] Threads_lock - owner thread: 0x00002b51b80c3120
+[0x00002b51b8007420] Heap_lock - owner thread: 0x00002b51b8009a40
+
+Heap:
+ PSYoungGen      total 4208640K, used 256K [0x0000000580100000, 0x0000000681900000, 0x0000000800000000)
+  eden space 4198400K, 0% used [0x0000000580100000,0x0000000580100000,0x0000000680500000)
+  from space 10240K, 2% used [0x0000000680500000,0x0000000680540000,0x0000000680f00000)
+  to   space 9728K, 0% used [0x0000000680f80000,0x0000000680f80000,0x0000000681900000)
+ ParOldGen       total 1398272K, used 4760K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x00000000806a6080,0x00000000d5780000)
+ Metaspace       used 17952K, capacity 18214K, committed 18560K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+
+Card table byte_map: [0x00002b51cb000000,0x00002b51cec00000] byte_map_base: 0x00002b51cabff000
+
+Marking Bits: (ParMarkBitMap*) 0x00002b51b4e22e00
+ Begin Bits: [0x00002b5280000000, 0x00002b529dff8000)
+ End Bits:   [0x00002b529dff8000, 0x00002b52bbff0000)
+
+Polling page: 0x00002b51b3060000
+
+CodeCache: size=245760Kb used=9260Kb max_used=9260Kb free=236499Kb
+ bounds [0x00002b51bc000000, 0x00002b51bc910000, 0x00002b51cb000000]
+ total_blobs=2032 nmethods=1679 adapters=262
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 19.728 Thread 0x00002b51b8126140 1675       3       beast.evolution.sitemodel.SiteModel::store (5 bytes)
+Event: 19.729 Thread 0x00002b51b8126140 nmethod 1675 0x00002b51bc90bb50 code [0x00002b51bc90bcc0, 0x00002b51bc90be70]
+Event: 20.157 Thread 0x00002b51b8126140 1676       1       beast.core.CalculationNode::accept (6 bytes)
+Event: 20.158 Thread 0x00002b51b8126140 nmethod 1676 0x00002b51bc90b890 code [0x00002b51bc90b9e0, 0x00002b51bc90baf0]
+Event: 21.369 Thread 0x00002b51b8126140 1677       3       beast.evolution.tree.Tree::startEditing (11 bytes)
+Event: 21.371 Thread 0x00002b51b8126140 nmethod 1677 0x00002b51bc90b4d0 code [0x00002b51bc90b640, 0x00002b51bc90b7e8]
+Event: 22.014 Thread 0x00002b51b8126140 1678       3       snap.operators.GammaMover::proposal (104 bytes)
+Event: 22.018 Thread 0x00002b51b8126140 nmethod 1678 0x00002b51bc90cd10 code [0x00002b51bc90cfe0, 0x00002b51bc90ed38]
+Event: 30.125 Thread 0x00002b51b8126140 1679       3       beast.core.State::acceptCalculationNodes (39 bytes)
+Event: 30.125 Thread 0x00002b51b8126140 nmethod 1679 0x00002b51bc90aa90 code [0x00002b51bc90ac60, 0x00002b51bc90b2c8]
+
+GC Heap History (10 events):
+Event: 5.337 GC heap after
+Heap after GC invocations=2 (full 0):
+ PSYoungGen      total 1136640K, used 4935K [0x0000000580100000, 0x00000005cac00000, 0x0000000800000000)
+  eden space 1049600K, 0% used [0x0000000580100000,0x0000000580100000,0x00000005c0200000)
+  from space 87040K, 5% used [0x00000005c5700000,0x00000005c5bd1d50,0x00000005cac00000)
+  to   space 87040K, 0% used [0x00000005c0200000,0x00000005c0200000,0x00000005c5700000)
+ ParOldGen       total 1398272K, used 88K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080216010,0x00000000d5780000)
+ Metaspace       used 17890K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+}
+Event: 7.555 GC heap before
+{Heap before GC invocations=3 (full 0):
+ PSYoungGen      total 1136640K, used 1054535K [0x0000000580100000, 0x00000005cac00000, 0x0000000800000000)
+  eden space 1049600K, 100% used [0x0000000580100000,0x00000005c0200000,0x00000005c0200000)
+  from space 87040K, 5% used [0x00000005c5700000,0x00000005c5bd1d50,0x00000005cac00000)
+  to   space 87040K, 0% used [0x00000005c0200000,0x00000005c0200000,0x00000005c5700000)
+ ParOldGen       total 1398272K, used 88K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080216010,0x00000000d5780000)
+ Metaspace       used 17901K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+Event: 7.642 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 1136640K, used 5607K [0x0000000580100000, 0x000000060ad00000, 0x0000000800000000)
+  eden space 1049600K, 0% used [0x0000000580100000,0x0000000580100000,0x00000005c0200000)
+  from space 87040K, 6% used [0x00000005c0200000,0x00000005c0779d30,0x00000005c5700000)
+  to   space 87040K, 0% used [0x0000000605800000,0x0000000605800000,0x000000060ad00000)
+ ParOldGen       total 1398272K, used 96K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080218010,0x00000000d5780000)
+ Metaspace       used 17901K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+}
+Event: 9.287 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 1136640K, used 1055207K [0x0000000580100000, 0x000000060ad00000, 0x0000000800000000)
+  eden space 1049600K, 100% used [0x0000000580100000,0x00000005c0200000,0x00000005c0200000)
+  from space 87040K, 6% used [0x00000005c0200000,0x00000005c0779d30,0x00000005c5700000)
+  to   space 87040K, 0% used [0x0000000605800000,0x0000000605800000,0x000000060ad00000)
+ ParOldGen       total 1398272K, used 96K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080218010,0x00000000d5780000)
+ Metaspace       used 17916K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+Event: 9.321 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 2186240K, used 4847K [0x0000000580100000, 0x000000060ad00000, 0x0000000800000000)
+  eden space 2099200K, 0% used [0x0000000580100000,0x0000000580100000,0x0000000600300000)
+  from space 87040K, 5% used [0x0000000605800000,0x0000000605cbbf10,0x000000060ad00000)
+  to   space 87040K, 0% used [0x0000000600300000,0x0000000600300000,0x0000000605800000)
+ ParOldGen       total 1398272K, used 96K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080218010,0x00000000d5780000)
+ Metaspace       used 17916K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+}
+Event: 13.123 GC heap before
+{Heap before GC invocations=5 (full 0):
+ PSYoungGen      total 2186240K, used 2104047K [0x0000000580100000, 0x000000060ad00000, 0x0000000800000000)
+  eden space 2099200K, 100% used [0x0000000580100000,0x0000000600300000,0x0000000600300000)
+  from space 87040K, 5% used [0x0000000605800000,0x0000000605cbbf10,0x000000060ad00000)
+  to   space 87040K, 0% used [0x0000000600300000,0x0000000600300000,0x0000000605800000)
+ ParOldGen       total 1398272K, used 96K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x0000000080218010,0x00000000d5780000)
+ Metaspace       used 17925K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+Event: 13.150 GC heap after
+Heap after GC invocations=5 (full 0):
+ PSYoungGen      total 2186240K, used 4831K [0x0000000580100000, 0x0000000681a00000, 0x0000000800000000)
+  eden space 2099200K, 0% used [0x0000000580100000,0x0000000580100000,0x0000000600300000)
+  from space 87040K, 5% used [0x0000000600300000,0x00000006007b7f00,0x0000000605800000)
+  to   space 10752K, 0% used [0x0000000680f80000,0x0000000680f80000,0x0000000681a00000)
+ ParOldGen       total 1398272K, used 104K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x000000008021a010,0x00000000d5780000)
+ Metaspace       used 17925K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+}
+Event: 16.597 GC heap before
+{Heap before GC invocations=6 (full 0):
+ PSYoungGen      total 2186240K, used 2104031K [0x0000000580100000, 0x0000000681a00000, 0x0000000800000000)
+  eden space 2099200K, 100% used [0x0000000580100000,0x0000000600300000,0x0000000600300000)
+  from space 87040K, 5% used [0x0000000600300000,0x00000006007b7f00,0x0000000605800000)
+  to   space 10752K, 0% used [0x0000000680f80000,0x0000000680f80000,0x0000000681a00000)
+ ParOldGen       total 1398272K, used 104K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x000000008021a010,0x00000000d5780000)
+ Metaspace       used 17937K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+Event: 16.615 GC heap after
+Heap after GC invocations=6 (full 0):
+ PSYoungGen      total 4208128K, used 4863K [0x0000000580100000, 0x0000000681900000, 0x0000000800000000)
+  eden space 4198400K, 0% used [0x0000000580100000,0x0000000580100000,0x0000000680500000)
+  from space 9728K, 49% used [0x0000000680f80000,0x000000068143ff40,0x0000000681900000)
+  to   space 10240K, 0% used [0x0000000680500000,0x0000000680500000,0x0000000680f00000)
+ ParOldGen       total 1398272K, used 112K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x000000008021c010,0x00000000d5780000)
+ Metaspace       used 17937K, capacity 18150K, committed 18304K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+}
+Event: 31.160 GC heap before
+{Heap before GC invocations=7 (full 0):
+ PSYoungGen      total 4208128K, used 4203263K [0x0000000580100000, 0x0000000681900000, 0x0000000800000000)
+  eden space 4198400K, 100% used [0x0000000580100000,0x0000000680500000,0x0000000680500000)
+  from space 9728K, 49% used [0x0000000680f80000,0x000000068143ff40,0x0000000681900000)
+  to   space 10240K, 0% used [0x0000000680500000,0x0000000680500000,0x0000000680f00000)
+ ParOldGen       total 1398272K, used 112K [0x0000000080200000, 0x00000000d5780000, 0x0000000580100000)
+  object space 1398272K, 0% used [0x0000000080200000,0x000000008021c010,0x00000000d5780000)
+ Metaspace       used 17952K, capacity 18214K, committed 18560K, reserved 1064960K
+  class space    used 2590K, capacity 2663K, committed 2688K, reserved 1048576K
+
+Deoptimization events (10 events):
+Event: 3.098 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc66bca0 method=java.util.regex.Pattern$CharProperty.study(Ljava/util/regex/Pattern$TreeInfo;)Z @ 25
+Event: 3.098 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc66bca0 method=java.util.regex.Pattern$CharProperty.study(Ljava/util/regex/Pattern$TreeInfo;)Z @ 25
+Event: 3.098 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc66bca0 method=java.util.regex.Pattern$CharProperty.study(Ljava/util/regex/Pattern$TreeInfo;)Z @ 25
+Event: 3.098 Thread 0x00002b51b8009a40 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00002b51bc6044e0 method=java.util.regex.Pattern$Slice.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 54
+Event: 3.098 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc66bca0 method=java.util.regex.Pattern$CharProperty.study(Ljava/util/regex/Pattern$TreeInfo;)Z @ 25
+Event: 3.104 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc7d15a4 method=java.util.regex.Matcher.search(I)Z @ 86
+Event: 3.104 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc6ca12c method=java.util.regex.Pattern$BmpCharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 31
+Event: 3.104 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc6ca12c method=java.util.regex.Pattern$BmpCharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 31
+Event: 3.104 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc6ca12c method=java.util.regex.Pattern$BmpCharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 31
+Event: 3.104 Thread 0x00002b51b8009a40 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00002b51bc6ca12c method=java.util.regex.Pattern$BmpCharProperty.match(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z @ 31
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.176 Thread 0x00002b51b8009a40 Exception <a 'java/security/PrivilegedActionException'> (0x00000005801eb5f0) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/jvm.cpp, line 1445]
+Event: 0.177 Thread 0x00002b51b8009a40 Exception <a 'java/security/PrivilegedActionException'> (0x00000005801edcd8) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/jvm.cpp, line 1445]
+Event: 0.177 Thread 0x00002b51b8009a40 Exception <a 'java/security/PrivilegedActionException'> (0x00000005801edee8) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/jvm.cpp, line 1445]
+Event: 0.177 Thread 0x00002b51b8009a40 Exception <a 'java/security/PrivilegedActionException'> (0x00000005801eece0) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/jvm.cpp, line 1445]
+Event: 0.177 Thread 0x00002b51b8009a40 Exception <a 'java/security/PrivilegedActionException'> (0x00000005801eeef0) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/jvm.cpp, line 1445]
+Event: 1.669 Thread 0x00002b51b8009a40 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 18> (0x0000000586708448) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 369]
+Event: 1.670 Thread 0x00002b51b8009a40 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 40> (0x00000005867090f0) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 369]
+Event: 2.259 Thread 0x00002b51b8009a40 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x0000000587902488) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/methodHandles.cpp, line 1167]
+Event: 2.261 Thread 0x00002b51b8009a40 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x000000058790f778) thrown at [/builddir/build/BUILD/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/openjdk/hotspot/src/share/vm/prims/methodHandles.cpp, line 1167]
+Event: 2.910 Thread 0x00002b51b8009a40 Implicit null exception at 0x00002b51bc5c47ec to 0x00002b51bc5c49c5
+
+Events (10 events):
+Event: 7.642 Executing VM operation: ParallelGCFailedAllocation done
+Event: 7.823 Thread 0x00002b51b8009a40 DEOPT PACKING pc=0x00002b51bc89ab31 sp=0x00002b51b3170a00
+Event: 7.823 Thread 0x00002b51b8009a40 DEOPT UNPACKING pc=0x00002b51bc0474c4 sp=0x00002b51b3170708 mode 0
+Event: 9.287 Executing VM operation: ParallelGCFailedAllocation
+Event: 9.321 Executing VM operation: ParallelGCFailedAllocation done
+Event: 13.123 Executing VM operation: ParallelGCFailedAllocation
+Event: 13.150 Executing VM operation: ParallelGCFailedAllocation done
+Event: 16.597 Executing VM operation: ParallelGCFailedAllocation
+Event: 16.615 Executing VM operation: ParallelGCFailedAllocation done
+Event: 31.160 Executing VM operation: ParallelGCFailedAllocation
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 00:13 67669                              /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java
+00600000-00601000 r--p 00000000 00:13 67669                              /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java
+00601000-00602000 rw-p 00001000 00:13 67669                              /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java
+02025000-02046000 rw-p 00000000 00:00 0                                  [heap]
+80200000-d5780000 rw-p 00000000 00:00 0 
+d5780000-580100000 ---p 00000000 00:00 0 
+580100000-681900000 rw-p 00000000 00:00 0 
+781e00000-800000000 ---p 00000000 00:00 0 
+800000000-8002a0000 rw-p 00000000 00:00 0 
+8002a0000-840000000 ---p 00000000 00:00 0 
+2b51b303d000-2b51b305f000 r-xp 00000000 00:13 51555                      /usr/lib64/ld-2.17.so
+2b51b305f000-2b51b3060000 rw-p 00000000 00:00 0 
+2b51b3060000-2b51b3061000 ---p 00000000 00:00 0 
+2b51b3061000-2b51b3062000 rw-p 00000000 00:00 0 
+2b51b3062000-2b51b306a000 rw-s 00000000 00:13 1302447987                 /tmp/hsperfdata_gseeholzer/7650
+2b51b306a000-2b51b306b000 r--s 00012000 00:2a 664325                     /home/gseeholzer/programs/beast/lib/launcher.jar
+2b51b306b000-2b51b306d000 r--s 0001e000 00:2a 795100                     /home/gseeholzer/.beast/2.6/MODEL_SELECTION/lib/MODEL_SELECTION.addon.jar
+2b51b306d000-2b51b3072000 rw-p 00000000 00:00 0 
+2b51b3072000-2b51b3076000 ---p 00000000 00:00 0 
+2b51b3076000-2b51b3244000 rw-p 00000000 00:00 0 
+2b51b3244000-2b51b3253000 r--s 0019c000 00:2a 792435                     /home/gseeholzer/.beast/2.6/BEAST/lib/beast.src.jar
+2b51b3253000-2b51b325a000 r--s 00068000 00:2a 919816                     /home/gseeholzer/.beast/2.6/BEASTLabs/lib/BEASTlabs.addon.jar
+2b51b325a000-2b51b325e000 r--s 00043000 00:2a 795081                     /home/gseeholzer/.beast/2.6/SNAPP/lib/snap.addon.jar
+2b51b325e000-2b51b325f000 r--p 00021000 00:13 51555                      /usr/lib64/ld-2.17.so
+2b51b325f000-2b51b3260000 rw-p 00022000 00:13 51555                      /usr/lib64/ld-2.17.so
+2b51b3260000-2b51b3261000 rw-p 00000000 00:00 0 
+2b51b3261000-2b51b3278000 r-xp 00000000 00:13 49320                      /usr/lib64/libpthread-2.17.so
+2b51b3278000-2b51b3477000 ---p 00017000 00:13 49320                      /usr/lib64/libpthread-2.17.so
+2b51b3477000-2b51b3478000 r--p 00016000 00:13 49320                      /usr/lib64/libpthread-2.17.so
+2b51b3478000-2b51b3479000 rw-p 00017000 00:13 49320                      /usr/lib64/libpthread-2.17.so
+2b51b3479000-2b51b347d000 rw-p 00000000 00:00 0 
+2b51b347d000-2b51b3492000 r-xp 00000000 00:13 51328                      /usr/lib64/libz.so.1.2.7
+2b51b3492000-2b51b3691000 ---p 00015000 00:13 51328                      /usr/lib64/libz.so.1.2.7
+2b51b3691000-2b51b3692000 r--p 00014000 00:13 51328                      /usr/lib64/libz.so.1.2.7
+2b51b3692000-2b51b3693000 rw-p 00015000 00:13 51328                      /usr/lib64/libz.so.1.2.7
+2b51b3693000-2b51b36a1000 r-xp 00000000 00:13 67621                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/jli/libjli.so
+2b51b36a1000-2b51b38a0000 ---p 0000e000 00:13 67621                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/jli/libjli.so
+2b51b38a0000-2b51b38a1000 r--p 0000d000 00:13 67621                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/jli/libjli.so
+2b51b38a1000-2b51b38a2000 rw-p 0000e000 00:13 67621                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/jli/libjli.so
+2b51b38a2000-2b51b38a4000 r-xp 00000000 00:13 51305                      /usr/lib64/libdl-2.17.so
+2b51b38a4000-2b51b3aa4000 ---p 00002000 00:13 51305                      /usr/lib64/libdl-2.17.so
+2b51b3aa4000-2b51b3aa5000 r--p 00002000 00:13 51305                      /usr/lib64/libdl-2.17.so
+2b51b3aa5000-2b51b3aa6000 rw-p 00003000 00:13 51305                      /usr/lib64/libdl-2.17.so
+2b51b3aa6000-2b51b3c69000 r-xp 00000000 00:13 49303                      /usr/lib64/libc-2.17.so
+2b51b3c69000-2b51b3e68000 ---p 001c3000 00:13 49303                      /usr/lib64/libc-2.17.so
+2b51b3e68000-2b51b3e6c000 r--p 001c2000 00:13 49303                      /usr/lib64/libc-2.17.so
+2b51b3e6c000-2b51b3e6e000 rw-p 001c6000 00:13 49303                      /usr/lib64/libc-2.17.so
+2b51b3e6e000-2b51b3e73000 rw-p 00000000 00:00 0 
+2b51b3e73000-2b51b4b39000 r-xp 00000000 00:13 67625                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/server/libjvm.so
+2b51b4b39000-2b51b4d39000 ---p 00cc6000 00:13 67625                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/server/libjvm.so
+2b51b4d39000-2b51b4de4000 r--p 00cc6000 00:13 67625                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/server/libjvm.so
+2b51b4de4000-2b51b4e0d000 rw-p 00d71000 00:13 67625                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/server/libjvm.so
+2b51b4e0d000-2b51b4e40000 rw-p 00000000 00:00 0 
+2b51b4e40000-2b51b4f29000 r-xp 00000000 00:13 11039                      /usr/lib64/libstdc++.so.6.0.19
+2b51b4f29000-2b51b5128000 ---p 000e9000 00:13 11039                      /usr/lib64/libstdc++.so.6.0.19
+2b51b5128000-2b51b5130000 r--p 000e8000 00:13 11039                      /usr/lib64/libstdc++.so.6.0.19
+2b51b5130000-2b51b5132000 rw-p 000f0000 00:13 11039                      /usr/lib64/libstdc++.so.6.0.19
+2b51b5132000-2b51b5147000 rw-p 00000000 00:00 0 
+2b51b5147000-2b51b5248000 r-xp 00000000 00:13 51340                      /usr/lib64/libm-2.17.so
+2b51b5248000-2b51b5447000 ---p 00101000 00:13 51340                      /usr/lib64/libm-2.17.so
+2b51b5447000-2b51b5448000 r--p 00100000 00:13 51340                      /usr/lib64/libm-2.17.so
+2b51b5448000-2b51b5449000 rw-p 00101000 00:13 51340                      /usr/lib64/libm-2.17.so
+2b51b5449000-2b51b545e000 r-xp 00000000 00:13 49314                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b51b545e000-2b51b565d000 ---p 00015000 00:13 49314                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b51b565d000-2b51b565e000 r--p 00014000 00:13 49314                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b51b565e000-2b51b565f000 rw-p 00015000 00:13 49314                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b51b565f000-2b51b5666000 r-xp 00000000 00:13 50239                      /usr/lib64/librt-2.17.so
+2b51b5666000-2b51b5865000 ---p 00007000 00:13 50239                      /usr/lib64/librt-2.17.so
+2b51b5865000-2b51b5866000 r--p 00006000 00:13 50239                      /usr/lib64/librt-2.17.so
+2b51b5866000-2b51b5867000 rw-p 00007000 00:13 50239                      /usr/lib64/librt-2.17.so
+2b51b5867000-2b51b5874000 r-xp 00000000 00:13 67611                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libverify.so
+2b51b5874000-2b51b5a73000 ---p 0000d000 00:13 67611                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libverify.so
+2b51b5a73000-2b51b5a75000 r--p 0000c000 00:13 67611                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libverify.so
+2b51b5a75000-2b51b5a76000 rw-p 0000e000 00:13 67611                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libverify.so
+2b51b5a76000-2b51b5aa4000 r-xp 00000000 00:13 67588                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libjava.so
+2b51b5aa4000-2b51b5ca3000 ---p 0002e000 00:13 67588                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libjava.so
+2b51b5ca3000-2b51b5ca4000 r--p 0002d000 00:13 67588                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libjava.so
+2b51b5ca4000-2b51b5ca6000 rw-p 0002e000 00:13 67588                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libjava.so
+2b51b5ca6000-2b51b5cb2000 r-xp 00000000 00:13 50383                      /usr/lib64/libnss_files-2.17.so
+2b51b5cb2000-2b51b5eb1000 ---p 0000c000 00:13 50383                      /usr/lib64/libnss_files-2.17.so
+2b51b5eb1000-2b51b5eb2000 r--p 0000b000 00:13 50383                      /usr/lib64/libnss_files-2.17.so
+2b51b5eb2000-2b51b5eb3000 rw-p 0000c000 00:13 50383                      /usr/lib64/libnss_files-2.17.so
+2b51b5eb3000-2b51b5eb9000 rw-p 00000000 00:00 0 
+2b51b5eb9000-2b51b5ec1000 r-xp 00000000 00:13 51577                      /usr/lib64/libnss_sss.so.2
+2b51b5ec1000-2b51b60c0000 ---p 00008000 00:13 51577                      /usr/lib64/libnss_sss.so.2
+2b51b60c0000-2b51b60c1000 r--p 00007000 00:13 51577                      /usr/lib64/libnss_sss.so.2
+2b51b60c1000-2b51b60c2000 rw-p 00008000 00:13 51577                      /usr/lib64/libnss_sss.so.2
+2b51b60c2000-2b51b68c7000 r--s 00000000 00:13 76185                      /var/lib/sss/mc/passwd
+2b51b68c7000-2b51b68cf000 r-xp 00000000 00:13 67614                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libzip.so
+2b51b68cf000-2b51b6ace000 ---p 00008000 00:13 67614                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libzip.so
+2b51b6ace000-2b51b6acf000 r--p 00007000 00:13 67614                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libzip.so
+2b51b6acf000-2b51b6ad0000 rw-p 00008000 00:13 67614                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/amd64/libzip.so
+2b51b6ad0000-2b51b6af5000 rw-p 00000000 00:00 0 
+2b51b6af5000-2b51b6e90000 ---p 00000000 00:00 0 
+2b51b6e90000-2b51b6e91000 ---p 00000000 00:00 0 
+2b51b6e91000-2b51b6f91000 rw-p 00000000 00:00 0 
+2b51b6f91000-2b51b6f92000 ---p 00000000 00:00 0 
+2b51b6f92000-2b51b7092000 rw-p 00000000 00:00 0 
+2b51b7092000-2b51b7093000 ---p 00000000 00:00 0 
+2b51b7093000-2b51b7193000 rw-p 00000000 00:00 0 
+2b51b7193000-2b51b7194000 ---p 00000000 00:00 0 
+2b51b7194000-2b51b7294000 rw-p 00000000 00:00 0 
+2b51b7294000-2b51b7295000 ---p 00000000 00:00 0 
+2b51b7295000-2b51b7395000 rw-p 00000000 00:00 0 
+2b51b7395000-2b51b7396000 ---p 00000000 00:00 0 
+2b51b7396000-2b51b7496000 rw-p 00000000 00:00 0 
+2b51b7496000-2b51b7497000 ---p 00000000 00:00 0 
+2b51b7497000-2b51b7597000 rw-p 00000000 00:00 0 
+2b51b7597000-2b51b7598000 ---p 00000000 00:00 0 
+2b51b7598000-2b51b7698000 rw-p 00000000 00:00 0 
+2b51b7698000-2b51b7699000 ---p 00000000 00:00 0 
+2b51b7699000-2b51b7799000 rw-p 00000000 00:00 0 
+2b51b7799000-2b51b779a000 ---p 00000000 00:00 0 
+2b51b779a000-2b51b789a000 rw-p 00000000 00:00 0 
+2b51b789a000-2b51b789b000 ---p 00000000 00:00 0 
+2b51b789b000-2b51b799b000 rw-p 00000000 00:00 0 
+2b51b799b000-2b51b799c000 ---p 00000000 00:00 0 
+2b51b799c000-2b51b7a9c000 rw-p 00000000 00:00 0 
+2b51b7a9c000-2b51b7a9d000 ---p 00000000 00:00 0 
+2b51b7a9d000-2b51b7b9d000 rw-p 00000000 00:00 0 
+2b51b7b9d000-2b51b7b9e000 ---p 00000000 00:00 0 
+2b51b7b9e000-2b51b7c9e000 rw-p 00000000 00:00 0 
+2b51b7c9e000-2b51b7c9f000 ---p 00000000 00:00 0 
+2b51b7c9f000-2b51b7d9f000 rw-p 00000000 00:00 0 
+2b51b7d9f000-2b51b7da0000 ---p 00000000 00:00 0 
+2b51b7da0000-2b51b7ea0000 rw-p 00000000 00:00 0 
+2b51b7ea0000-2b51b7ea1000 ---p 00000000 00:00 0 
+2b51b7ea1000-2b51b7fe3000 rw-p 00000000 00:00 0 
+2b51b7fe3000-2b51b7ff6000 r--s 00346000 00:13 67570                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/resources.jar
+2b51b7ff6000-2b51b7ffc000 r--s 00309000 00:13 67565                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/charsets.jar
+2b51b7ffc000-2b51b7ffd000 rw-p 00000000 00:00 0 
+2b51b8000000-2b51b8456000 rw-p 00000000 00:00 0 
+2b51b8456000-2b51bc000000 ---p 00000000 00:00 0 
+2b51bc000000-2b51bc910000 rwxp 00000000 00:00 0 
+2b51bc910000-2b51cb000000 ---p 00000000 00:00 0 
+2b51cb000000-2b51cb2ab000 rw-p 00000000 00:00 0 
+2b51cb2ab000-2b51cd7ff000 ---p 00000000 00:00 0 
+2b51cd7ff000-2b51ce00c000 rw-p 00000000 00:00 0 
+2b51ce00c000-2b51cebff000 ---p 00000000 00:00 0 
+2b51cebff000-2b51ceeab000 rw-p 00000000 00:00 0 
+2b51ceeab000-2b51d1400000 ---p 00000000 00:00 0 
+2b51d1400000-2b51d1401000 ---p 00000000 00:00 0 
+2b51d1401000-2b51d1501000 rw-p 00000000 00:00 0 
+2b51d1501000-2b51d1502000 ---p 00000000 00:00 0 
+2b51d1502000-2b51d1602000 rw-p 00000000 00:00 0 
+2b51d1602000-2b51d1603000 ---p 00000000 00:00 0 
+2b51d1603000-2b51d1703000 rw-p 00000000 00:00 0 
+2b51d1703000-2b51d1704000 ---p 00000000 00:00 0 
+2b51d1704000-2b51d1804000 rw-p 00000000 00:00 0 
+2b51d1804000-2b51d1805000 ---p 00000000 00:00 0 
+2b51d1805000-2b51d1905000 rw-p 00000000 00:00 0 
+2b51d1905000-2b51d1906000 ---p 00000000 00:00 0 
+2b51d1906000-2b51d1a06000 rw-p 00000000 00:00 0 
+2b51d1a06000-2b51d1a07000 ---p 00000000 00:00 0 
+2b51d1a07000-2b51d1b07000 rw-p 00000000 00:00 0 
+2b51d1b07000-2b51d1b08000 ---p 00000000 00:00 0 
+2b51d1b08000-2b51d1c08000 rw-p 00000000 00:00 0 
+2b51d1c08000-2b51d1c09000 ---p 00000000 00:00 0 
+2b51d1c09000-2b51d1d09000 rw-p 00000000 00:00 0 
+2b51d1d09000-2b51d1d0a000 ---p 00000000 00:00 0 
+2b51d1d0a000-2b51d1e0a000 rw-p 00000000 00:00 0 
+2b51d1e0a000-2b51d1e0b000 ---p 00000000 00:00 0 
+2b51d1e0b000-2b51d1f0b000 rw-p 00000000 00:00 0 
+2b51d1f0b000-2b51d1f0c000 ---p 00000000 00:00 0 
+2b51d1f0c000-2b51d200c000 rw-p 00000000 00:00 0 
+2b51d200c000-2b51d200d000 ---p 00000000 00:00 0 
+2b51d200d000-2b51d210d000 rw-p 00000000 00:00 0 
+2b51d210d000-2b51d210e000 ---p 00000000 00:00 0 
+2b51d210e000-2b51d220e000 rw-p 00000000 00:00 0 
+2b51d220e000-2b51d220f000 ---p 00000000 00:00 0 
+2b51d220f000-2b51d230f000 rw-p 00000000 00:00 0 
+2b51d230f000-2b51d2310000 ---p 00000000 00:00 0 
+2b51d2310000-2b51d2410000 rw-p 00000000 00:00 0 
+2b51d2410000-2b51d2411000 ---p 00000000 00:00 0 
+2b51d2411000-2b51d2511000 rw-p 00000000 00:00 0 
+2b51d2511000-2b51d2512000 ---p 00000000 00:00 0 
+2b51d2512000-2b51d2612000 rw-p 00000000 00:00 0 
+2b51d2612000-2b51d2613000 ---p 00000000 00:00 0 
+2b51d2613000-2b51d2713000 rw-p 00000000 00:00 0 
+2b51d2713000-2b51d2714000 ---p 00000000 00:00 0 
+2b51d2714000-2b51d2814000 rw-p 00000000 00:00 0 
+2b51d2814000-2b51d2815000 ---p 00000000 00:00 0 
+2b51d2815000-2b51d2915000 rw-p 00000000 00:00 0 
+2b51d2915000-2b51d2916000 ---p 00000000 00:00 0 
+2b51d2916000-2b51d2a16000 rw-p 00000000 00:00 0 
+2b51d2a16000-2b51d2a17000 ---p 00000000 00:00 0 
+2b51d2a17000-2b51d2b17000 rw-p 00000000 00:00 0 
+2b51d2b17000-2b51d2b18000 ---p 00000000 00:00 0 
+2b51d2b18000-2b51d2c18000 rw-p 00000000 00:00 0 
+2b51d2c18000-2b51d2c19000 ---p 00000000 00:00 0 
+2b51d2c19000-2b51d2d19000 rw-p 00000000 00:00 0 
+2b51d2d19000-2b51d2d1a000 ---p 00000000 00:00 0 
+2b51d2d1a000-2b51d3872000 rw-p 00000000 00:00 0 
+2b51d3872000-2b51d38e8000 rw-p 00000000 00:00 0 
+2b51d38e8000-2b51d3ab7000 r--s 0440f000 00:13 67559                      /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/lib/rt.jar
+2b51d3ab7000-2b51d3ffe000 rw-p 00000000 00:00 0 
+2b51d4000000-2b51d4021000 rw-p 00000000 00:00 0 
+2b51d4021000-2b51d8000000 ---p 00000000 00:00 0 
+2b51d8000000-2b51d8021000 rw-p 00000000 00:00 0 
+2b51d8021000-2b51dc000000 ---p 00000000 00:00 0 
+2b51dc000000-2b51dc021000 rw-p 00000000 00:00 0 
+2b51dc021000-2b51e0000000 ---p 00000000 00:00 0 
+2b51e0000000-2b51e0021000 rw-p 00000000 00:00 0 
+2b51e0021000-2b51e4000000 ---p 00000000 00:00 0 
+2b51e4000000-2b51e4021000 rw-p 00000000 00:00 0 
+2b51e4021000-2b51e8000000 ---p 00000000 00:00 0 
+2b51e8000000-2b51e8021000 rw-p 00000000 00:00 0 
+2b51e8021000-2b51ec000000 ---p 00000000 00:00 0 
+2b51ec000000-2b51ec021000 rw-p 00000000 00:00 0 
+2b51ec021000-2b51f0000000 ---p 00000000 00:00 0 
+2b51f0000000-2b51f0021000 rw-p 00000000 00:00 0 
+2b51f0021000-2b51f4000000 ---p 00000000 00:00 0 
+2b51f4000000-2b51f4021000 rw-p 00000000 00:00 0 
+2b51f4021000-2b51f8000000 ---p 00000000 00:00 0 
+2b51f8000000-2b51f8021000 rw-p 00000000 00:00 0 
+2b51f8021000-2b51fc000000 ---p 00000000 00:00 0 
+2b51fc000000-2b51fc021000 rw-p 00000000 00:00 0 
+2b51fc021000-2b5200000000 ---p 00000000 00:00 0 
+2b5200000000-2b5200021000 rw-p 00000000 00:00 0 
+2b5200021000-2b5204000000 ---p 00000000 00:00 0 
+2b5204000000-2b5204021000 rw-p 00000000 00:00 0 
+2b5204021000-2b5208000000 ---p 00000000 00:00 0 
+2b5208000000-2b5208021000 rw-p 00000000 00:00 0 
+2b5208021000-2b520c000000 ---p 00000000 00:00 0 
+2b520c000000-2b520c021000 rw-p 00000000 00:00 0 
+2b520c021000-2b5210000000 ---p 00000000 00:00 0 
+2b5210000000-2b5210021000 rw-p 00000000 00:00 0 
+2b5210021000-2b5214000000 ---p 00000000 00:00 0 
+2b5214000000-2b5214021000 rw-p 00000000 00:00 0 
+2b5214021000-2b5218000000 ---p 00000000 00:00 0 
+2b5218000000-2b5218021000 rw-p 00000000 00:00 0 
+2b5218021000-2b521c000000 ---p 00000000 00:00 0 
+2b521c000000-2b521c021000 rw-p 00000000 00:00 0 
+2b521c021000-2b5220000000 ---p 00000000 00:00 0 
+2b5220000000-2b5220021000 rw-p 00000000 00:00 0 
+2b5220021000-2b5224000000 ---p 00000000 00:00 0 
+2b5224000000-2b5224021000 rw-p 00000000 00:00 0 
+2b5224021000-2b5228000000 ---p 00000000 00:00 0 
+2b5228000000-2b5228021000 rw-p 00000000 00:00 0 
+2b5228021000-2b522c000000 ---p 00000000 00:00 0 
+2b522c000000-2b522c021000 rw-p 00000000 00:00 0 
+2b522c021000-2b5230000000 ---p 00000000 00:00 0 
+2b5230000000-2b5230021000 rw-p 00000000 00:00 0 
+2b5230021000-2b5234000000 ---p 00000000 00:00 0 
+2b5234000000-2b5234021000 rw-p 00000000 00:00 0 
+2b5234021000-2b5238000000 ---p 00000000 00:00 0 
+2b5238000000-2b5238021000 rw-p 00000000 00:00 0 
+2b5238021000-2b523c000000 ---p 00000000 00:00 0 
+2b523c000000-2b523c021000 rw-p 00000000 00:00 0 
+2b523c021000-2b5240000000 ---p 00000000 00:00 0 
+2b5240000000-2b5240021000 rw-p 00000000 00:00 0 
+2b5240021000-2b5244000000 ---p 00000000 00:00 0 
+2b5244000000-2b5244021000 rw-p 00000000 00:00 0 
+2b5244021000-2b5248000000 ---p 00000000 00:00 0 
+2b5248000000-2b5248021000 rw-p 00000000 00:00 0 
+2b5248021000-2b524c000000 ---p 00000000 00:00 0 
+2b524c000000-2b524c021000 rw-p 00000000 00:00 0 
+2b524c021000-2b5250000000 ---p 00000000 00:00 0 
+2b5250000000-2b5250021000 rw-p 00000000 00:00 0 
+2b5250021000-2b5254000000 ---p 00000000 00:00 0 
+2b5254000000-2b5254021000 rw-p 00000000 00:00 0 
+2b5254021000-2b5258000000 ---p 00000000 00:00 0 
+2b5258000000-2b5258021000 rw-p 00000000 00:00 0 
+2b5258021000-2b525c000000 ---p 00000000 00:00 0 
+2b525c000000-2b525c021000 rw-p 00000000 00:00 0 
+2b525c021000-2b5260000000 ---p 00000000 00:00 0 
+2b5260000000-2b5260021000 rw-p 00000000 00:00 0 
+2b5260021000-2b5264000000 ---p 00000000 00:00 0 
+2b5264000000-2b5264021000 rw-p 00000000 00:00 0 
+2b5264021000-2b5268000000 ---p 00000000 00:00 0 
+2b5268000000-2b5268021000 rw-p 00000000 00:00 0 
+2b5268021000-2b526c000000 ---p 00000000 00:00 0 
+2b526c000000-2b526c021000 rw-p 00000000 00:00 0 
+2b526c021000-2b5270000000 ---p 00000000 00:00 0 
+2b5270000000-2b5270021000 rw-p 00000000 00:00 0 
+2b5270021000-2b5274000000 ---p 00000000 00:00 0 
+2b5274000000-2b5274021000 rw-p 00000000 00:00 0 
+2b5274021000-2b5278000000 ---p 00000000 00:00 0 
+2b5278000000-2b5278021000 rw-p 00000000 00:00 0 
+2b5278021000-2b527c000000 ---p 00000000 00:00 0 
+2b527c000000-2b527c021000 rw-p 00000000 00:00 0 
+2b527c021000-2b5280000000 ---p 00000000 00:00 0 
+2b5280000000-2b52c8096000 rw-p 00000000 00:00 0 
+2b52c8096000-2b52c8097000 ---p 00000000 00:00 0 
+2b52c8097000-2b52c8197000 rw-p 00000000 00:00 0 
+2b52c8197000-2b52c819a000 ---p 00000000 00:00 0 
+2b52c819a000-2b52c8298000 rw-p 00000000 00:00 0 
+2b52c8298000-2b52c829b000 ---p 00000000 00:00 0 
+2b52c829b000-2b52c8399000 rw-p 00000000 00:00 0 
+2b52c8399000-2b52c839c000 ---p 00000000 00:00 0 
+2b52c839c000-2b52c849a000 rw-p 00000000 00:00 0 
+2b52c849a000-2b52c849e000 ---p 00000000 00:00 0 
+2b52c849e000-2b52c859b000 rw-p 00000000 00:00 0 
+2b52c859b000-2b52c859f000 ---p 00000000 00:00 0 
+2b52c859f000-2b52c869c000 rw-p 00000000 00:00 0 
+2b52c869c000-2b52c86a0000 ---p 00000000 00:00 0 
+2b52c86a0000-2b52c879d000 rw-p 00000000 00:00 0 
+2b52c879d000-2b52c87a1000 ---p 00000000 00:00 0 
+2b52c87a1000-2b52c889e000 rw-p 00000000 00:00 0 
+2b52c889e000-2b52c88a2000 ---p 00000000 00:00 0 
+2b52c88a2000-2b52c899f000 rw-p 00000000 00:00 0 
+2b52c899f000-2b52c89a3000 ---p 00000000 00:00 0 
+2b52c89a3000-2b52c8aa0000 rw-p 00000000 00:00 0 
+2b52c8aa0000-2b52c8aa4000 ---p 00000000 00:00 0 
+2b52c8aa4000-2b52c8ba1000 rw-p 00000000 00:00 0 
+2b52c8ba1000-2b52c8ba5000 ---p 00000000 00:00 0 
+2b52c8ba5000-2b52c8ca2000 rw-p 00000000 00:00 0 
+2b52c8ca2000-2b52c8ca6000 ---p 00000000 00:00 0 
+2b52c8ca6000-2b52c8da3000 rw-p 00000000 00:00 0 
+2b52c8da3000-2b52c8da7000 ---p 00000000 00:00 0 
+2b52c8da7000-2b52c8ea4000 rw-p 00000000 00:00 0 
+2b52c8ea4000-2b52c8ea8000 ---p 00000000 00:00 0 
+2b52c8ea8000-2b52c8fa5000 rw-p 00000000 00:00 0 
+2b52c8fa5000-2b52c8fa9000 ---p 00000000 00:00 0 
+2b52c8fa9000-2b52c90a6000 rw-p 00000000 00:00 0 
+2b52c90a6000-2b52c90aa000 ---p 00000000 00:00 0 
+2b52c90aa000-2b52c91a7000 rw-p 00000000 00:00 0 
+2b52c91a7000-2b52c91ab000 ---p 00000000 00:00 0 
+2b52c91ab000-2b52c92a8000 rw-p 00000000 00:00 0 
+2b52c92a8000-2b52c92ac000 ---p 00000000 00:00 0 
+2b52c92ac000-2b52c93a9000 rw-p 00000000 00:00 0 
+2b52c93a9000-2b52c93ad000 ---p 00000000 00:00 0 
+2b52c93ad000-2b52c94aa000 rw-p 00000000 00:00 0 
+2b52c94aa000-2b52c94ae000 ---p 00000000 00:00 0 
+2b52c94ae000-2b52c95ab000 rw-p 00000000 00:00 0 
+2b52c95ab000-2b52c95af000 ---p 00000000 00:00 0 
+2b52c95af000-2b52c96ac000 rw-p 00000000 00:00 0 
+2b52c96ac000-2b52c96af000 ---p 00000000 00:00 0 
+2b52c96af000-2b52c97ad000 rw-p 00000000 00:00 0 
+2b52c97ad000-2b52c97ae000 ---p 00000000 00:00 0 
+2b52c97ae000-2b52c98ae000 rw-p 00000000 00:00 0 
+2b52c98ae000-2b52c98f6000 r--s 0041c000 00:2a 792434                     /home/gseeholzer/.beast/2.6/BEAST/lib/beast.jar
+2b52c98f6000-2b52ca076000 rw-p 00000000 00:00 0 
+2b52ca076000-2b52ca0f6000 ---p 00000000 00:00 0 
+2b52cc000000-2b52cc021000 rw-p 00000000 00:00 0 
+2b52cc021000-2b52d0000000 ---p 00000000 00:00 0 
+2b52d0000000-2b52d0021000 rw-p 00000000 00:00 0 
+2b52d0021000-2b52d4000000 ---p 00000000 00:00 0 
+2b52d4000000-2b52d4021000 rw-p 00000000 00:00 0 
+2b52d4021000-2b52d8000000 ---p 00000000 00:00 0 
+2b52d8000000-2b52d8021000 rw-p 00000000 00:00 0 
+2b52d8021000-2b52dc000000 ---p 00000000 00:00 0 
+2b52dc000000-2b52dc255000 rw-p 00000000 00:00 0 
+2b52dc255000-2b52e0000000 ---p 00000000 00:00 0 
+2b52e0000000-2b52e0189000 rw-p 00000000 00:00 0 
+2b52e0189000-2b52e4000000 ---p 00000000 00:00 0 
+2b52e4000000-2b52e41d2000 rw-p 00000000 00:00 0 
+2b52e41d2000-2b52e8000000 ---p 00000000 00:00 0 
+2b52e8000000-2b52e821e000 rw-p 00000000 00:00 0 
+2b52e821e000-2b52ec000000 ---p 00000000 00:00 0 
+2b52ec000000-2b52ec0f0000 rw-p 00000000 00:00 0 
+2b52ec0f0000-2b52f0000000 ---p 00000000 00:00 0 
+2b52f0000000-2b52f01d0000 rw-p 00000000 00:00 0 
+2b52f01d0000-2b52f4000000 ---p 00000000 00:00 0 
+2b52f4000000-2b52f40a9000 rw-p 00000000 00:00 0 
+2b52f40a9000-2b52f8000000 ---p 00000000 00:00 0 
+2b52f8000000-2b52f809b000 rw-p 00000000 00:00 0 
+2b52f809b000-2b52fc000000 ---p 00000000 00:00 0 
+2b52fc000000-2b52fc1ff000 rw-p 00000000 00:00 0 
+2b52fc1ff000-2b5300000000 ---p 00000000 00:00 0 
+2b5300000000-2b530014b000 rw-p 00000000 00:00 0 
+2b530014b000-2b5304000000 ---p 00000000 00:00 0 
+2b5304000000-2b5304086000 rw-p 00000000 00:00 0 
+2b5304086000-2b5308000000 ---p 00000000 00:00 0 
+2b5308000000-2b5308943000 rw-p 00000000 00:00 0 
+2b5308943000-2b530c000000 ---p 00000000 00:00 0 
+2b530c000000-2b530c094000 rw-p 00000000 00:00 0 
+2b530c094000-2b5310000000 ---p 00000000 00:00 0 
+2b5310000000-2b5310115000 rw-p 00000000 00:00 0 
+2b5310115000-2b5314000000 ---p 00000000 00:00 0 
+2b5314000000-2b53140f8000 rw-p 00000000 00:00 0 
+2b53140f8000-2b5318000000 ---p 00000000 00:00 0 
+2b5318000000-2b53181d8000 rw-p 00000000 00:00 0 
+2b53181d8000-2b531c000000 ---p 00000000 00:00 0 
+2b531c000000-2b531c09e000 rw-p 00000000 00:00 0 
+2b531c09e000-2b5320000000 ---p 00000000 00:00 0 
+2b5320000000-2b5320093000 rw-p 00000000 00:00 0 
+2b5320093000-2b5324000000 ---p 00000000 00:00 0 
+2b5324000000-2b5324021000 rw-p 00000000 00:00 0 
+2b5324021000-2b5328000000 ---p 00000000 00:00 0 
+2b5328000000-2b5328021000 rw-p 00000000 00:00 0 
+2b5328021000-2b532c000000 ---p 00000000 00:00 0 
+7ffd95073000-7ffd95094000 rw-p 00000000 00:00 0                          [stack]
+7ffd9513c000-7ffd9513e000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+java_command: beast.app.beastapp.BeastLauncher -overwrite -java -seed 90729128 beast.xml
+java_class_path (initial): /home/gseeholzer/programs/beast/lib/launcher.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=./:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/gseeholzer/programs/bamUtil/bin:/home/gseeholzer/programs/samtools-1.10/bin:/home/gseeholzer/programs/angsd:/home/gseeholzer/programs/angsd/misc:/home/gseeholzer/programs/satsuma2-master/bin:/home/gseeholzer/programs/pcangsd:/home/gseeholzer/programs/evalAdmix:/home/gseeholzer/programs/htslib-1.10.2/bin:/home/gseeholzer/programs/ngsRelate:/home/gseeholzer/programs/vcftools_0.1.13/bin:/home/gseeholzer/programs/bcftools-1.10.2/bin:/home/gseeholzer/programs/gsl/bin:/home/gseeholzer/programs/ngsTools/ngsDist:/home/gseeholzer/programs/ngsTools/ngsF:/home/gseeholzer/programs/ngsTools/ngsF-HMM:/home/gseeholzer/programs/ngsTools/ngsLD:/home/gseeholzer/programs/ngsTools/ngsPopGen:/home/gseeholzer/programs/ngsTools/ngsSim:/home/gseeholzer/programs/ngsTools/ngsUtils:/home/gseeholzer/programs/fastme-2.1.6.1/src:/home/gseeholzer/programs/beast/bin:/home/gseeholzer/.local/bin:/home/gseeholzer/bin
+LD_LIBRARY_PATH=/usr/local/lib
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xab5320], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xab5320], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x8ac6b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x8ac6b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x8ac6b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x8ac6b0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x8ac560], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x8ac770], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x8ac770], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x8ac770], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x8ac770], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:CentOS Linux release 7.5.1804 (Core) 
+
+uname:Linux 3.10.0-862.3.3.el7.x86_64 #1 SMP Fri Jun 15 04:15:27 UTC 2018 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK infinity, CORE 0k, NPROC 1030318, NOFILE 65000, AS infinity
+load average:53.66 36.10 35.99
+
+/proc/meminfo:
+MemTotal:       264015960 kB
+MemFree:         1336220 kB
+MemAvailable:    3363688 kB
+Buffers:              64 kB
+Cached:          6933188 kB
+SwapCached:            0 kB
+Active:         255145376 kB
+Inactive:        1970732 kB
+Active(anon):   255145368 kB
+Inactive(anon):  1970676 kB
+Active(file):          8 kB
+Inactive(file):       56 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:      250040416 kB
+Mapped:            90164 kB
+Shmem:           6933188 kB
+Slab:            3028320 kB
+SReclaimable:    2797988 kB
+SUnreclaim:       230332 kB
+KernelStack:       85920 kB
+PageTables:       567572 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    132007980 kB
+Committed_AS:   529478960 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      717824 kB
+VmallocChunk:   34224732156 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   2213888 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      250364 kB
+DirectMap2M:    14297088 kB
+DirectMap1G:    255852544 kB
+
+
+CPU:total 64 (initial active 64) (16 cores per cpu, 2 threads per core) family 6 model 79 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 0
+cpu cores	: 16
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 1
+cpu cores	: 16
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 2
+cpu cores	: 16
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 3
+cpu cores	: 16
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 4
+cpu cores	: 16
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 5
+cpu cores	: 16
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 6
+cpu cores	: 16
+apicid		: 12
+initial apicid	: 12
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 7
+cpu cores	: 16
+apicid		: 14
+initial apicid	: 14
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 8
+cpu cores	: 16
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 9
+cpu cores	: 16
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 10
+cpu cores	: 16
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 11
+cpu cores	: 16
+apicid		: 22
+initial apicid	: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 12
+cpu cores	: 16
+apicid		: 24
+initial apicid	: 24
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 13
+cpu cores	: 16
+apicid		: 26
+initial apicid	: 26
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 14
+cpu cores	: 16
+apicid		: 28
+initial apicid	: 28
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 15
+cpu cores	: 16
+apicid		: 30
+initial apicid	: 30
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 0
+cpu cores	: 16
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 1
+cpu cores	: 16
+apicid		: 34
+initial apicid	: 34
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 2
+cpu cores	: 16
+apicid		: 36
+initial apicid	: 36
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 3
+cpu cores	: 16
+apicid		: 38
+initial apicid	: 38
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 20
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 4
+cpu cores	: 16
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 21
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 5
+cpu cores	: 16
+apicid		: 42
+initial apicid	: 42
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 22
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 6
+cpu cores	: 16
+apicid		: 44
+initial apicid	: 44
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 23
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 7
+cpu cores	: 16
+apicid		: 46
+initial apicid	: 46
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 24
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 8
+cpu cores	: 16
+apicid		: 48
+initial apicid	: 48
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 25
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 9
+cpu cores	: 16
+apicid		: 50
+initial apicid	: 50
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 26
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 10
+cpu cores	: 16
+apicid		: 52
+initial apicid	: 52
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 27
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 11
+cpu cores	: 16
+apicid		: 54
+initial apicid	: 54
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 28
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 12
+cpu cores	: 16
+apicid		: 56
+initial apicid	: 56
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 29
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 13
+cpu cores	: 16
+apicid		: 58
+initial apicid	: 58
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 30
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 14
+cpu cores	: 16
+apicid		: 60
+initial apicid	: 60
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 31
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 15
+cpu cores	: 16
+apicid		: 62
+initial apicid	: 62
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 32
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 0
+cpu cores	: 16
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 33
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 1
+cpu cores	: 16
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 34
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 2
+cpu cores	: 16
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 35
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 3
+cpu cores	: 16
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 36
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 4
+cpu cores	: 16
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 37
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 5
+cpu cores	: 16
+apicid		: 11
+initial apicid	: 11
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 38
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 6
+cpu cores	: 16
+apicid		: 13
+initial apicid	: 13
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 39
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 7
+cpu cores	: 16
+apicid		: 15
+initial apicid	: 15
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 40
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 8
+cpu cores	: 16
+apicid		: 17
+initial apicid	: 17
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 41
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 9
+cpu cores	: 16
+apicid		: 19
+initial apicid	: 19
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 42
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 10
+cpu cores	: 16
+apicid		: 21
+initial apicid	: 21
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 43
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 11
+cpu cores	: 16
+apicid		: 23
+initial apicid	: 23
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 44
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 12
+cpu cores	: 16
+apicid		: 25
+initial apicid	: 25
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 45
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 13
+cpu cores	: 16
+apicid		: 27
+initial apicid	: 27
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 46
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 14
+cpu cores	: 16
+apicid		: 29
+initial apicid	: 29
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 47
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 0
+siblings	: 32
+core id		: 15
+cpu cores	: 16
+apicid		: 31
+initial apicid	: 31
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.55
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 48
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 0
+cpu cores	: 16
+apicid		: 33
+initial apicid	: 33
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 49
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 1
+cpu cores	: 16
+apicid		: 35
+initial apicid	: 35
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 50
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 2
+cpu cores	: 16
+apicid		: 37
+initial apicid	: 37
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 51
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 3
+cpu cores	: 16
+apicid		: 39
+initial apicid	: 39
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 52
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 4
+cpu cores	: 16
+apicid		: 41
+initial apicid	: 41
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 53
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 5
+cpu cores	: 16
+apicid		: 43
+initial apicid	: 43
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 54
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 6
+cpu cores	: 16
+apicid		: 45
+initial apicid	: 45
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 55
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 7
+cpu cores	: 16
+apicid		: 47
+initial apicid	: 47
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 56
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 8
+cpu cores	: 16
+apicid		: 49
+initial apicid	: 49
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 57
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 9
+cpu cores	: 16
+apicid		: 51
+initial apicid	: 51
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 58
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 10
+cpu cores	: 16
+apicid		: 53
+initial apicid	: 53
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 59
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 11
+cpu cores	: 16
+apicid		: 55
+initial apicid	: 55
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 60
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 12
+cpu cores	: 16
+apicid		: 57
+initial apicid	: 57
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 61
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 13
+cpu cores	: 16
+apicid		: 59
+initial apicid	: 59
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 62
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 14
+cpu cores	: 16
+apicid		: 61
+initial apicid	: 61
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 63
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2697A v4 @ 2.60GHz
+stepping	: 1
+microcode	: 0xb00001f
+cpu MHz		: 2600.000
+cache size	: 40960 KB
+physical id	: 1
+siblings	: 32
+core id		: 15
+cpu cores	: 16
+apicid		: 63
+initial apicid	: 63
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 20
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+bogomips	: 5187.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 264015960k(1328492k free), swap 0k(0k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.171-b10) for linux-amd64 JRE (1.8.0_171-b10), built on May 22 2018 01:32:00 by "mockbuild" with gcc 4.8.5 20150623 (Red Hat 4.8.5-28)
+
+time: Sun Dec  6 12:05:48 2020
+elapsed time: 31 seconds (0d 0h 0m 31s)
+
