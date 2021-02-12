@@ -58,6 +58,7 @@ scenario.key = cbind(c('FULL','SBE1','SBE2','SBE3'),c('Pre-Extinction','Post-Ext
 w <- ncol(alt)/max(dim(alt))
 h <- nrow(alt)/max(dim(alt))
 
+
 ## Set up appropriately sized device with no borders and required coordinate system    
 ## png("eg.png", width=480*w, height=480*h)
 i = 'SBE2'

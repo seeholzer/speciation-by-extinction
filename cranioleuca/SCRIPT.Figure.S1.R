@@ -27,14 +27,18 @@ EC0 = readShapeSpatial('map_layers/ECU_adm_shp/ECU_adm0.shp')
 EC1 = readShapeSpatial('map_layers/ECU_adm_shp/ECU_adm1.shp')
 alt = raster('map_layers/alt_CranCrop.grd')
 alt = crop(alt,extent(ex))
-range = readShapeSpatial('map_layers/C.ant.FULL.shp')
+range = readShapeSpatial('map_layers/C.ant.scenarios.shp')
+C.ant.FULL  = readShapeSpatial('map_layers/C.ant.FULL.shp')
 
+colfunc = colorRampPalette(c("#425BD3", "#E8B618"))
+
+color.key = data.frame(scenario=c('C.ant.SBE3','C.ant.SBE2','C.ant.SBE1','FULL','C.bar.SBE1','C.bar.SBE2','C.bar.SBE3'),col=colfunc(7))
 
 scenario.key = cbind(c('FULL','SBE1','SBE2','SBE3'),c('Pre-Extinction','Post-Extinction 1','Post-Extinction 2','Post-Extinction 3'))
 
 #plot sampling map for each geographic variant of the simulated extinction scenarios SBE1-SBE3
 #Figure S1 = v1, v2, v3
-v = 'v2'
+v = 'v1'
 for(v in c('v1','v2','v3')){
 
 	popdata = read.delim('cran.SBE.scenarios.txt',stringsAsFactors=F)
@@ -75,7 +79,7 @@ for(v in c('v1','v2','v3')){
 	plot(EC0,add=T,lwd=0.75,border=admin.lines)
 	plot(PE1,add=T,lwd=0.1,border=admin.lines)
 	plot(EC1,add=T,lwd=0.1,border=admin.lines)
-	plot(range,add=T,col=add.alpha('#9ECAE1',.5),border=add.alpha('#9ECAE1',.5))
+	plot(C.ant.FULL,add=T,col=add.alpha('#9ECAE1',.5),border=add.alpha('#9ECAE1',.5))
 	
 	key = data.frame(scenario=c('FULL','SBE3','SBE2','SBE1'),
 						new.name=c('Pre-Extinction','Post-Extinction 3','Post-Extinction 2','Post-Extinction 1'),
@@ -90,6 +94,27 @@ for(v in c('v1','v2','v3')){
 		points(popdata[i,'long'],popdata[i,'lat'],pch=21,cex=2,bg=bg[i],col='grey50',lwd=1)
 		text(popdata[i,'long'],popdata[i,'lat'],c(1:nrow(popdata))[i],cex=.5,col=text.col[i])
 	}
+	
+	if(v == 'v1'){
+		x = -77.5
+		y = -6.25
+		text(x,y,'Origin of',cex=.75,adj=c(0,.5),col='#543005')
+		text(x,y-.25,'Local Extinction',cex=.75,adj=c(0,.5),col='#543005')
+	}
+
+	if(v == 'v2'){
+		x = -77.4
+		y = -7.5
+		text(x,y,'Origin of',cex=.75,adj=c(0,.5),col='#543005')
+		text(x,y-.25,'Local Extinction',cex=.75,adj=c(0,.5),col='#543005')
+	}
+	
+	if(v == 'v3'){
+		x = -77.5
+		y = -8.5
+		text(x,y,'Origin of',cex=.75,adj=c(0,.5),col='#543005')
+		text(x,y-.25,'Local Extinction',cex=.75,adj=c(0,.5),col='#543005')
+	}	
 	
 	#populations removed in each scenario
 	text(key$x,key$y,key[,'new.name'],cex=.75,adj=c(0,0))

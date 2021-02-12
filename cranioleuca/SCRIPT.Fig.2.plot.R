@@ -72,7 +72,7 @@ png(paste0('cranioleuca/Fig.2.empirical.support.horizontal.png'),
 	
 	lines(1:4,deltaBIC,col=col,lty=lty)
 	points(1:4,deltaBIC,col=col,bg='grey50',pch=pch,cex=1.5,lwd=.5)
-
+	
 	col = 'grey50'
 	pch = 21
 	lty = 1
@@ -86,9 +86,6 @@ png(paste0('cranioleuca/Fig.2.empirical.support.horizontal.png'),
 
 
 dev.off()
-
-
-
 
 
 

@@ -38,7 +38,6 @@ all.traits = c(morph.traits,plumage.traits)
 traits = list(morphology=morph.traits,plumage=plumage.traits,combined=all.traits)
 
 
-
 #Simulated Extinction Scenarios
 popdata = read.delim('cran.SBE.scenarios.txt',stringsAsFactors=F)
 popdata = popdata[!popdata$pop %in% 'curtata', ]
@@ -111,6 +110,7 @@ for(i in 1:length(scenario.trait)){
 		results.list[[scenario.trait[i]]]$p = p
 
 }#scenario loop
+
 
 #positive values indicates support for two species
 #negative values indicates support for one species 

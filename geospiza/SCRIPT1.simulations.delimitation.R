@@ -1,8 +1,8 @@
 ##################################################
 #	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models
 #	Script 1 - mclust modelling
-#	Usage: Best if run in terminal
-#		$ Rscript 
+#	Usage: Best to run in parallel in terminal
+#		$ Rscript SCRIPT1.simulations.delimitation.R
 #	- code adapted from Cadena et al. 2018
 #	Author: Glenn F. Seeholzer
 #	Update history at github.com/seeholzer/speciation-by-extinction

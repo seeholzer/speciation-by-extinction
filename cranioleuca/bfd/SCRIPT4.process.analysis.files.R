@@ -18,13 +18,13 @@
 library(dplyr)
 
 #setwd to analysis files for a given dataset/run
-setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/bfd')
+setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/')
 
 #path to analysis files
-path = 'runs/F1r1/analysis.files'
-path = 'runs/F2/analysis.files'
-path = 'runs/F3/analysis.files'
-path = 'runs/F4/analysis.files'
+path = 'bfd/runs/F1r1/analysis.files'
+path = 'bfd/runs/F2/analysis.files'
+path = 'bfd/runs/F3/analysis.files'
+path = 'bfd/runs/F4/analysis.files'
 
 ##################################################
 # 1) Get paths of analysis files
@@ -162,14 +162,15 @@ for(i in 1:nrow(sum)){
 
 # From BFD* tutorial
 # BF = 2 x (MLE1 - MLE0)
-#	MLE0 is the reference model, in all cases, 1sp.
+#	MLE0 is the reference model, in all cases, 1 species
 # 	A positive BF value indicates support in favor of model 1 (MLE1).
 #	A negative BF value indicates support in favor of model 0 (MLE0).
 
-#If the above for Bayes Factors works for BIC
-#then, for the deltaBIC below
-#positive values indicates support for two species
-#negative values indicates support for one species 
+# The BF scale is as follows:
+# 0 < BF < 2 is not worth more than a bare mention
+# 2 < BF < 6 is positive evidence
+# 6 < BF < 10 is strong support
+# BF > 10 is decisive.
 
 sum$BF = 2*(sum$MLE.2sp - sum$MLE.1sp)
 

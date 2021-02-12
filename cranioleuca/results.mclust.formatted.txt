@@ -1,0 +1,5 @@
+Scenario	v1 BIC.1sp	v1 BIC.2sp	v1 deltaBIC	v2 BIC.1sp	v2 BIC.2sp	v2 deltaBIC	v3 BIC.1sp	v3 BIC.2sp	v3 deltaBIC
+Pre-Extinction	-8359	-8378	-19	-8359	-8378	-19	-8359	-8378	-19
+Post-Extinction 1	-7257	-7232	25	-7345	-7366	-21	-7554	-7576	-22
+Post-Extinction 2	-5632	-5591	41	-5390	-5389	1	-5808	-5824	-16
+Post-Extinction 3	-4156	-4091	65	-4076	-3979	98	-4441	-4422	19
