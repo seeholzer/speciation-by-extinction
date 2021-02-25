@@ -30,3 +30,10 @@ SU = Stanford University
 
 - Cadena, C. D., Zapata, F. & Jiménez, I. Issues and perspectives in species delimitation using phenotypic data: Atlantean evolution in Darwin’s Finches. Syst. Biol. 67, 181–194 (2018).
 - Mckay, B. D. & Zink, R. M. Sisyphean evolution in Darwin’s finches. Biol. Rev. 90, 689–698 (2015).
+
+
+## Bird Subspecies
+
+Data and script to calculate the number of bird species with three or more subspecies based on the Clements/eBird taxonomy.
+
+- Clements, J. F. et al. The eBird/Clements checklist of birds of the world: v2019. (2019)
