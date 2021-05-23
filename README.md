@@ -1,6 +1,6 @@
 # speciation-by-extinction
 
-This repository contains data and scripts to reproduce analyses in Seeholzer & Brumfield 2021 "Speciation-by-Extinction".
+This repository contains data and scripts to reproduce analyses in "Speciation-by-Extinction".
 
 
 ######################################################################

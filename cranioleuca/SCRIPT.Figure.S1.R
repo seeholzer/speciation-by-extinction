@@ -4,8 +4,6 @@
 #		for Cranioleuca antisiensisSpecies delimitation using Normal Mixture Models 
 #		for scenarios of simulated extinction in Cranioleuca antisiensis.
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #	***Change working directory to local path***

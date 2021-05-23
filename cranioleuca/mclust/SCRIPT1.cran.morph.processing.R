@@ -2,8 +2,6 @@
 #	Description: Species delimitation using Normal Mixture Models for scenarios of simulated extinction in Cranioleuca antisiensis
 #	Script 1 - Bayesian PCA imputation of missing values in morphological data  
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 

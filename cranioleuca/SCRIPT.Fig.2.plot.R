@@ -1,8 +1,6 @@
 ##################################################
 #	Description: Figure 3 - plot of mclust and BFD* results
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #	***Change working directory to local path***

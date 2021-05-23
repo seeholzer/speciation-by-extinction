@@ -1,8 +1,6 @@
 ##################################################
 #	Description: Create maps for Figure 2
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #	***Change working directory to local path***

@@ -2,8 +2,6 @@
 #	Description: Species delimitation using Normal Mixture Models for scenarios of simulated extinction in Cranioleuca antisiensis
 #	Script 2 - PCA of plumage color coordinates into PCA for each plumage patch   
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #	***Change working directory to local path***

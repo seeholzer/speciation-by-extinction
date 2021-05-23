@@ -9,8 +9,6 @@
 #	>module load R-3.4.1
 #	>Rscript SCRIPT3.collate.analysis.files.R [target.directory]
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 options(scipen=999) #suppress scientific notation
 

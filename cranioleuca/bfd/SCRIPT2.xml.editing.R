@@ -11,8 +11,6 @@
 #	- a template PBS job must also be present
 #	- both are named [dataset].xml or [dataset].job
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 options(scipen=999) #suppress scientific notation
 

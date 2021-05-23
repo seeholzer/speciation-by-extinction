@@ -2,8 +2,6 @@
 #	Description: Create summary tables of reuslts of quantitative species delimitation for 
 #	phenotypic and genetic data. Combined manually into Table S1.
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 library(plyr)

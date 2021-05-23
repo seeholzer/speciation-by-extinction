@@ -2,8 +2,6 @@
 #	Description: Species delimitation using Normal Mixture Models for scenarios of simulated extinction in Cranioleuca antisiensis
 #	Script 3 - mclust analysis of phenotypic data with simulated extinction 
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #	***Change working directory to local path***

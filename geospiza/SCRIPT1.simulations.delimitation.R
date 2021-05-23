@@ -4,8 +4,7 @@
 #	Usage: Best to run in parallel in terminal
 #		$ Rscript SCRIPT1.simulations.delimitation.R
 #	- code adapted from Cadena et al. 2018
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
+#
 ##################################################
 
 #	***Set working directory to local path***

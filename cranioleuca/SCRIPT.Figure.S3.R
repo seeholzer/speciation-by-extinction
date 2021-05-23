@@ -3,8 +3,7 @@
 #	simulated extinction scenarios for Cranioleuca antisiensis
 #		- produces maps of mclust cluster assignments to each population for all extinction scenarios and versions
 #		- these are combined into a single png file in adobe illustrator to make Figure S2
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
+#
 ##################################################
 
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/')

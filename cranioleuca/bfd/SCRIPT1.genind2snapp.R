@@ -4,8 +4,6 @@
 #	Goal: 	1. Create nexus file of 2 individuals per population and 100 loci for input into Beauti 
 #				to create template .xml for use in SCRIPT2.xml.editing.R 
 #
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 
 #load packages

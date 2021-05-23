@@ -1,7 +1,7 @@
 ##################################################
 #	Description: Script to calculate the number of bird species with three or more subspecies
 #
-#	Author: Glenn F. Seeholzer
+#	Author: N/A
 #	Update history at github.com/seeholzer/speciation-by-extinction
 ##################################################
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/bird.subspecies')

@@ -1,8 +1,7 @@
 ##################################################
 #	Description: Species delimitation of Darwin's Finch morphological dataset with simulated extinction using normal mixture models
 #	Script 4 - exploratory plotting
-#	Author: Glenn F. Seeholzer
-#	Update history at github.com/seeholzer/speciation-by-extinction
+#
 ##################################################
 
 #	***Set working directory to local path***
