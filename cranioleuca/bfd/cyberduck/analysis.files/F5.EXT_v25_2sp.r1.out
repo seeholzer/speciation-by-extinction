@@ -1,0 +1,342 @@
+pbsworkdir
+/home/lmoreira/nas3/bfd/runs/F5
+./:/home/lmoreira/programs/miniconda3/condabin:/home/lmoreira/perl5/perlbrew/bin:/home/lmoreira/perl5/perlbrew/perls/perl-5.28.0/bin:/home/lmoreira/programs/H-scan:/home/lmoreira/programs/parallel-20201222/bin:/home/lmoreira/programs/psmc:/home/lmoreira/programs/AGAT/bin:/home/lmoreira/programs/Bio-MUST-Apps-HmmCleaner-0.180750/bin:/home/lmoreira/programs/discoal:/home/lmoreira/programs/diploSHIC:/home/lmoreira/programs/samblaster:/home/lmoreira/nas3/programs/lumpy-sv/bin:/home/lmoreira/nas3/programs/boost_1_57_0:/home/lmoreira/nas3/programs/pandoc/bin:/home/lmoreira/nas3/programs/easySFS:/home/lmoreira/nas3/programs/SNPGenie:/home/lmoreira/nas3/programs/bedops/bin:/home/lmoreira/nas3/programs/gffread:/home/lmoreira/nas3/programs/gmap-2020-03-12/bin:/home/lmoreira/nas3/programs/LDhat:/home/lmoreira/nas3/programs/LDhelmet_v1.10:/home/lmoreira/nas3/programs/gm_et_linux_64:/home/lmoreira/nas3/programs/BRAKER/scripts:/home/lmoreira/nas3/programs/ngsLD:/home/lmoreira/nas3/programs/fastq-pair/build:/home/lmoreira/nas3/programs/fastq_screen_v0.14.0:/home/lmoreira/nas3/programs/iqtree-1.6.8-Linux/bin:/home/lmoreira/nas3/programs/satsuma-code:/home/lmoreira/nas3/programs/bcftools:/home/lmoreira/nas3/programs/mapping-iterative-assembler/bin:/home/lmoreira/nas3/programs/vcf2phylip:/home/lmoreira/nas3/programs/LFMM_CL_v1.5/bin:/home/lmoreira/ANGSD_pipeline/PCAngsd/pcangsd:/home/lmoreira/nas3/programs/angsd/misc:/home/lmoreira/nas3/programs/angsd:/home/lmoreira/nas3/programs/bamUtil/bin:/home/lmoreira/nas2/PopSizeABC/comp_stat/ms:/home/lmoreira/nas3/programs/bioawk:/home/lmoreira/nas3/programs/seqkit:/home/lmoreira/nas3/programs/G-PhoCS/bin:/home/lmoreira/nas3/programs/treemix-1.13/bin:/home/lmoreira/nas3/programs/fastx_toolkit_0.0.13/bin:/home/lmoreira/nas3/programs/PopLDdecay/bin:/home/lmoreira/nas3/programs/plink1.9:/home/lmoreira/nas3/programs/htslib-1.9/bin:/home/lmoreira/nas3/programs/seqtk:/home/lmoreira/nas3/programs/vcftools/bin:/home/lmoreira/nas3/programs/qualimap_v2.2.1:/home/lmoreira/nas3/programs/gatk-4.0.3.0:/home/lmoreira/nas3/programs/fsc26_linux64:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/lmoreira/programs/mugsy_x86-64-v1r2.2/:/home/lmoreira/programs/mugsy_x86-64-v1r2.2//mapping:/home/lmoreira/programs/JustOrthologs:/home/lmoreira/programs/beast/bin/:/home/lmoreira/.local/bin:/home/lmoreira/bin
+Mon Nov 22 23:44:45 EST 2021
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+
+                        BEAST v2.6.6, 2002-2021
+             Bayesian Evolutionary Analysis Sampling Trees
+                       Designed and developed by
+ Remco Bouckaert, Alexei J. Drummond, Andrew Rambaut & Marc A. Suchard
+                                    
+                   Centre for Computational Evolution
+                         University of Auckland
+                       r.bouckaert@auckland.ac.nz
+                        alexei@cs.auckland.ac.nz
+                                    
+                   Institute of Evolutionary Biology
+                        University of Edinburgh
+                           a.rambaut@ed.ac.uk
+                                    
+                    David Geffen School of Medicine
+                 University of California, Los Angeles
+                           msuchard@ucla.edu
+                                    
+                      Downloads, Help & Resources:
+                           http://beast2.org/
+                                    
+  Source code distributed under the GNU Lesser General Public License:
+                   http://github.com/CompEvol/beast2
+                                    
+                           BEAST developers:
+   Alex Alekseyenko, Trevor Bedford, Erik Bloomquist, Joseph Heled, 
+ Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li, 
+Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel, 
+          Oliver Pybus, Tim Vaughan, Chieh-Hsi Wu, Walter Xie
+                                    
+                               Thanks to:
+          Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Random number seed: 1637642686242
+
+File: F5.EXT_v25_2sp.r1.xml seed: 1637642686242 threads: 32
+Loading package BEAST v2.6.6
+Loading package BEASTLabs v1.9.7
+Loading package MODEL_SELECTION v1.5.3
+Loading package SNAPP v1.5.2
+Loading package BEAST v2.6.6
+Alignment(bfd)
+  40 taxa
+  100 sites
+  100 patterns
+
+ant: 100 17
+bar: 100 17
+cur: 100 5
+Data(snap.bfd)
+  3 taxa
+  100 sites
+  69 patterns
+
+Seq: seq_Amotape_B67243.Tumbes.Amotape
+Seq: seq_Amotape_B67257.Tumbes.Amotape4
+Seq: seq_Canchaque_B72873.Piura.Canchaque4
+Seq: seq_Canchaque_B72878.Piura.Canchaque7
+Seq: seq_Llama_B72883.Cajamarca.Llama3
+Seq: seq_Llama_B72884.Cajamarca.Llama6
+Seq: seq_Porculla_B72863.Piura.Porculla
+Seq: seq_Porculla_B72866.Piura.Porculla4
+Seq: seq_Carpish_B72761.Huanuco.Acomayo3
+Seq: seq_Carpish_B72772.Huanuco.Mitotambo2
+Seq: seq_Quichas_B72777.Lima.Quichas2
+Seq: seq_Quichas_B72778.Lima.Quichas
+Seq: seq_Huamatanga_B72889.Lima.Huamatanga7
+Seq: seq_Huamatanga_B72892.Lima.Huamatanga7
+Seq: seq_LaQuinua_B72753.Pasco.LaQuinua1
+Seq: seq_LaQuinua_B72756.Pasco.LaQuinua3
+Seq: seq_curtata_cra.cur.B60322
+Seq: seq_curtata_cra.cur.B81753
+ant: 96 17
+bar: 96 17
+cur: 96 5
+3 taxa
+96 sites with weight 100
+70 patterns
+Rate prior = gamma
+Log Likelihood Correction = -981.1044353014495
+===============================================================================
+Citations for this model:
+
+Bouckaert, Remco, Timothy G. Vaughan, Jo?lle Barido-Sottani, Sebasti?n Duch?ne, Mathieu Fourment, 
+Alexandra Gavryushkina, Joseph Heled, Graham Jones, Denise K?hnert, Nicola De Maio, Michael Matschiner, 
+F?bio K. Mendes, Nicola F. M?ller, Huw A. Ogilvie, Louis du Plessis, Alex Popinga, Andrew Rambaut, 
+David Rasmussen, Igor Siveroni, Marc A. Suchard, Chieh-Hsi Wu, Dong Xie, Chi Zhang, Tanja Stadler, 
+Alexei J. Drummond 
+  BEAST 2.5: An advanced software platform for Bayesian evolutionary analysis. 
+  PLoS computational biology 15, no. 4 (2019): e1006650.
+
+David Bryant, Remco Bouckaert, Joseph Felsenstein, Noah Rosenberg, Arindam RoyChoudhury. Inferring Species Trees Directly from Biallelic Genetic Markers: Bypassing Gene Trees in a Full Coalescent Analysis. Mol. Biol. Evol. 29(8):1917-1932, 2012
+
+===============================================================================
+Starting step 0
+Starting step 1
+Starting step 2
+Starting step 3
+Starting step 4
+Starting step 5
+Starting step 6
+Starting step 7
+Starting step 8
+Starting step 9
+Starting step 10
+Starting step 11
+Starting step 12
+Starting step 13
+Starting step 14
+Starting step 15
+Starting step 16
+Starting step 18
+Starting step 17
+Starting step 19
+Starting step 20
+Starting step 21
+Starting step 22
+Starting step 23
+Finished step 14
+Finished step 12
+Finished step 13
+Finished step 4
+Finished step 6
+Finished step 17
+Finished step 23
+Finished step 16
+Finished step 11
+Finished step 19
+Finished step 21
+Finished step 20
+Finished step 22
+Finished step 8
+Finished step 18
+Finished step 9
+Finished step 10
+Finished step 7
+Finished step 5
+Finished step 15
+Finished step 2
+Finished step 3
+Finished step 1
+Finished step 0
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step0/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[0 ] = -1547.5005046022898
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step1/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[1 ] = -1547.8787176099006
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step2/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[2 ] = -1548.3822076227566
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step3/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[3 ] = -1548.7577835875095
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step4/likelihood.log, burnin 20%, skipping 59 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[4 ] = -1549.3735014575047
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step5/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[5 ] = -1549.986895876345
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step6/likelihood.log, burnin 20%, skipping 61 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[6 ] = -1550.6872581581117
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step7/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[7 ] = -1551.1290235172953
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step8/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[8 ] = -1551.5302571043676
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step9/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[9 ] = -1552.0821970407287
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step10/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[10 ] = -1552.8406389850345
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step11/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[11 ] = -1553.1725577978873
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v25_2sp.r1/step12/likelihood.log, burnin 20%, skipping 0 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+Fatal exception: 1
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at beast.util.LogAnalyser.calcStats(Unknown Source)
+	at beast.util.LogAnalyser.<init>(Unknown Source)
+	at beast.util.LogAnalyser.<init>(Unknown Source)
+	at beast.inference.PathSampleAnalyser.estimateMarginalLikelihood(Unknown Source)
+	at beast.inference.PathSampleAnalyser.estimateMarginalLikelihood(Unknown Source)
+	at beast.inference.PathSampler.analyse(Unknown Source)
+	at beast.inference.PathSampler.doRuns(Unknown Source)
+	at beast.inference.PathSampler.run(Unknown Source)
+	at beast.app.BeastMCMC.run(Unknown Source)
+	at beast.app.beastapp.BeastMain.<init>(Unknown Source)
+	at beast.app.beastapp.BeastMain.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at beast.app.beastapp.BeastLauncher.run(Unknown Source)
+	at beast.app.beastapp.BeastLauncher.main(Unknown Source)
+Fatal exception: 1
+java.lang.RuntimeException: An error was encounted. Terminating BEAST
+	at beast.app.util.ErrorLogHandler.publish(Unknown Source)
+	at java.util.logging.Logger.log(Logger.java:738)
+	at java.util.logging.Logger.doLog(Logger.java:765)
+	at java.util.logging.Logger.log(Logger.java:788)
+	at java.util.logging.Logger.severe(Logger.java:1464)
+	at beast.app.beastapp.BeastMain.<init>(Unknown Source)
+	at beast.app.beastapp.BeastMain.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at beast.app.beastapp.BeastLauncher.run(Unknown Source)
+	at beast.app.beastapp.BeastLauncher.main(Unknown Source)
+
+real	378m34.725s
+user	7225m48.108s
+sys	154m48.998s

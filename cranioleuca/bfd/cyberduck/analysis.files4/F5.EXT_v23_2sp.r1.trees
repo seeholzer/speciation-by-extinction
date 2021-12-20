@@ -1,0 +1,16 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=3;
+		Taxlabels
+			ant
+			bar
+			cur
+			;
+End;
+Begin trees;
+	Translate
+		   1 ant,
+		   2 bar,
+		   3 cur
+;

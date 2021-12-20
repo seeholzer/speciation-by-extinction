@@ -1,0 +1,9 @@
+qsub F5.EXT_v17_1sp.r1.job
+qsub F5.EXT_v2_1sp.r1.job
+qsub F5.EXT_v23_1sp.r1.job
+qsub F5.EXT_v23_2sp.r1.job
+qsub F5.EXT_v24_1sp.r1.job
+qsub F5.EXT_v25_1sp.r1.job
+qsub F5.EXT_v26_2sp.r1.job
+qsub F5.FULL_v2_2sp.r1.job
+qsub F5.FULL_v3_2sp.r1.job

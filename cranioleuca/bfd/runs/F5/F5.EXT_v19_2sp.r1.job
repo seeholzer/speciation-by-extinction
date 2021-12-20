@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=32
+#PBS -l walltime=5000:00:00
+#PBS -N F5.EXT_v19_2sp.r1
+#PBS -j oe
+#PBS -m ae
+#PBS -M seeholzer.glenn@gmail.com
+#PBS -o F5.EXT_v19_2sp.r1.out
+
+# change to the working directory
+cd $PBS_O_WORKDIR
+echo "pbsworkdir"
+echo $PBS_O_WORKDIR
+EXECDIR=`pwd`
+export PATH=./:$PATH
+echo $PATH
+
+date
+time
+
+
+rm -rf ./F5.EXT_v19_2sp.r1
+mkdir ./F5.EXT_v19_2sp.r1
+
+time beast -threads 32 F5.EXT_v19_2sp.r1.xml
+
+

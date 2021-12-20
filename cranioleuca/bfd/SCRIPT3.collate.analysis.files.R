@@ -32,6 +32,9 @@ if(!dir.exists(dir)){
 # 3) get file paths of target files  
 
 f = list.files(recursive=T)
+#remove files already in previously made analysis.files folders
+f = f[!grepl('analysis.files',f)]
+
 
 outs	= f[grep('out',f)]
 logs 	= f[grep('step0.*log',f)]
@@ -41,21 +44,10 @@ trees 	= f[grep('step0.*trees',f)]
 ##################################################
 # 4) copy target files to analysis.files directory  
 
+cat('\n\n\n\ncopying outs\n\n')
 file.copy(outs,paste0(dir,'/',outs))
+
+warnings()
+
+cat('\n\n\n\ncopying logs\n\n')
 file.copy(logs,paste0(dir,'/',sapply(strsplit(logs,'/'),'[',3)))
-file.copy(trees,paste0(dir,'/',sapply(strsplit(trees,'/'),'[',3)))
-
-##################################################
-# 5) run treeannotator on tree files in analysis.files directory  
-
-setwd(dir)
-
-f = list.files(pattern='trees')
-
-for(t in f){
-	I = t
-	O = gsub('trees','consensus.tree',I)
-	system(paste('treeannotator -burnin 20 -heights median',I,O))
-}
-
-

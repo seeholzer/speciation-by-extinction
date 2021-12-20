@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=32
+#PBS -l walltime=5000:00:00
+#PBS -N dataset.hyp.run
+#PBS -j oe
+#PBS -m ae
+#PBS -M seeholzer.glenn@gmail.com
+#PBS -o dataset.hyp.run.out
+
+# change to the working directory
+cd $PBS_O_WORKDIR
+echo "pbsworkdir"
+echo $PBS_O_WORKDIR
+EXECDIR=`pwd`
+export PATH=./:$PATH
+echo $PATH
+
+date
+time
+
+
+rm -rf ./dataset.hyp.run
+mkdir ./dataset.hyp.run
+
+time beast -threads 32 dataset.hyp.run.xml
+
+

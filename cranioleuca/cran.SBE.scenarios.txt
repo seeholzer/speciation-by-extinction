@@ -1,21 +1,21 @@
-pop	long	lat	FULL_v1	SBE1_v1	SBE2_v1	SBE3_v1	FULL_v2	SBE1_v2	SBE2_v2	SBE3_v2	FULL_v3	SBE1_v3	SBE2_v3	SBE3_v3
-Amotape	-80.6195166	-4.146305	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant
-Canchaque	-79.57027393	-5.377335714	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant
-Porculla	-79.48031567	-5.801414933	ant	ant	ant	extinct	ant	ant	ant	ant	ant	ant	ant	ant
-Llama	-79.05083727	-6.498612727	ant	ant	extinct	extinct	ant	ant	ant	extinct	ant	ant	ant	ant
-Celendin	-78.11347545	-6.874747273	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	ant	ant	ant	extinct
-Contumaza	-78.78507638	-7.40240525	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	ant	ant	ant	extinct
-Duraznopampa	-77.81001	-6.617287	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	ant	ant	ant	extinct
-ElMolino	-77.75634	-7.77374	bar	bar	extinct	extinct	ant	extinct	extinct	extinct	ant	ant	extinct	extinct
-Suyubamba	-77.584254	-7.827796	bar	bar	extinct	extinct	ant	extinct	extinct	extinct	ant	ant	extinct	extinct
-Macate	-78.04720692	-8.750106923	bar	bar	bar	extinct	bar	bar	extinct	extinct	ant	extinct	extinct	extinct
-CorBlanca	-77.649464	-9.0148242	bar	bar	bar	extinct	bar	bar	extinct	extinct	ant	extinct	extinct	extinct
-Chinchan	-77.11721055	-9.609871636	bar	bar	bar	bar	bar	bar	bar	extinct	bar	bar	extinct	extinct
-CarpaChavin	-76.72383214	-9.366755714	bar	bar	bar	bar	bar	bar	bar	extinct	bar	bar	extinct	extinct
-Pacar	-77.49522222	-10.07555556	bar	bar	bar	bar	bar	bar	bar	extinct	bar	bar	extinct	extinct
-Chavinillo	-76.601912	-9.83556	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	extinct
-Carpish	-76.23704736	-9.798146409	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
-Quichas	-76.77166663	-10.58165719	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
-LaQuinua	-76.17191	-10.61816	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
-Huamatanga	-76.726	-11.51666667	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
-curtata	NA	NA	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur
+popNumber	pop	long	lat	group	FULL_v1	FULL_v2	FULL_v3	FULL_v4	FULL_v5	FULL_v6	FULL_v7	FULL_v8	EXT_v1	EXT_v2	EXT_v3	EXT_v4	EXT_v5	EXT_v6	EXT_v7	EXT_v8	EXT_v9	EXT_v10	EXT_v11	EXT_v12	EXT_v13	EXT_v14	EXT_v15	EXT_v16	EXT_v17	EXT_v18	EXT_v19	EXT_v20	EXT_v21	EXT_v22	EXT_v23	EXT_v24	EXT_v25	EXT_v26	EXT_v27	EXT_v28
+1	Amotape	-80.6195166	-4.146305	1	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant
+2	Canchaque	-79.57027393	-5.377335714	1	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant	ant
+3	Porculla	-79.48031567	-5.801414933	2	bar	ant	ant	ant	ant	ant	ant	ant	extinct	ant	ant	ant	ant	ant	ant	extinct	ant	ant	ant	ant	ant	extinct	ant	ant	ant	ant	extinct	ant	ant	ant	extinct	ant	ant	extinct	ant	extinct
+4	Llama	-79.05083727	-6.498612727	3	bar	bar	ant	ant	ant	ant	ant	ant	bar	extinct	ant	ant	ant	ant	ant	extinct	extinct	ant	ant	ant	ant	extinct	extinct	ant	ant	ant	extinct	extinct	ant	ant	extinct	extinct	ant	extinct	extinct	extinct
+5	Celendin	-78.11347545	-6.874747273	4	bar	bar	bar	ant	ant	ant	ant	ant	bar	bar	extinct	ant	ant	ant	ant	bar	extinct	extinct	ant	ant	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	extinct	ant	extinct	extinct	extinct	extinct	extinct	extinct
+6	Contumaza	-78.78507638	-7.40240525	4	bar	bar	bar	ant	ant	ant	ant	ant	bar	bar	extinct	ant	ant	ant	ant	bar	extinct	extinct	ant	ant	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	extinct	ant	extinct	extinct	extinct	extinct	extinct	extinct
+7	Duraznopampa	-77.81001	-6.617287	4	bar	bar	bar	ant	ant	ant	ant	ant	bar	bar	extinct	ant	ant	ant	ant	bar	extinct	extinct	ant	ant	ant	extinct	extinct	extinct	ant	ant	extinct	extinct	extinct	ant	extinct	extinct	extinct	extinct	extinct	extinct
+8	ElMolino	-77.75634	-7.77374	5	bar	bar	bar	bar	ant	ant	ant	ant	bar	bar	bar	extinct	ant	ant	ant	bar	bar	extinct	extinct	ant	ant	bar	extinct	extinct	extinct	ant	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct
+9	Suyubamba	-77.584254	-7.827796	5	bar	bar	bar	bar	ant	ant	ant	ant	bar	bar	bar	extinct	ant	ant	ant	bar	bar	extinct	extinct	ant	ant	bar	extinct	extinct	extinct	ant	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct
+10	Macate	-78.04720692	-8.750106923	6	bar	bar	bar	bar	bar	ant	ant	ant	bar	bar	bar	bar	extinct	ant	ant	bar	bar	bar	extinct	extinct	ant	bar	bar	extinct	extinct	extinct	bar	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct
+11	CorBlanca	-77.649464	-9.0148242	6	bar	bar	bar	bar	bar	ant	ant	ant	bar	bar	bar	bar	extinct	ant	ant	bar	bar	bar	extinct	extinct	ant	bar	bar	extinct	extinct	extinct	bar	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct	extinct
+12	Chinchan	-77.11721055	-9.609871636	7	bar	bar	bar	bar	bar	bar	ant	ant	bar	bar	bar	bar	bar	extinct	ant	bar	bar	bar	bar	extinct	extinct	bar	bar	bar	extinct	extinct	bar	bar	extinct	extinct	bar	extinct	extinct	extinct	extinct	extinct
+13	CarpaChavin	-76.72383214	-9.366755714	7	bar	bar	bar	bar	bar	bar	ant	ant	bar	bar	bar	bar	bar	extinct	ant	bar	bar	bar	bar	extinct	extinct	bar	bar	bar	extinct	extinct	bar	bar	extinct	extinct	bar	extinct	extinct	extinct	extinct	extinct
+14	Pacar	-77.49522222	-10.07555556	7	bar	bar	bar	bar	bar	bar	ant	ant	bar	bar	bar	bar	bar	extinct	ant	bar	bar	bar	bar	extinct	extinct	bar	bar	bar	extinct	extinct	bar	bar	extinct	extinct	bar	extinct	extinct	extinct	extinct	extinct
+15	Chavinillo	-76.601912	-9.83556	8	bar	bar	bar	bar	bar	bar	bar	ant	bar	bar	bar	bar	bar	bar	extinct	bar	bar	bar	bar	bar	extinct	bar	bar	bar	bar	extinct	bar	bar	bar	extinct	bar	bar	extinct	bar	extinct	extinct
+16	Carpish	-76.23704736	-9.798146409	9	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
+17	Quichas	-76.77166663	-10.58165719	9	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
+18	LaQuinua	-76.17191	-10.61816	9	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
+19	Huamatanga	-76.726	-11.51666667	9	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar	bar
+NA	curtata	NA	NA	NA	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur	cur

@@ -1,0 +1,82 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
+#    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
+#        <prior id="lambdaPrior.bfd" name="distribution">
+#            <parameter id="lambda" lower="0.0" name="x" spec="beast.core.parameter.RealParameter">0.01</parameter>
+#            <Gamma id="Gamma.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.1" name="alpha" spec="beast.core.parameter.RealParameter">2.0</parameter>
+#                <parameter estimate="false" id="RealParameter.2" name="beta" spec="beast.core.parameter.RealParameter">200.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <distribution id="snapprior.bfd" lambda="@lambda" spec="snap.likelihood.SnAPPrior">
+#            <parameter estimate="false" id="alpha" lower="0.0" name="alpha" spec="beast.core.parameter.RealParameter">11.75</parameter>
+#            <parameter estimate="false" id="beta" lower="0.0" name="beta" spec="beast.core.parameter.RealParameter">109.73</parameter>
+#            <parameter estimate="false" id="kappa" lower="0.0" name="kappa" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#            <parameter id="coalescenceRate" name="coalescenceRate" spec="beast.core.parameter.RealParameter">10.0</parameter>
+#            <tree clusterType="upgma" id="Tree.bfd" nodetype="snap.NodeData" spec="beast.util.ClusterTree">
+#                <taxa dataType="integerdata" id="snap.bfd" spec="snap.Data">
+#                    <taxonset id="ant" spec="beast.evolution.alignment.TaxonSet">
+#                        <taxon id="CarpaChavin_B72793.Huanuco.CarpaChavin" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="CarpaChavin_B72795.Huanuco.CarpaChavin" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Carpish_B72761.Huanuco.Acomayo" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Carpish_B72772.Huanuco.Mitotambo" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="ElMolino_B72830.LaLibertad.ElMolino" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="ElMolino_B72834.LaLibertad.ElMolino" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Amotape_B67243.Tumbes.Amotape" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Amotape_B67257.Tumbes.Amotape" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Celendin_B72843.Cajamarca.Celendin" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Celendin_B72848.Cajamarca.Celendin" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Duraznopampa_B72852.Amazonas.Duraznopampa" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Duraznopampa_B72861.Amazonas.Duraznopampa" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Chavinillo_B72789.Huanuco.Chavinillo" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Chavinillo_B72792.Huanuco.Chavinillo" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Macate_B72807.Ancash.Macate" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Macate_B72814.Ancash.Macate" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Quichas_B72777.Lima.Quichas" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Quichas_B72778.Lima.Quichas" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Canchaque_B72873.Piura.Canchaque" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Canchaque_B72878.Piura.Canchaque" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="CorBlanca_NK_171703" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="CorBlanca_FMNH_391888" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Suyubamba_B72820.LaLibertad.Suyubamba" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Suyubamba_B72821.LaLibertad.Suyubamba" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Huamatanga_B72889.Lima.Huamatanga" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Huamatanga_B72892.Lima.Huamatanga" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Contumaza_B72841.Cajamarca.Contumaza" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Contumaza_NK_172033" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Llama_B72883.Cajamarca.Llama" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Llama_B72884.Cajamarca.Llama" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Pacar_B72907.Ancash.Pacar" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Pacar_B72909.Ancash.Pacar" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="LaQuinua_B72753.Pasco.LaQuinua" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="LaQuinua_B72756.Pasco.LaQuinua" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Chinchan_B72900.Ancash.Chinchan" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="Chinchan_NK_173896" spec="beast.evolution.alignment.Taxon"/>
+#                    </taxonset>
+#                    <taxonset id="cur" spec="beast.evolution.alignment.TaxonSet">
+#                        <taxon id="curtata_cra.cur.B6032" spec="beast.evolution.alignment.Taxon"/>
+#                        <taxon id="curtata_cra.cur.B8175" spec="beast.evolution.alignment.Taxon"/>
+#                    </taxonset>
+#                </taxa>
+#                <parameter id="RealParameter.0" lower="0.0" name="clock.rate" spec="beast.core.parameter.RealParameter" upper="0.0">1.0</parameter>
+#            </tree>
+#        </distribution>
+#    </distribution>
+#    <distribution id="likelihood" spec="beast.core.util.CompoundDistribution">
+#        <distribution data="@snap.bfd" id="treeLikelihood.bfd" non-polymorphic="false" pattern="coalescenceRate" spec="snap.likelihood.SnAPTreeLikelihood" tree="@Tree.bfd">
+#            <siteModel id="MutationSiteModel.bfd" spec="beast.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate" name="mutationRate" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="shape" name="shape" spec="beast.core.parameter.RealParameter">2.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant" name="proportionInvariant" spec="beast.core.parameter.RealParameter">0.0</parameter>
+#                <substModel coalescenceRate="@coalescenceRate" id="MutationModel" spec="snap.likelihood.SnapSubstitutionModel">
+#                    <parameter estimate="false" id="u" lower="0.0" name="mutationRateU" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                    <parameter id="v" lower="0.0" name="mutationRateV" spec="beast.core.parameter.RealParameter">1.0</parameter>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#    </distribution>
+#</input>
+#
+Sample	posterior	likelihood	prior	theta0	theta1	theta2	TreeHeightLogger

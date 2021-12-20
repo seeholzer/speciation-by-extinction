@@ -1,7 +1,9 @@
 ##################################################
-#	Description: Create maps for Figure 2
+#	SCRIPT.Fig.2.maps
+#	Description: Create four maps for panel A of Figure 2 
 #
 ##################################################
+
 
 #	***Change working directory to local path***
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/')
@@ -27,42 +29,42 @@ alt = crop(alt,extent(ex))
 range = readShapeSpatial('map_layers/C.ant.scenarios.shp')
 C.ant.FULL  = readShapeSpatial('map_layers/C.ant.FULL.shp')
 
-#colfunc = colorRampPalette(c("#E19DC9", "#C9E19D"))
-#colfunc = colorRampPalette(c("#ACAFD3", "#EAD898"))
-colfunc = colorRampPalette(c("#425BD3", "#E8B618"))
+#colfunc = colorRampPalette(c("#425BD3", "#E8B618"))
+colfunc = colorRampPalette(c('#d7191c','#fdae61','#ffffbf','#abd9e9','#2c7bb6'))
 # colfunc(7)
 # plot(rep(1,7),col=colfunc(7),pch=19,cex=3)
 
-color.key = data.frame(scenario=c('C.ant.SBE3','C.ant.SBE2','C.ant.SBE1','FULL','C.bar.SBE1','C.bar.SBE2','C.bar.SBE3'),col=colfunc(7))
-
-
-#set geographic variation of extinction scenarios
-v = 'v2'
+#create a color key for the scenarios
+color.key = data.frame(scenario=c("C.ant.SBE3","C.ant.SBE2","C.ant.SBE1","FULL","C.bar.SBE1","C.bar.SBE2","C.bar.SBE3"),col=colfunc(7))
+color.key$col = add.alpha(color.key$col,0.75)
 
 #population data
 popdata = read.delim('cran.SBE.scenarios.txt',stringsAsFactors=F)
-popdata = popdata[!popdata$pop %in% 'curtata',c(1:3,grep(v,colnames(popdata)))]
+#subset to a sequential, nested series of extinction scenarios of increasing magnitude 
+popdata = popdata[!popdata$pop %in% 'curtata',c(1:5,grep(paste(c("FULL_v5","EXT_v4","EXT_v16","EXT_v24"),collapse='|'),colnames(popdata)))]
 
+#modify popdata so that aligns with the labelling of shapefile C.ant.FULL 
 popdata$scenario = 'FULL'
-popdata$scenario[popdata$SBE3 %in% 'extinct'] = 'SBE3'
-popdata$scenario[popdata$SBE2 %in% 'extinct'] = 'SBE2'
-popdata$scenario[popdata$SBE1 %in% 'extinct'] = 'SBE1'
+popdata$scenario[popdata$EXT_v24 %in% 'extinct'] = 'SBE3'
+popdata$scenario[popdata$EXT_v16 %in% 'extinct'] = 'SBE2'
+popdata$scenario[popdata$EXT_v4 %in% 'extinct'] = 'SBE1'
 
-
-scenario.key = cbind(c('FULL','SBE1','SBE2','SBE3'),c('Pre-Extinction','Post-Extinction 1','Post-Extinction 2','Post-Extinction 3'))
+#change names of scenarios
+scenario.key = cbind(c('FULL','SBE1','SBE2','SBE3'),c('Pre-Extinction 5','Post-Extinction 4','Post-Extinction 16','Post-Extinction 24'))
 
 
 #scaling factors of height and width 
 w <- ncol(alt)/max(dim(alt))
 h <- nrow(alt)/max(dim(alt))
 
-
 ## Set up appropriately sized device with no borders and required coordinate system    
 ## png("eg.png", width=480*w, height=480*h)
-i = 'SBE2'
+i = 'FULL'
 for(i in c('FULL','SBE1','SBE2','SBE3')){
 
-	filename = paste0('Fig.2.map.',i,'.png') 
+	scenario = scenario.key[scenario.key[,1] %in% i,2]
+
+	filename = paste0('Fig.2a.',scenario,'.png') 
 	png(filename,width=5*w,height=5*h,units='in',res=300,bg='transparent')
 	#set up blank plot space, necessary to avoid white blank space around raster plot
 	#dev.new(width= 5*w, height= 5*h)
@@ -118,9 +120,9 @@ for(i in c('FULL','SBE1','SBE2','SBE3')){
 		extinct.pops.removed = range[!grepl(paste(c('FULL'),collapse='|'),range@data$scenario),]
 		border = unionSpatialPolygons(extinct.pops.removed,rep(1,nrow(extinct.pops.removed@data)))
 		plot(border,add=T,col='transparent',border='black',lwd=.5)
-
+		
 		bg = rep('#FFEDA0',nrow(popdata))
-		bg[popdata$SBE1_v2 %in% 'extinct'] = 'grey90'
+		bg[popdata$EXT_v4 %in% 'extinct'] = 'grey90'
 		text.col = 'black'
 			
 		points(popdata[ ,'long'],popdata[ ,'lat'],pch=21,cex=2,bg=bg,col='grey50',lwd=1)
@@ -139,7 +141,7 @@ for(i in c('FULL','SBE1','SBE2','SBE3')){
 		plot(border,add=T,col='transparent',border='black',lwd=.5)
 
 		bg = rep('#FFEDA0',nrow(popdata))
-		bg[popdata$SBE2_v2 %in% 'extinct'] = 'grey90'
+		bg[popdata$EXT_v16 %in% 'extinct'] = 'grey90'
 		text.col = 'black'
 			
 		points(popdata[ ,'long'],popdata[ ,'lat'],pch=21,cex=2,bg=bg,col='grey50',lwd=1)
@@ -158,7 +160,7 @@ for(i in c('FULL','SBE1','SBE2','SBE3')){
 		plot(border,add=T,col='transparent',border='black',lwd=.5)
 
 		bg = rep('#FFEDA0',nrow(popdata))
-		bg[popdata$SBE3_v2 %in% 'extinct'] = 'grey90'
+		bg[popdata$EXT_v24 %in% 'extinct'] = 'grey90'
 		text.col = 'black'
 			
 		points(popdata[ ,'long'],popdata[ ,'lat'],pch=21,cex=2,bg=bg,col='grey50',lwd=1)
@@ -168,7 +170,15 @@ for(i in c('FULL','SBE1','SBE2','SBE3')){
 	
 	
 	if(i == 'FULL'){
-
+		
+		#dividing line between antisiensis and baroni
+		x0 = -76.5; y0 = -7.7 
+		x1 = -79.4; 	y1 = -8.9		
+		segments(x0,y0,x1,y1,col='grey25',lty=2)
+		text(x0,y0,'< antisiensis  ',cex=.75,col='#d7191c',srt=295,adj=c(1,0))
+		text(x0,y0,'  baroni >',cex=.75,col='#2c7bb6',srt=295,adj=c(0,0))
+		
+		#scale bar
 		scalebar(d = 200, xy = c(extent(alt)[1]+.5,extent(alt)[3]+0.1),type = "line", lonlat = TRUE,lwd = 2,label='')
 		text(extent(alt)[1]+.5,extent(alt)[3]+0.1,'200 km',adj=c(-1,-0.75),cex=.5)
 
@@ -197,8 +207,7 @@ for(i in c('FULL','SBE1','SBE2','SBE3')){
 	text(x,y-0.5,'extinct',cex=.75,col='black',adj=c(.25,.5))
 	
 	#scenario label
-	foo = scenario.key[scenario.key[,1] %in% i,2]
-	text(x,y+0.5,foo,cex=1)
+	text(x,y+0.5,scenario,cex=1)
 	# a = strsplit(foo,'-')[[1]][1]
 	# b = strsplit(foo,'-')[[1]][2]
 	# text(x,y+0.5,bquote(paste(bold(.(a)),'-',.(b))),cex=1)

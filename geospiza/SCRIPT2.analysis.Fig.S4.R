@@ -53,8 +53,6 @@ for(i in 4:ncol(d)){
 	d[,i] = factor(x,levels=levels)	
 }
 
-table(d[,c('no.extinction','7.00-8.25')])
-
 ##################################################
 # 2.3) Compare extinction scenario classifications to the classifications with no extinction
 #			- determine which extinction scenarios resulted in speciation-by-extinction
@@ -63,7 +61,9 @@ scenarios = names(mclust.data)
 list = rep(list(NA),length(scenarios))
 names(list) = scenarios
 
-i = grep('6.25-9.25',scenarios)
+i = grep('7.00-8.25',scenarios)
+i = grep('8.50-11.25',scenarios)
+
 for(i in 1:length(scenarios)){
 	
 	tmp = d[,c('ID','no.extinction',scenarios[i])]
@@ -152,7 +152,8 @@ for(i in SBE.names){
 }
 x = l[[1]]
 sapply(l,function(x) x$post['1']/x$pre['1'])
-
+x = cbind(sapply(l,function(x) x$pre['1']),sapply(l,function(x) x$post['1']))
+(table(x[,2]))
 
 ##################################################
 # 2.5) How many times did SBE occur?

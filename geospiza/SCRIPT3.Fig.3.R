@@ -11,7 +11,7 @@ setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza')
 library(plyr)
 library(mixtools)
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/geospiza')
-source('~/Dropbox/SBE/speciation-by-extinction_github/supporting.functions/FUN.add.alpha.R', chdir = TRUE)
+source('FUN.add.alpha.R', chdir = TRUE)
 
 ##################################################
 # 3.1) Read data
@@ -79,7 +79,7 @@ data = merge(d,pre[,c('ID','PC1','PC2','PC3','PC4')],by='ID',all=T)
 
 #key for pre-extinction and post-extinction names
 pre.ext.key = data.frame(mclust=1:4,name=c('G. fuliginosa','G. fortis 2','G. fortis 1','G. magnirostris'),pch=c(21,3,4,8),col=c('black','grey75','grey75','grey75'))
-post.ext.key = data.frame(mclust=1:5,name=c('G. fuliginosa 2','G. fortis 1','G. fuliginosa 1','G. fortis 2','G. magnirostris'),pch=c(22,3,24,4,8),col=c('black','grey75','black','grey75','grey75'))
+post.ext.key = data.frame(mclust=1:5,name=c('G. fuliginosa 2','G. fortis 2','G. fuliginosa 1','G. fortis 1','G. magnirostris'),pch=c(22,3,24,4,8),col=c('black','grey75','black','grey75','grey75'))
 
 png(paste0('Fig.3.png'),width=6,height=3,units='in',res=600,bg='transparent')
 	#dev.new(width=6,height=3.25)
@@ -138,6 +138,11 @@ png(paste0('Fig.3.png'),width=6,height=3,units='in',res=600,bg='transparent')
 	mtext('Post-Extinction',3)
 
 	extinct = is.na(data[,'post.extinction'])
+	
+	geo = read.table("Geospiza.data.csv", header=T, sep=",")
+	geo[paste0(geo$Institution,geo$Museum.Number) %in% post.ext[extinct & post.ext$Taxa.New %in% 'G. fuliginosa','ID'], ]
+	head(post.ext)
+	
 	
 	#label extinct Geospiza fuliginosa
 	x = post.ext[post.ext[extinct,'PC2'] %in% max(post.ext[extinct,'PC2'],na.rm = TRUE),'PC1']

@@ -1,0 +1,482 @@
+pbsworkdir
+/home/lmoreira/nas3/bfd/runs/F5
+./:/home/lmoreira/programs/miniconda3/condabin:/home/lmoreira/perl5/perlbrew/bin:/home/lmoreira/perl5/perlbrew/perls/perl-5.28.0/bin:/home/lmoreira/nas3/programs/eems/runeems_snps/src:/home/lmoreira/programs/H-scan:/home/lmoreira/programs/parallel-20201222/bin:/home/lmoreira/programs/psmc:/home/lmoreira/programs/AGAT/bin:/home/lmoreira/programs/Bio-MUST-Apps-HmmCleaner-0.180750/bin:/home/lmoreira/programs/discoal:/home/lmoreira/programs/diploSHIC:/home/lmoreira/programs/samblaster:/home/lmoreira/nas3/programs/lumpy-sv/bin:/home/lmoreira/nas3/programs/boost_1_57_0:/home/lmoreira/nas3/programs/pandoc/bin:/home/lmoreira/nas3/programs/easySFS:/home/lmoreira/nas3/programs/SNPGenie:/home/lmoreira/nas3/programs/bedops/bin:/home/lmoreira/nas3/programs/gffread:/home/lmoreira/nas3/programs/gmap-2020-03-12/bin:/home/lmoreira/nas3/programs/LDhat:/home/lmoreira/nas3/programs/LDhelmet_v1.10:/home/lmoreira/nas3/programs/gm_et_linux_64:/home/lmoreira/nas3/programs/BRAKER/scripts:/home/lmoreira/nas3/programs/ngsLD:/home/lmoreira/nas3/programs/fastq-pair/build:/home/lmoreira/nas3/programs/fastq_screen_v0.14.0:/home/lmoreira/nas3/programs/iqtree-1.6.8-Linux/bin:/home/lmoreira/nas3/programs/satsuma-code:/home/lmoreira/nas3/programs/bcftools:/home/lmoreira/nas3/programs/mapping-iterative-assembler/bin:/home/lmoreira/nas3/programs/vcf2phylip:/home/lmoreira/nas3/programs/LFMM_CL_v1.5/bin:/home/lmoreira/ANGSD_pipeline/PCAngsd/pcangsd:/home/lmoreira/nas3/programs/angsd/misc:/home/lmoreira/nas3/programs/angsd:/home/lmoreira/nas3/programs/bamUtil/bin:/home/lmoreira/nas2/PopSizeABC/comp_stat/ms:/home/lmoreira/nas3/programs/bioawk:/home/lmoreira/nas3/programs/seqkit:/home/lmoreira/nas3/programs/G-PhoCS/bin:/home/lmoreira/nas3/programs/treemix-1.13/bin:/home/lmoreira/nas3/programs/fastx_toolkit_0.0.13/bin:/home/lmoreira/nas3/programs/PopLDdecay/bin:/home/lmoreira/nas3/programs/plink1.9:/home/lmoreira/nas3/programs/htslib-1.9/bin:/home/lmoreira/nas3/programs/seqtk:/home/lmoreira/nas3/programs/vcftools/bin:/home/lmoreira/nas3/programs/qualimap_v2.2.1:/home/lmoreira/nas3/programs/gatk-4.0.3.0:/home/lmoreira/nas3/programs/fsc26_linux64:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/lmoreira/programs/mugsy_x86-64-v1r2.2/:/home/lmoreira/programs/mugsy_x86-64-v1r2.2//mapping:/home/lmoreira/programs/JustOrthologs:/home/lmoreira/programs/beast/bin/:/home/lmoreira/.local/bin:/home/lmoreira/bin
+Sun Dec  5 16:56:59 EST 2021
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+
+                        BEAST v2.6.6, 2002-2021
+             Bayesian Evolutionary Analysis Sampling Trees
+                       Designed and developed by
+ Remco Bouckaert, Alexei J. Drummond, Andrew Rambaut & Marc A. Suchard
+                                    
+                   Centre for Computational Evolution
+                         University of Auckland
+                       r.bouckaert@auckland.ac.nz
+                        alexei@cs.auckland.ac.nz
+                                    
+                   Institute of Evolutionary Biology
+                        University of Edinburgh
+                           a.rambaut@ed.ac.uk
+                                    
+                    David Geffen School of Medicine
+                 University of California, Los Angeles
+                           msuchard@ucla.edu
+                                    
+                      Downloads, Help & Resources:
+                           http://beast2.org/
+                                    
+  Source code distributed under the GNU Lesser General Public License:
+                   http://github.com/CompEvol/beast2
+                                    
+                           BEAST developers:
+   Alex Alekseyenko, Trevor Bedford, Erik Bloomquist, Joseph Heled, 
+ Sebastian Hoehna, Denise Kuehnert, Philippe Lemey, Wai Lok Sibon Li, 
+Gerton Lunter, Sidney Markowitz, Vladimir Minin, Michael Defoin Platel, 
+          Oliver Pybus, Tim Vaughan, Chieh-Hsi Wu, Walter Xie
+                                    
+                               Thanks to:
+          Roald Forsberg, Beth Shapiro and Korbinian Strimmer
+
+Random number seed: 1638741419465
+
+File: F5.EXT_v17_1sp.r1.xml seed: 1638741419465 threads: 8
+Loading package BEAST v2.6.6
+Loading package BEASTLabs v1.9.7
+Loading package MODEL_SELECTION v1.5.3
+Loading package SNAPP v1.5.2
+Loading package BEAST v2.6.6
+Alignment(bfd)
+  40 taxa
+  100 sites
+  100 patterns
+
+ant: 100 49
+cur: 100 5
+Data(snap.bfd)
+  2 taxa
+  100 sites
+  50 patterns
+
+Seq: seq_Carpish_B72761.Huanuco.Acomayo3
+Seq: seq_Carpish_B72772.Huanuco.Mitotambo2
+Seq: seq_Amotape_B67243.Tumbes.Amotape
+Seq: seq_Amotape_B67257.Tumbes.Amotape4
+Seq: seq_Celendin_B72843.Cajamarca.Celendin1
+Seq: seq_Celendin_B72848.Cajamarca.Celendin2
+Seq: seq_Duraznopampa_B72852.Amazonas.Duraznopampa1
+Seq: seq_Duraznopampa_B72861.Amazonas.Duraznopampa1
+Seq: seq_Chavinillo_B72789.Huanuco.Chavinillo3
+Seq: seq_Chavinillo_B72792.Huanuco.Chavinillo4
+Seq: seq_Quichas_B72777.Lima.Quichas2
+Seq: seq_Quichas_B72778.Lima.Quichas
+Seq: seq_Canchaque_B72873.Piura.Canchaque4
+Seq: seq_Canchaque_B72878.Piura.Canchaque7
+Seq: seq_Huamatanga_B72889.Lima.Huamatanga7
+Seq: seq_Huamatanga_B72892.Lima.Huamatanga7
+Seq: seq_Contumaza_B72841.Cajamarca.Contumaza4
+Seq: seq_Contumaza_NK_1720332
+Seq: seq_Llama_B72883.Cajamarca.Llama3
+Seq: seq_Llama_B72884.Cajamarca.Llama6
+Seq: seq_Porculla_B72863.Piura.Porculla
+Seq: seq_Porculla_B72866.Piura.Porculla4
+Seq: seq_LaQuinua_B72753.Pasco.LaQuinua1
+Seq: seq_LaQuinua_B72756.Pasco.LaQuinua3
+Seq: seq_curtata_cra.cur.B60322
+Seq: seq_curtata_cra.cur.B81753
+ant: 100 49
+cur: 100 5
+2 taxa
+100 sites
+52 patterns
+Rate prior = gamma
+Log Likelihood Correction = -1753.9119587958348
+===============================================================================
+Citations for this model:
+
+Bouckaert, Remco, Timothy G. Vaughan, Jo?lle Barido-Sottani, Sebasti?n Duch?ne, Mathieu Fourment, 
+Alexandra Gavryushkina, Joseph Heled, Graham Jones, Denise K?hnert, Nicola De Maio, Michael Matschiner, 
+F?bio K. Mendes, Nicola F. M?ller, Huw A. Ogilvie, Louis du Plessis, Alex Popinga, Andrew Rambaut, 
+David Rasmussen, Igor Siveroni, Marc A. Suchard, Chieh-Hsi Wu, Dong Xie, Chi Zhang, Tanja Stadler, 
+Alexei J. Drummond 
+  BEAST 2.5: An advanced software platform for Bayesian evolutionary analysis. 
+  PLoS computational biology 15, no. 4 (2019): e1006650.
+
+David Bryant, Remco Bouckaert, Joseph Felsenstein, Noah Rosenberg, Arindam RoyChoudhury. Inferring Species Trees Directly from Biallelic Genetic Markers: Bypassing Gene Trees in a Full Coalescent Analysis. Mol. Biol. Evol. 29(8):1917-1932, 2012
+
+===============================================================================
+Starting step 0
+Starting step 1
+Starting step 3
+Starting step 2
+Starting step 5
+Starting step 4
+Starting step 6
+Starting step 7
+Finished step 3
+Finished step 6
+Finished step 4
+Finished step 5
+Finished step 0
+Finished step 7
+Finished step 1
+Finished step 2
+Starting step 8
+Starting step 9
+Starting step 12
+Starting step 11
+Starting step 13
+Starting step 15
+Starting step 10
+Starting step 14
+Finished step 15
+Finished step 13
+Finished step 10
+Finished step 12
+Finished step 8
+Finished step 11
+Finished step 9
+Finished step 14
+Starting step 17
+Starting step 19
+Starting step 18
+Starting step 20
+Starting step 21
+Starting step 16
+Starting step 23
+Starting step 22
+Finished step 18
+Finished step 23
+Finished step 19
+Finished step 22
+Finished step 20
+Finished step 21
+Finished step 16
+Finished step 17
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step0/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[0 ] = -2218.8286687131463
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step1/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[1 ] = -2219.050383674425
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step2/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[2 ] = -2219.3053985443476
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step3/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[3 ] = -2219.5842083109114
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step4/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[4 ] = -2219.8503059309132
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step5/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[5 ] = -2220.0660944362157
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step6/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[6 ] = -2220.3417414391615
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step7/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[7 ] = -2220.6157972608266
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step8/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[8 ] = -2220.8097333643977
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step9/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[9 ] = -2221.03960324823
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step10/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[10 ] = -2221.17979650525
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step11/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[11 ] = -2221.6767528477762
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step12/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[12 ] = -2221.7545568002633
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step13/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[13 ] = -2221.9796724405915
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step14/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[14 ] = -2222.457244239337
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step15/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[15 ] = -2222.2007940141916
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step16/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[16 ] = -2222.2070535750086
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step17/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[17 ] = -2222.5391850859337
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step18/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[18 ] = -2222.6592380432703
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step19/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[19 ] = -2222.692529626048
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step20/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[20 ] = -2222.7333443590587
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step21/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[21 ] = -2222.8723580897563
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step22/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[22 ] = -2222.852735155684
+
+Loading /home/lmoreira/nas3/bfd/runs/F5/F5.EXT_v17_1sp.r1/step23/likelihood.log, burnin 20%, skipping 200 log lines
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+*********************************************************************************
+
+Calculating statistics
+
+|---------|---------|---------|---------|---------|---------|---------|---------|
+********************************************************************************
+
+marginalLs[23 ] = -2222.511754699406
+
+Step        theta         likelihood   contribution ESS
+0            1            -2218.8287   0            535.87       
+1            0.8623       -2219.0504   -305.5845    801          
+2            0.7384       -2219.3054   -274.868     801          
+3            0.6276       -2219.5842   -245.9932    801          
+4            0.529        -2219.8503   -218.9349    768.693      
+5            0.4417       -2220.0661   -193.6526    738.0166     
+6            0.3651       -2220.3417   -170.1323    801          
+7            0.2983       -2220.6158   -148.3336    662.1374     
+8            0.2406       -2220.8097   -128.2184    616.4653     
+9            0.1911       -2221.0396   -109.7611    801          
+10           0.1493       -2221.1798   -92.9194     728.1492     
+11           0.1143       -2221.6768   -77.6714     768.9084     
+12           0.0855       -2221.7546   -63.9514     801          
+13           0.0623       -2221.9797   -51.7355     503.7176     
+14           0.0438       -2222.4572   -40.9795     485.5494     
+15           0.0296       -2222.2008   -31.6209     589.1825     
+16           0.019        -2222.2071   -23.6247     511.2039     
+17           0.0113       -2222.5392   -16.9336     545.8068     
+18           0.0062       -2222.6592   -11.482      521.3184     
+19           0.0029       -2222.6925   -7.2043      600.8812     
+20           0.0011       -2222.7333   -4.0247      753.018      
+21           0.0003       -2222.8724   -1.8541      552.6648     
+22           0            -2222.8527   -0.5833      490.147      
+23           0            -2222.5118   -0.0642      760.2126     
+sum(ESS) = 15937.9418  
+
+marginal L estimate = -2220.1278835024677
+
+
+Total wall time: 98936 seconds
+Done
+
+real	1649m0.065s
+user	13213m19.153s
+sys	193m36.863s

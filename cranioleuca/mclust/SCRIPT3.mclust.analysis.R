@@ -36,13 +36,20 @@ all.traits = c(morph.traits,plumage.traits)
 traits = list(morphology=morph.traits,plumage=plumage.traits,combined=all.traits)
 
 
-#Simulated Extinction Scenarios
+#Extinction Scenarios
 popdata = read.delim('cran.SBE.scenarios.txt',stringsAsFactors=F)
 popdata = popdata[!popdata$pop %in% 'curtata', ]
 
+#The seven variants of the FULL dataset are only used in the bfd analysis
+#NMM only requires a single scenario with all populations extant
+#Remove the six redudant variants and rename to just FULL
+FULL = colnames(popdata)[grep('FULL',colnames(popdata))]
+tokeep = colnames(popdata)[!colnames(popdata) %in% FULL]
+popdata = popdata[,c(tokeep,FULL[1])]
+colnames(popdata)[grep('FULL',colnames(popdata))] = "FULL"
 
 #Simulated extinction scenario x trait combinations
-x = expand.grid(colnames(popdata)[-grep('pop|long|lat',colnames(popdata))],names(traits))
+x = expand.grid(colnames(popdata)[-grep('popNumber|pop|long|lat|group',colnames(popdata))],names(traits))
 scenario.trait = apply(x,1,function(x) paste(x,collapse='.'))
 
 
@@ -56,7 +63,7 @@ colnames(sum) = colnames
 sum[,c('scenario.name','trait.set')] = t(sapply(strsplit(scenario.trait,'\\.'),'['))
 
 results.list = list()
-i = 2
+i = 1
 for(i in 1:length(scenario.trait)){
 		scenario.name = strsplit(scenario.trait[i],'\\.')[[1]][1]
 		trait.set = strsplit(scenario.trait[i],'\\.')[[1]][2]
