@@ -9,8 +9,6 @@ This repository contains data and scripts to reproduce analyses in "Speciation-b
 
 Data and scripts used for species delimitation analyses with simulated extinction in *Cranioleuca antisiensis*. Phenotypic and genetic data from Seeholzer and Brumfield 2018. 
 
-Principal Directories
-
 ### bfd - Bayes Factor species delimitation of phenotypic data
 
 Includes all raw data and files necessary to create .xml and .job scripts for BFD runs (ran on a cluster).
@@ -38,16 +36,16 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
 
 
+
+
+
 ## Geospiza
 
 Data and scripts used for species delimitation analysis of simulated extinction in the morphological dataset for the Darwin's Finch used by McKay & Zink 2015 and Cadena et al. 2018. Code adapted from supplementary material in Cadena et al. 2018. 
 
-Data Geospiza.data.csv from Cadena et al. 2018. Institution codes as follows
-RM = Rotheschild Mus.
-Harris = Harris
-Hull = G. W. Hull
-CAS = California Academy of Sciences
-SU = Stanford University
+
+##### data
+- Geospiza.data.csv from Cadena et al. 2018. Institution codes as follows: RM = Rotheschild Mus., Harris = Harris, Hull = G. W. Hull, CAS = California Academy of Sciences, SU = Stanford University
 
 
 ## Bird Subspecies
