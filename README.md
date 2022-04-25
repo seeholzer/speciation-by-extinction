@@ -22,7 +22,7 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - SCRIPT1.genind2snapp.R - converts raw genetic data in genlight format (cran.snp.data.genlight.Rdata)
 - SCRIPT2.xml.editing.R - edits base .job and .xml files for each BFD run
 - SCRIPT3.collate.analysis.files.R - collates output files from subdirectories in cluster
-- SCRIPT4.process.analysis.files.R - summarizes results of BFD analyses (used in SCRIPT.Fig.2.plot.R).
+- SCRIPT4.process.analysis.files.R - summarizes results of BFD analyses (used in SCRIPT.Fig.2.plot.R)
 - SCRIPT4b.restart.failed.runs.R - restarts failed runs (for use on cluster)
 
 ### mclust - Normal Mixture Model species delimitation of phenotypic data
@@ -36,8 +36,6 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - SCRIPT1.cran.morph.processing.R - process raw morphological measurements for analysis
 - SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
 - SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
-
-
 
 
 - Seeholzer GF, Brumfield RT. 2017. Isolation-by-distance, not incipient ecological speciation, explains genetic differentiation in an Andean songbird (Aves: Furnariidae: *Cranioleuca antisiensis*, Line-cheeked Spinetail) despite near three-fold body size change across an environmental. Molecular Ecology 1–18.
