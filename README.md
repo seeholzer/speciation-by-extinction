@@ -5,9 +5,18 @@ This repository contains data and scripts to reproduce analyses in "Speciation-b
 
 ######################################################################
 
+
 ## Cranioleuca
 
 Data and scripts used for species delimitation analyses with simulated extinction in *Cranioleuca antisiensis*. Phenotypic and genetic data from Seeholzer and Brumfield 2018. 
+
+### Figure Scripts - scripts to reproduce all figures and tables associated with Cranioleuca analyses
+- SCRIPT.Fig.2.maps.R - reproduce Figure 2a maps
+- SCRIPT.Fig.2.plot.R - reproduce Figure 2b of mclust and BFD results
+- SCRIPT.Fig.S1.R - reproduce Figure S1 visualizing SBE scenarios
+- SCRIPT.Figure.S2.S3.R - reproduce Figure S2 and S3
+- SCRIPT.Table.S1.R - reproduce Table S1
+- SCRIPT.mclust.assignment.maps.R - reproduce maps in ./mclust.sampling.maps
 
 ### bfd - Bayes Factor species delimitation of phenotypic data
 
@@ -35,18 +44,10 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
 - SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
 
-
-### map_layers - GIS layers to create maps
-### mclust.sampling.maps - map of mclust cluster assignments for each population 
-### scenario.maps - visualization of SBE hypotheses
-
-### Figure Scripts
-- SCRIPT.Fig.2.maps.R - reproduce Figure 2a maps
-- SCRIPT.Fig.2.plot.R - reproduce Figure 2b of mclust and BFD results
-- SCRIPT.Fig.S1.R - reproduce Figure S1 visualizing SBE scenarios
-- SCRIPT.Figure.S2.S3.R - reproduce Figure S2 and S3
-- SCRIPT.Table.S1.R - reproduce Table S1
-- SCRIPT.mclust.assignment.maps.R - reproduce maps in ./mclust.sampling.maps
+### Additional *Cranioleuca* Directories
+#### map_layers - GIS layers to create maps
+#### mclust.sampling.maps - map of mclust cluster assignments for each population 
+#### scenario.maps - visualization of SBE hypotheses
 
 
 
