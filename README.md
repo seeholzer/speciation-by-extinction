@@ -16,7 +16,7 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 ##### data
 - cran.snp.data.genlight.Rdata
 
-##### scripts
+##### scripts - to be run in order
 - SCRIPT1.genind2snapp.R - converts raw genetic data in genlight format (cran.snp.data.genlight.Rdata)
 - SCRIPT2.xml.editing.R - edits base .job and .xml files for each BFD run
 - SCRIPT3.collate.analysis.files.R - collates output files from subdirectories in cluster
@@ -36,23 +36,41 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
 
 
+### map_layers - GIS layers to create maps
+### mclust.sampling.maps - map of mclust cluster assignments for each population 
+### scenario.maps - visualization of SBE hypotheses
+
+### Figure Scripts
+- SCRIPT.Fig.2.maps.R - reproduce Figure 2a maps
+- SCRIPT.Fig.2.plot.R - reproduce Figure 2b of mclust and BFD results
+- SCRIPT.Fig.S1.R - reproduce Figure S1 visualizing SBE scenarios
+- SCRIPT.Figure.S2.S3.R - reproduce Figure S2 and S3
+- SCRIPT.Table.S1.R - reproduce Table S1
+- SCRIPT.mclust.assignment.maps.R - reproduce maps in ./mclust.sampling.maps
 
 
 
 ## Geospiza
-
 Data and scripts used for species delimitation analysis of simulated extinction in the morphological dataset for the Darwin's Finch used by McKay & Zink 2015 and Cadena et al. 2018. Code adapted from supplementary material in Cadena et al. 2018. 
 
-
 ##### data
-- Geospiza.data.csv from Cadena et al. 2018. Institution codes as follows: RM = Rotheschild Mus., Harris = Harris, Hull = G. W. Hull, CAS = California Academy of Sciences, SU = Stanford University
+- Geospiza.data.csv - raw data used in McKay & Zink 2015 and Cadena et al. 2018 Institution codes as follows: RM = Rotheschild Mus., Harris = Harris, Hull = G. W. Hull, CAS = California Academy of Sciences, SU = Stanford University
+
+##### scripts - to be run in order
+- SCRIPT1.simulations.delimitation.R
+- SCRIPT2.analysis.Fig.S4.R
+- SCRIPT3.Fig.3.R
+- SCRIPT4.exploratory.plotting.R
 
 
 ## Bird Subspecies
-
 Data and script to calculate the number of bird species with three or more subspecies based on the Clements/eBird taxonomy.
 
-- Clements, J. F. et al. The eBird/Clements checklist of birds of the world: v2019. (2019)
+##### data
+- Clements-Checklist-v2019-August-2019.csv
+
+##### scripts - to be run in order
+- SCRIPT.number.of.birds.with.at.least.3.subspecies.R
 
 
 
@@ -61,4 +79,5 @@ Data and script to calculate the number of bird species with three or more subsp
 - Seeholzer GF, Brumfield RT. 2017. Isolation-by-distance, not incipient ecological speciation, explains genetic differentiation in an Andean songbird (Aves: Furnariidae: *Cranioleuca antisiensis*, Line-cheeked Spinetail) despite near three-fold body size change across an environmental. Molecular Ecology 1–18.
 - Cadena, C. D., Zapata, F. & Jiménez, I. Issues and perspectives in species delimitation using phenotypic data: Atlantean evolution in Darwin’s Finches. Syst. Biol. 67, 181–194 (2018).
 - Mckay, B. D. & Zink, R. M. Sisyphean evolution in Darwin’s finches. Biol. Rev. 90, 689–698 (2015).
+- Clements, J. F. et al. The eBird/Clements checklist of birds of the world: v2019. (2019)
 
