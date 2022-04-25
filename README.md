@@ -33,9 +33,9 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - cran.meta.txt - meta data for each Cranioleuca specimen
 
 ##### scripts
--SCRIPT1.cran.morph.processing.R - process raw morphological measurements for analysis
--SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
--SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
+- SCRIPT1.cran.morph.processing.R - process raw morphological measurements for analysis
+- SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
+- SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
 
 
 
