@@ -26,7 +26,7 @@ library(plyr)
 setwd('~/Dropbox/SBE/speciation-by-extinction_github/cranioleuca/bfd/')
 
 #	F5
-dataset = 'F6'
+dataset = 'F5'
 nperpop = 2
 missingness = 0
 nloci = 100
