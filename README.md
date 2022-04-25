@@ -33,9 +33,11 @@ Includes all raw data and files necessary to create .xml and .job scripts for BF
 - cran.meta.txt - meta data for each Cranioleuca specimen
 
 ##### scripts
-- SCRIPT1.cran.morph.processing.R - process raw morphological measurements for analysis
-- SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
-- SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
+-SCRIPT1.cran.morph.processing.R - process raw morphological measurements for analysis
+-SCRIPT2.cran.plumage.processing.R - process raw plumage coordinates for analysis
+-SCRIPT3.mclust.analysis.R - mclust species delimitation analysis
+
+
 
 
 - Seeholzer GF, Brumfield RT. 2017. Isolation-by-distance, not incipient ecological speciation, explains genetic differentiation in an Andean songbird (Aves: Furnariidae: *Cranioleuca antisiensis*, Line-cheeked Spinetail) despite near three-fold body size change across an environmental. Molecular Ecology 1–18.
